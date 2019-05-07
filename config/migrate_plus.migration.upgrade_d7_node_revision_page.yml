@@ -1,0 +1,117 @@
+uuid: 860d84b7-3006-4b79-9ae3-a3b14b3e55e5
+langcode: en
+status: true
+dependencies: {  }
+id: upgrade_d7_node_revision_page
+class: Drupal\migrate\Plugin\Migration
+field_plugin_method: alterFieldFormatterMigration
+cck_plugin_method: null
+migration_tags:
+  - 'Drupal 7'
+  - Content
+migration_group: migrate_drupal_7
+label: 'Node revisions (Basic page)'
+source:
+  plugin: d7_node_revision
+  node_type: page
+process:
+  nid:
+    -
+      plugin: get
+      source: nid
+  vid:
+    -
+      plugin: get
+      source: vid
+  langcode:
+    -
+      plugin: default_value
+      source: language
+      default_value: und
+  title:
+    -
+      plugin: get
+      source: title
+  uid:
+    -
+      plugin: get
+      source: node_uid
+  status:
+    -
+      plugin: get
+      source: status
+  created:
+    -
+      plugin: get
+      source: created
+  changed:
+    -
+      plugin: get
+      source: changed
+  promote:
+    -
+      plugin: get
+      source: promote
+  sticky:
+    -
+      plugin: get
+      source: sticky
+  revision_uid:
+    -
+      plugin: get
+      source: revision_uid
+  revision_log:
+    -
+      plugin: get
+      source: log
+  revision_timestamp:
+    -
+      plugin: get
+      source: timestamp
+  comment_node_page/0/status:
+    -
+      plugin: get
+      source: comment
+  body:
+    -
+      plugin: get
+      source: body
+  field_heading:
+    -
+      plugin: get
+      source: field_heading
+  field_heading_background_image:
+    -
+      plugin: sub_process
+      source: field_heading_background_image
+      process:
+        target_id: fid
+        alt: alt
+        title: title
+        width: width
+        height: height
+  field_heading_links:
+    -
+      plugin: field_link
+      source: field_heading_links
+  field_subheading:
+    -
+      plugin: get
+      source: field_subheading
+  field_html_embed:
+    -
+      plugin: get
+      source: field_html_embed
+destination:
+  plugin: 'entity_revision:node'
+  default_bundle: page
+migration_dependencies:
+  required:
+    - upgrade_d7_node_article
+    - upgrade_d7_node_blog_article
+    - upgrade_d7_node_event
+    - upgrade_d7_node_landing_page
+    - upgrade_d7_node_page
+    - upgrade_d7_node_plant_instance
+    - upgrade_d7_node_plant_type
+  optional: {  }

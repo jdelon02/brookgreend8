@@ -1,0 +1,195 @@
+uuid: b9960abf-9d61-483f-9027-37900c46028e
+langcode: en
+status: true
+dependencies: {  }
+id: upgrade_d7_node_revision_plant_type
+class: Drupal\migrate\Plugin\Migration
+field_plugin_method: alterFieldFormatterMigration
+cck_plugin_method: null
+migration_tags:
+  - 'Drupal 7'
+  - Content
+migration_group: migrate_drupal_7
+label: 'Node revisions (Plant Name)'
+source:
+  plugin: d7_node_revision
+  node_type: plant_type
+process:
+  nid:
+    -
+      plugin: get
+      source: nid
+  vid:
+    -
+      plugin: get
+      source: vid
+  langcode:
+    -
+      plugin: default_value
+      source: language
+      default_value: und
+  title:
+    -
+      plugin: get
+      source: title
+  uid:
+    -
+      plugin: get
+      source: node_uid
+  status:
+    -
+      plugin: get
+      source: status
+  created:
+    -
+      plugin: get
+      source: created
+  changed:
+    -
+      plugin: get
+      source: changed
+  promote:
+    -
+      plugin: get
+      source: promote
+  sticky:
+    -
+      plugin: get
+      source: sticky
+  revision_uid:
+    -
+      plugin: get
+      source: revision_uid
+  revision_log:
+    -
+      plugin: get
+      source: log
+  revision_timestamp:
+    -
+      plugin: get
+      source: timestamp
+  comment_node_plant_type/0/status:
+    -
+      plugin: get
+      source: comment
+  body:
+    -
+      plugin: get
+      source: body
+  field_infraspecific_epithet_albu:
+    -
+      plugin: get
+      source: field_infraspecific_epithet_albu
+  field_infraspecific_flag:
+    -
+      plugin: get
+      source: field_infraspecific_flag
+  field_intergeneric_hybrid_flag:
+    -
+      plugin: get
+      source: field_intergeneric_hybrid_flag
+  field_pc_common_name:
+    -
+      plugin: get
+      source: field_pc_common_name
+  field_pc_cultivar_name:
+    -
+      plugin: get
+      source: field_pc_cultivar_name
+  field_pc_featured_plant_type_ima:
+    -
+      plugin: sub_process
+      source: field_pc_featured_plant_type_ima
+      process:
+        target_id: fid
+        alt: alt
+        title: title
+        width: width
+        height: height
+  field_pc_genus:
+    -
+      plugin: get
+      source: field_pc_genus
+  field_pc_hardiness:
+    -
+      plugin: sub_process
+      source: field_pc_hardiness
+      process:
+        target_id: tid
+  field_pc_images_carousel:
+    -
+      plugin: get
+      source: field_pc_images_carousel
+  field_pc_labeled:
+    -
+      plugin: get
+      source: field_pc_labeled
+  field_pc_leaves:
+    -
+      plugin: sub_process
+      source: field_pc_leaves
+      process:
+        target_id: tid
+  field_pc_longevity:
+    -
+      plugin: sub_process
+      source: field_pc_longevity
+      process:
+        target_id: tid
+  field_pc_origin:
+    -
+      plugin: get
+      source: field_pc_origin
+  field_pc_plant_family:
+    -
+      plugin: sub_process
+      source: field_pc_plant_family
+      process:
+        target_id: tid
+  field_pc_reference:
+    -
+      plugin: get
+      source: field_pc_reference
+  field_pc_registered_name:
+    -
+      plugin: get
+      source: field_pc_registered_name
+  field_pc_research_section_access:
+    -
+      plugin: get
+      source: field_pc_research_section_access
+  field_pc_scientific_name1:
+    -
+      plugin: get
+      source: field_pc_scientific_name1
+  field_pc_specific_epithet:
+    -
+      plugin: get
+      source: field_pc_specific_epithet
+  field_pc_stem:
+    -
+      plugin: sub_process
+      source: field_pc_stem
+      process:
+        target_id: tid
+  field_pc_trademarked_name:
+    -
+      plugin: get
+      source: field_pc_trademarked_name
+  field_pc_zone:
+    -
+      plugin: get
+      source: field_pc_zone
+destination:
+  plugin: 'entity_revision:node'
+  default_bundle: plant_type
+migration_dependencies:
+  required:
+    - upgrade_d7_node_article
+    - upgrade_d7_node_blog_article
+    - upgrade_d7_node_event
+    - upgrade_d7_node_landing_page
+    - upgrade_d7_node_page
+    - upgrade_d7_node_plant_instance
+    - upgrade_d7_node_plant_type
+  optional: {  }

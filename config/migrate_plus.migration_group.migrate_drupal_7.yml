@@ -1,0 +1,20 @@
+uuid: f070be2f-6c58-4238-b0cb-4e014f412673
+langcode: en
+status: true
+dependencies: {  }
+id: migrate_drupal_7
+label: 'Import from Drupal 7'
+description: 'Migrations originally generated from drush migrate-upgrade --configure-only'
+source_type: 'Drupal 7'
+module: null
+shared_configuration:
+  source:
+    key: drupal_7
+    database:
+      driver: mysql
+      username: pantheon
+      password: bc7423c8224844daa65abd225cd212b8
+      host: dbserver.migratetest.fde1c4fe-2d4b-4918-9ed1-66352e56ec2c.drush.in
+      port: '22966'
+      database: pantheon
+      prefix: null
