@@ -26,6 +26,7 @@
         "drupal/core": "^8",
         "drupal/custom_formatters": "^3.0",
         "drupal/devel": "^2.0",
+        "drupal/eck": "^1.0",
         "drupal/environment_indicator": "^3.5",
         "drupal/filefield_paths": "^1.0",
         "drupal/flexslider": "^2.0",
