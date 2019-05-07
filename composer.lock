@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "bcba74593a2cfad4a62b4725b83bbc9a",
+    "content-hash": "616d17fb6899cba8577b6502b371ddd2",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -3339,17 +3339,11 @@
         },
         {
             "name": "drupal/migrate_upgrade",
-            "version": "3.0.0",
+            "version": "dev-3.x",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/migrate_upgrade.git",
-                "reference": "8.x-3.0"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/migrate_upgrade-8.x-3.0.zip",
-                "reference": "8.x-3.0",
-                "shasum": "5d5788a3262ce88a95a943c9419736edfae4e32c"
+                "reference": "95143dff1337d1d4a5526690469d5b5f1dd64644"
             },
             "require": {
                 "drupal/core": "*",
@@ -3365,11 +3359,11 @@
                     "dev-3.x": "3.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-3.0",
+                    "version": "8.x-3.0+0-dev",
                     "datestamp": "1547043784",
                     "security-coverage": {
-                        "status": "covered",
-                        "message": "Covered by Drupal's security advisory policy"
+                        "status": "not-covered",
+                        "message": "Dev releases are not covered by Drupal security advisories."
                     }
                 }
             },
@@ -3407,7 +3401,8 @@
             "homepage": "https://www.drupal.org/project/migrate_upgrade",
             "support": {
                 "source": "https://git.drupalcode.org/project/migrate_upgrade"
-            }
+            },
+            "time": "2019-04-05T17:42:09+00:00"
         },
         {
             "name": "drupal/module_filter",
@@ -9805,6 +9800,7 @@
     "stability-flags": {
         "drupal/migrate_plus": 20,
         "drupal/migrate_tools": 20,
+        "drupal/migrate_upgrade": 20,
         "drupal/simple_block": 10
     },
     "prefer-stable": true,
