@@ -31,6 +31,12 @@ if (file_exists($local_settings)) {
   include $local_settings;
 }
 
+# When on Pantheon, connect to a D7 database.
+$migrate_settings = __DIR__ . "/settings.migrate-on-pantheon.php";
+if (file_exists($migrate_settings)) {
+    include $migrate_settings;
+}
+
 /**
  * Always install the 'standard' profile to stop the installer from
  * modifying settings.php.
