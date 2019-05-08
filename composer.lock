@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "5fc600008b9ab93911a41786b10c7660",
+    "content-hash": "3e4613b5ecaccdd211790aa4a794810e",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -2604,8 +2604,7 @@
             "support": {
                 "source": "http://git.drupal.org/project/eck.git",
                 "issues": "https://www.drupal.org/project/issues/eck"
-            },
-            "time": "2019-04-11T06:26:26+00:00"
+            }
         },
         {
             "name": "drupal/entity_reference_revisions",
