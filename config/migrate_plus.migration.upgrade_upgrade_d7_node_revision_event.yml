@@ -1,0 +1,176 @@
+uuid: bceb4928-9879-4c8d-a774-11766995ae3a
+langcode: en
+status: true
+dependencies: {  }
+id: upgrade_upgrade_d7_node_revision_event
+class: Drupal\migrate\Plugin\Migration
+field_plugin_method: alterFieldFormatterMigration
+cck_plugin_method: null
+migration_tags:
+  - 'Drupal 7'
+  - Content
+migration_group: migrate_drupal_7
+label: 'Node revisions (Event)'
+source:
+  key: drupal_7
+  database:
+    driver: mysql
+    username: pantheon
+    password: bc7423c8224844daa65abd225cd212b8
+    host: dbserver.migratetest.fde1c4fe-2d4b-4918-9ed1-66352e56ec2c.drush.in
+    port: '22966'
+    database: pantheon
+    prefix: null
+  plugin: d7_node_revision
+  node_type: event
+process:
+  nid:
+    -
+      plugin: get
+      source: nid
+  vid:
+    -
+      plugin: get
+      source: vid
+  langcode:
+    -
+      plugin: default_value
+      source: language
+      default_value: und
+  title:
+    -
+      plugin: get
+      source: title
+  uid:
+    -
+      plugin: get
+      source: node_uid
+  status:
+    -
+      plugin: get
+      source: status
+  created:
+    -
+      plugin: get
+      source: created
+  changed:
+    -
+      plugin: get
+      source: changed
+  promote:
+    -
+      plugin: get
+      source: promote
+  sticky:
+    -
+      plugin: get
+      source: sticky
+  revision_uid:
+    -
+      plugin: get
+      source: revision_uid
+  revision_log:
+    -
+      plugin: get
+      source: log
+  revision_timestamp:
+    -
+      plugin: get
+      source: timestamp
+  comment_node_event/0/status:
+    -
+      plugin: get
+      source: comment
+  body:
+    -
+      plugin: get
+      source: body
+  field_event_date:
+    -
+      plugin: sub_process
+      source: field_event_date
+      process:
+        value:
+          plugin: format_date
+          from_format: 'Y-m-d H:i:s'
+          to_format: 'Y-m-d\TH:i:s'
+          source: value
+  field_event_location_link:
+    -
+      plugin: field_link
+      source: field_event_location_link
+  field_event_location_text:
+    -
+      plugin: get
+      source: field_event_location_text
+  field_event_type:
+    -
+      plugin: sub_process
+      source: field_event_type
+      process:
+        target_id: tid
+  field_heading:
+    -
+      plugin: get
+      source: field_heading
+  field_heading_background_image:
+    -
+      plugin: sub_process
+      source: field_heading_background_image
+      process:
+        target_id: fid
+        alt: alt
+        title: title
+        width: width
+        height: height
+  field_heading_links:
+    -
+      plugin: field_link
+      source: field_heading_links
+  field_image:
+    -
+      plugin: sub_process
+      source: field_image
+      process:
+        target_id: fid
+        alt: alt
+        title: title
+        width: width
+        height: height
+  field_subheading:
+    -
+      plugin: get
+      source: field_subheading
+  field_attraction:
+    -
+      plugin: sub_process
+      source: field_attraction
+      process:
+        target_id: tid
+  field_sponsors_image:
+    -
+      plugin: sub_process
+      source: field_sponsors_image
+      process:
+        target_id: fid
+        alt: alt
+        title: title
+        width: width
+        height: height
+  field_sponsors:
+    -
+      plugin: get
+      source: field_sponsors
+destination:
+  plugin: 'entity_revision:node'
+  default_bundle: event
+migration_dependencies:
+  required:
+    - upgrade_upgrade_d7_node_article
+    - upgrade_upgrade_d7_node_blog_article
+    - upgrade_upgrade_d7_node_event
+    - upgrade_upgrade_d7_node_landing_page
+    - upgrade_upgrade_d7_node_page
+    - upgrade_upgrade_d7_node_plant_instance
+    - upgrade_upgrade_d7_node_plant_type
+  optional: {  }

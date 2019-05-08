@@ -1,0 +1,74 @@
+uuid: f4d67e4b-679b-447c-a8be-aada1bbafba7
+langcode: en
+status: true
+dependencies: {  }
+id: upgrade_upgrade_d7_search_page
+class: Drupal\migrate\Plugin\Migration
+field_plugin_method: null
+cck_plugin_method: null
+migration_tags:
+  - 'Drupal 7'
+  - Configuration
+migration_group: migrate_drupal_7
+label: 'Search page configuration'
+source:
+  key: drupal_7
+  database:
+    driver: mysql
+    username: pantheon
+    password: bc7423c8224844daa65abd225cd212b8
+    host: dbserver.migratetest.fde1c4fe-2d4b-4918-9ed1-66352e56ec2c.drush.in
+    port: '22966'
+    database: pantheon
+    prefix: null
+  plugin: d7_search_page
+  variables:
+    - node_rank_comments
+    - node_rank_promote
+    - node_rank_relevance
+    - node_rank_sticky
+    - node_rank_views
+  constants:
+    suffix: _search
+process:
+  module:
+    -
+      plugin: get
+      source: module
+  module_exists:
+    -
+      plugin: skip_on_empty
+      method: row
+      source: module_exists
+  status:
+    -
+      plugin: static_map
+      source: status
+      map:
+        node: true
+        user: true
+      default_value: false
+  id:
+    -
+      plugin: concat
+      source:
+        - module
+        - constants/suffix
+  plugin:
+    -
+      plugin: concat
+      source:
+        - module
+        - constants/suffix
+  path:
+    -
+      plugin: get
+      source: module
+  configuration/rankings:
+    -
+      plugin: search_configuration_rankings
+destination:
+  plugin: 'entity:search_page'
+migration_dependencies:
+  required: {  }
+  optional: {  }

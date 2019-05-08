@@ -1,0 +1,39 @@
+uuid: d221f4d3-995b-4551-ab07-9501dac7b304
+langcode: en
+status: true
+dependencies: {  }
+id: upgrade_upgrade_system_image
+class: Drupal\migrate\Plugin\Migration
+field_plugin_method: null
+cck_plugin_method: null
+migration_tags:
+  - 'Drupal 6'
+  - 'Drupal 7'
+  - Configuration
+migration_group: migrate_drupal_7
+label: 'Image toolkit configuration'
+source:
+  key: drupal_7
+  database:
+    driver: mysql
+    username: pantheon
+    password: bc7423c8224844daa65abd225cd212b8
+    host: dbserver.migratetest.fde1c4fe-2d4b-4918-9ed1-66352e56ec2c.drush.in
+    port: '22966'
+    database: pantheon
+    prefix: null
+  plugin: variable
+  variables:
+    - image_toolkit
+  source_module: system
+process:
+  toolkit:
+    -
+      plugin: get
+      source: image_toolkit
+destination:
+  plugin: config
+  config_name: system.image
+migration_dependencies:
+  required: {  }
+  optional: {  }

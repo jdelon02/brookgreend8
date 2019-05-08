@@ -1,0 +1,6 @@
+name: brookgreend-8
+recipe: pantheon
+config:
+  framework: drupal8
+  site: brookgreend8
+  id: 1ef9e7ac-96cc-4f53-bd67-b2fdedc5ea36

@@ -23,7 +23,6 @@ module:
   dblog: 0
   devel: 0
   dynamic_page_cache: 0
-  eck: 0
   editor: 0
   entity_reference_revisions: 0
   environment_indicator: 0

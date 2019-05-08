@@ -1,0 +1,50 @@
+uuid: 1dd7a8e2-239d-4606-8897-a7d99af446db
+langcode: en
+status: true
+dependencies: {  }
+id: upgrade_upgrade_d7_node_title_label
+class: Drupal\migrate\Plugin\Migration
+field_plugin_method: alterFieldFormatterMigration
+cck_plugin_method: null
+migration_tags:
+  - 'Drupal 7'
+  - Configuration
+migration_group: migrate_drupal_7
+label: 'Node title label'
+source:
+  key: drupal_7
+  database:
+    driver: mysql
+    username: pantheon
+    password: bc7423c8224844daa65abd225cd212b8
+    host: dbserver.migratetest.fde1c4fe-2d4b-4918-9ed1-66352e56ec2c.drush.in
+    port: '22966'
+    database: pantheon
+    prefix: null
+  plugin: d7_node_type
+  constants:
+    entity_type: node
+    field_name: title
+process:
+  entity_type:
+    -
+      plugin: get
+      source: constants/entity_type
+  bundle:
+    -
+      plugin: get
+      source: type
+  field_name:
+    -
+      plugin: get
+      source: constants/field_name
+  label:
+    -
+      plugin: get
+      source: title_label
+destination:
+  plugin: 'entity:base_field_override'
+migration_dependencies:
+  required:
+    - upgrade_upgrade_d7_node_type
+  optional: {  }

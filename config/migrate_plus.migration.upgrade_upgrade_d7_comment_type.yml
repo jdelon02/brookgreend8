@@ -1,0 +1,56 @@
+uuid: 32d98dfa-2595-4cef-a4d2-5f2d370efdb7
+langcode: en
+status: true
+dependencies: {  }
+id: upgrade_upgrade_d7_comment_type
+class: Drupal\migrate\Plugin\Migration
+field_plugin_method: alterFieldFormatterMigration
+cck_plugin_method: null
+migration_tags:
+  - 'Drupal 7'
+  - Configuration
+migration_group: migrate_drupal_7
+label: 'Comment type'
+source:
+  key: drupal_7
+  database:
+    driver: mysql
+    username: pantheon
+    password: bc7423c8224844daa65abd225cd212b8
+    host: dbserver.migratetest.fde1c4fe-2d4b-4918-9ed1-66352e56ec2c.drush.in
+    port: '22966'
+    database: pantheon
+    prefix: null
+  plugin: d7_node_type
+  constants:
+    entity_type: node
+    id_prefix: comment_node_
+    label_suffix: comment
+process:
+  target_entity_type_id:
+    -
+      plugin: get
+      source: constants/entity_type
+  id:
+    -
+      plugin: concat
+      source:
+        - constants/id_prefix
+        - type
+    -
+      plugin: static_map
+      bypass: true
+      map:
+        comment_node_forum: comment_forum
+  label:
+    -
+      plugin: concat
+      source:
+        - name
+        - constants/label_suffix
+      delimiter: ' '
+destination:
+  plugin: 'entity:comment_type'
+migration_dependencies:
+  required: {  }
+  optional: {  }

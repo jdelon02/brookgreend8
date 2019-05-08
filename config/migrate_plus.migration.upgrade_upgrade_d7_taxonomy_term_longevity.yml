@@ -1,0 +1,105 @@
+uuid: c941e670-88ad-488c-a587-f34aaa51dd04
+langcode: en
+status: true
+dependencies: {  }
+id: upgrade_upgrade_d7_taxonomy_term_longevity
+class: Drupal\migrate\Plugin\Migration
+field_plugin_method: alterFieldFormatterMigration
+cck_plugin_method: null
+migration_tags:
+  - 'Drupal 7'
+  - Content
+migration_group: migrate_drupal_7
+label: 'Taxonomy terms (Longevity)'
+source:
+  key: drupal_7
+  database:
+    driver: mysql
+    username: pantheon
+    password: bc7423c8224844daa65abd225cd212b8
+    host: dbserver.migratetest.fde1c4fe-2d4b-4918-9ed1-66352e56ec2c.drush.in
+    port: '22966'
+    database: pantheon
+    prefix: null
+  plugin: d7_taxonomy_term
+  bundle: longevity
+process:
+  tid:
+    -
+      plugin: get
+      source: tid
+  vid:
+    -
+      plugin: migration_lookup
+      migration: upgrade_upgrade_d7_taxonomy_vocabulary
+      source: vid
+  name:
+    -
+      plugin: get
+      source: name
+  description/value:
+    -
+      plugin: get
+      source: description
+  description/format:
+    -
+      plugin: get
+      source: format
+  weight:
+    -
+      plugin: get
+      source: weight
+  parent_id:
+    -
+      plugin: skip_on_empty
+      method: process
+      source: parent
+    -
+      plugin: migration_lookup
+      migration:
+        - upgrade_upgrade_d7_taxonomy_term_stem
+        - upgrade_upgrade_d7_taxonomy_term_scientific_name
+        - upgrade_upgrade_d7_taxonomy_term_longevity
+        - upgrade_upgrade_d7_taxonomy_term_leaves
+        - upgrade_upgrade_d7_taxonomy_term_hardiness
+        - upgrade_upgrade_d7_taxonomy_term_family
+        - upgrade_upgrade_d7_taxonomy_term_attraction
+        - upgrade_upgrade_d7_taxonomy_term_event_type
+        - upgrade_upgrade_d7_taxonomy_term_css_classes
+        - upgrade_upgrade_d7_taxonomy_term_tags
+  parent:
+    -
+      plugin: default_value
+      default_value: 0
+      source: '@parent_id'
+  forum_container:
+    -
+      plugin: get
+      source: is_container
+  changed:
+    -
+      plugin: get
+      source: timestamp
+  langcode:
+    -
+      plugin: get
+      source: language
+destination:
+  plugin: 'entity:taxonomy_term'
+  default_bundle: longevity
+migration_dependencies:
+  required:
+    - upgrade_upgrade_d7_taxonomy_vocabulary
+  optional:
+    - upgrade_upgrade_d7_field_instance
+    - upgrade_upgrade_d7_taxonomy_vocabulary
+    - upgrade_upgrade_d7_taxonomy_term_tags
+    - upgrade_upgrade_d7_taxonomy_term_css_classes
+    - upgrade_upgrade_d7_taxonomy_term_event_type
+    - upgrade_upgrade_d7_taxonomy_term_attraction
+    - upgrade_upgrade_d7_taxonomy_term_family
+    - upgrade_upgrade_d7_taxonomy_term_hardiness
+    - upgrade_upgrade_d7_taxonomy_term_leaves
+    - upgrade_upgrade_d7_taxonomy_term_longevity
+    - upgrade_upgrade_d7_taxonomy_term_scientific_name
+    - upgrade_upgrade_d7_taxonomy_term_stem

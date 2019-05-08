@@ -1,0 +1,82 @@
+uuid: 77bd4b06-df75-478f-b4d7-026159b12c37
+langcode: en
+status: true
+dependencies: {  }
+id: upgrade_upgrade_system_site
+class: Drupal\migrate\Plugin\Migration
+field_plugin_method: null
+cck_plugin_method: null
+migration_tags:
+  - 'Drupal 6'
+  - 'Drupal 7'
+  - Configuration
+migration_group: migrate_drupal_7
+label: 'Site configuration'
+source:
+  key: drupal_7
+  database:
+    driver: mysql
+    username: pantheon
+    password: bc7423c8224844daa65abd225cd212b8
+    host: dbserver.migratetest.fde1c4fe-2d4b-4918-9ed1-66352e56ec2c.drush.in
+    port: '22966'
+    database: pantheon
+    prefix: null
+  plugin: variable
+  constants:
+    slash: /
+  variables:
+    - site_name
+    - site_mail
+    - site_slogan
+    - site_frontpage
+    - site_403
+    - site_404
+    - drupal_weight_select_max
+    - admin_compact_mode
+  source_module: system
+process:
+  name:
+    -
+      plugin: get
+      source: site_name
+  mail:
+    -
+      plugin: get
+      source: site_mail
+  slogan:
+    -
+      plugin: get
+      source: site_slogan
+  page/front:
+    -
+      plugin: concat
+      source:
+        - constants/slash
+        - site_frontpage
+  page/403:
+    -
+      plugin: concat
+      source:
+        - constants/slash
+        - site_403
+  page/404:
+    -
+      plugin: concat
+      source:
+        - constants/slash
+        - site_404
+  weight_select_max:
+    -
+      plugin: get
+      source: drupal_weight_select_max
+  admin_compact_mode:
+    -
+      plugin: get
+      source: admin_compact_mode
+destination:
+  plugin: config
+  config_name: system.site
+migration_dependencies:
+  required: {  }
+  optional: {  }

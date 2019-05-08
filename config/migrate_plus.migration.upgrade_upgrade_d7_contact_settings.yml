@@ -1,0 +1,49 @@
+uuid: b29bcfc2-c429-4e57-b738-c6de35298912
+langcode: en
+status: true
+dependencies: {  }
+id: upgrade_upgrade_d7_contact_settings
+class: Drupal\migrate\Plugin\Migration
+field_plugin_method: null
+cck_plugin_method: null
+migration_tags:
+  - 'Drupal 7'
+  - Configuration
+migration_group: migrate_drupal_7
+label: 'Contact configuration'
+source:
+  key: drupal_7
+  database:
+    driver: mysql
+    username: pantheon
+    password: bc7423c8224844daa65abd225cd212b8
+    host: dbserver.migratetest.fde1c4fe-2d4b-4918-9ed1-66352e56ec2c.drush.in
+    port: '22966'
+    database: pantheon
+    prefix: null
+  plugin: contact_settings
+  variables:
+    - contact_default_status
+    - contact_threshold_limit
+process:
+  user_default_enabled:
+    -
+      plugin: get
+      source: contact_default_status
+  flood/limit:
+    -
+      plugin: get
+      source: contact_threshold_limit
+  default_form:
+    -
+      plugin: migration_lookup
+      migration: upgrade_upgrade_contact_category
+      source: default_category
+destination:
+  plugin: config
+  config_name: contact.settings
+migration_dependencies:
+  required:
+    - upgrade_upgrade_contact_category
+  optional:
+    - upgrade_upgrade_contact_category

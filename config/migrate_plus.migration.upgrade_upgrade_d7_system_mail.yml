@@ -1,0 +1,41 @@
+uuid: 90244dd4-7b7a-4849-8674-da685d08eef4
+langcode: en
+status: true
+dependencies: {  }
+id: upgrade_upgrade_d7_system_mail
+class: Drupal\migrate\Plugin\Migration
+field_plugin_method: null
+cck_plugin_method: null
+migration_tags:
+  - 'Drupal 7'
+  - Configuration
+migration_group: migrate_drupal_7
+label: 'Drupal 7 system mail configuration'
+source:
+  key: drupal_7
+  database:
+    driver: mysql
+    username: pantheon
+    password: bc7423c8224844daa65abd225cd212b8
+    host: dbserver.migratetest.fde1c4fe-2d4b-4918-9ed1-66352e56ec2c.drush.in
+    port: '22966'
+    database: pantheon
+    prefix: null
+  plugin: variable
+  variables:
+    - mail_system
+  source_module: system
+process:
+  interface/default:
+    -
+      plugin: static_map
+      source: mail_system/default-system
+      map:
+        DefaultMailSystem: php_mail
+        MailTestCase: test_mail_collector
+destination:
+  plugin: config
+  config_name: system.mail
+migration_dependencies:
+  required: {  }
+  optional: {  }

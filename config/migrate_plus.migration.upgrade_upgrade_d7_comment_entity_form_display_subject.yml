@@ -1,0 +1,71 @@
+uuid: 18692e69-66c4-4e03-b6e3-c43b063c79a5
+langcode: en
+status: true
+dependencies: {  }
+id: upgrade_upgrade_d7_comment_entity_form_display_subject
+class: Drupal\migrate\Plugin\Migration
+field_plugin_method: alterFieldInstanceMigration
+cck_plugin_method: null
+migration_tags:
+  - 'Drupal 7'
+  - Configuration
+migration_group: migrate_drupal_7
+label: 'Comment subject form display configuration'
+source:
+  key: drupal_7
+  database:
+    driver: mysql
+    username: pantheon
+    password: bc7423c8224844daa65abd225cd212b8
+    host: dbserver.migratetest.fde1c4fe-2d4b-4918-9ed1-66352e56ec2c.drush.in
+    port: '22966'
+    database: pantheon
+    prefix: null
+  plugin: d7_node_type
+  constants:
+    entity_type: comment
+    field_name: subject
+    form_mode: default
+    options:
+      type: string_textfield
+      weight: 10
+process:
+  entity_type:
+    -
+      plugin: get
+      source: constants/entity_type
+  field_name:
+    -
+      plugin: get
+      source: constants/field_name
+  form_mode:
+    -
+      plugin: get
+      source: constants/form_mode
+  options:
+    -
+      plugin: get
+      source: constants/options
+  bundle:
+    -
+      plugin: migration_lookup
+      source: type
+      migration: upgrade_upgrade_d7_comment_type
+    -
+      plugin: skip_on_empty
+      method: row
+  hidden:
+    -
+      plugin: static_map
+      source: comment_subject_field
+      map:
+        - true
+        - false
+      default_value: false
+destination:
+  plugin: component_entity_form_display
+migration_dependencies:
+  required:
+    - upgrade_upgrade_d7_comment_type
+  optional:
+    - upgrade_upgrade_d7_comment_type

@@ -1,0 +1,135 @@
+uuid: 8e717c4f-0ec4-4942-8f1d-2e0790d738e4
+langcode: en
+status: true
+dependencies: {  }
+id: upgrade_upgrade_d7_node_plant_instance
+class: Drupal\migrate\Plugin\Migration
+field_plugin_method: alterFieldInstanceMigration
+cck_plugin_method: null
+migration_tags:
+  - 'Drupal 7'
+  - Content
+migration_group: migrate_drupal_7
+label: 'Nodes (Plant Inventory)'
+source:
+  key: drupal_7
+  database:
+    driver: mysql
+    username: pantheon
+    password: bc7423c8224844daa65abd225cd212b8
+    host: dbserver.migratetest.fde1c4fe-2d4b-4918-9ed1-66352e56ec2c.drush.in
+    port: '22966'
+    database: pantheon
+    prefix: null
+  plugin: d7_node
+  node_type: plant_instance
+process:
+  nid:
+    -
+      plugin: get
+      source: tnid
+  vid:
+    -
+      plugin: get
+      source: vid
+  langcode:
+    -
+      plugin: default_value
+      source: language
+      default_value: und
+  title:
+    -
+      plugin: get
+      source: title
+  uid:
+    -
+      plugin: get
+      source: node_uid
+  status:
+    -
+      plugin: get
+      source: status
+  created:
+    -
+      plugin: get
+      source: created
+  changed:
+    -
+      plugin: get
+      source: changed
+  promote:
+    -
+      plugin: get
+      source: promote
+  sticky:
+    -
+      plugin: get
+      source: sticky
+  revision_uid:
+    -
+      plugin: get
+      source: revision_uid
+  revision_log:
+    -
+      plugin: get
+      source: log
+  revision_timestamp:
+    -
+      plugin: get
+      source: timestamp
+  comment_node_plant_instance/0/status:
+    -
+      plugin: get
+      source: comment
+  field_pc_bed:
+    -
+      plugin: get
+      source: field_pc_bed
+  field_pc_featured_plant_type_ima:
+    -
+      plugin: sub_process
+      source: field_pc_featured_plant_type_ima
+      process:
+        target_id: fid
+        alt: alt
+        title: title
+        width: width
+        height: height
+  field_pc_garden:
+    -
+      plugin: get
+      source: field_pc_garden
+  field_pc_gardener_notes:
+    -
+      plugin: get
+      source: field_pc_gardener_notes
+  field_pc_images_carousel:
+    -
+      plugin: get
+      source: field_pc_images_carousel
+  field_pc_plant_id:
+    -
+      plugin: get
+      source: field_pc_plant_id
+  field_pc_plant_parent:
+    -
+      plugin: get
+      source: field_pc_plant_parent
+  field_pc_plant_type:
+    -
+      plugin: get
+      source: field_pc_plant_type
+  field_pc_source:
+    -
+      plugin: get
+      source: field_pc_source
+destination:
+  plugin: 'entity:node'
+  default_bundle: plant_instance
+migration_dependencies:
+  required:
+    - upgrade_upgrade_d7_user
+    - upgrade_upgrade_d7_node_type
+  optional:
+    - upgrade_upgrade_d7_field_instance
+    - upgrade_upgrade_d7_comment_field_instance

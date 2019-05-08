@@ -1,0 +1,80 @@
+uuid: 54bb2919-95d8-4f93-8d4c-2543e82acb7c
+langcode: en
+status: true
+dependencies: {  }
+id: upgrade_upgrade_d7_node_type
+class: Drupal\migrate\Plugin\Migration
+field_plugin_method: alterFieldFormatterMigration
+cck_plugin_method: null
+migration_tags:
+  - 'Drupal 7'
+  - Configuration
+migration_group: migrate_drupal_7
+label: 'Node type configuration'
+source:
+  key: drupal_7
+  database:
+    driver: mysql
+    username: pantheon
+    password: bc7423c8224844daa65abd225cd212b8
+    host: dbserver.migratetest.fde1c4fe-2d4b-4918-9ed1-66352e56ec2c.drush.in
+    port: '22966'
+    database: pantheon
+    prefix: null
+  plugin: d7_node_type
+  constants:
+    preview: 1
+process:
+  type:
+    -
+      plugin: get
+      source: type
+  name:
+    -
+      plugin: get
+      source: name
+  description:
+    -
+      plugin: get
+      source: description
+  help:
+    -
+      plugin: get
+      source: help
+  title_label:
+    -
+      plugin: get
+      source: title_label
+  preview_mode:
+    -
+      plugin: get
+      source: constants/preview
+  display_submitted:
+    -
+      plugin: get
+      source: display_submitted
+  new_revision:
+    -
+      plugin: get
+      source: options/revision
+  create_body:
+    -
+      plugin: get
+      source: create_body
+  create_body_label:
+    -
+      plugin: get
+      source: body_label
+  third_party_settings/menu_ui/available_menus:
+    -
+      plugin: get
+      source: available_menus
+  third_party_settings/menu_ui/parent:
+    -
+      plugin: get
+      source: parent
+destination:
+  plugin: 'entity:node_type'
+migration_dependencies:
+  required: {  }
+  optional: {  }
