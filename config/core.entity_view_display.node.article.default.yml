@@ -1,14 +1,14 @@
-uuid: 10cd7cd6-43bb-48bf-820e-b5dda56311eb
+uuid: 58b8ac17-3396-46e6-bf80-67f977fe8b46
 langcode: en
 status: true
 dependencies:
   config:
-    - core.entity_view_display.comment.comment_node_article.default
+    - core.entity_view_display.comment.comment.default
     - field.field.node.article.body
     - field.field.node.article.comment
-    - field.field.node.article.comment_node_article
     - field.field.node.article.field_image
     - field.field.node.article.field_tags
+    - image.style.large
     - node.type.article
   module:
     - comment
@@ -23,12 +23,12 @@ bundle: article
 mode: default
 content:
   body:
-    label: hidden
-    weight: 0
     type: text_default
+    weight: 0
+    region: content
     settings: {  }
     third_party_settings: {  }
-    region: content
+    label: hidden
   comment:
     type: comment_default
     weight: 110
@@ -38,32 +38,23 @@ content:
       view_mode: default
       pager_id: 0
     third_party_settings: {  }
-  comment_node_article:
-    label: hidden
-    type: comment_default
-    weight: 20
-    settings:
-      view_mode: default
-      pager_id: 0
-    third_party_settings: {  }
-    region: content
   field_image:
-    label: hidden
-    weight: -1
     type: image
+    weight: -1
+    region: content
     settings:
-      image_style: ''
+      image_style: large
       image_link: ''
     third_party_settings: {  }
-    region: content
+    label: hidden
   field_tags:
-    label: above
-    weight: 10
     type: entity_reference_label
+    weight: 10
+    region: content
+    label: above
     settings:
       link: true
     third_party_settings: {  }
-    region: content
   links:
     weight: 100
     region: content

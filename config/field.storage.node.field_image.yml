@@ -1,5 +1,5 @@
-uuid: 5d582c04-dc5d-4d95-92a1-570f407e0877
-langcode: und
+uuid: b3a04a09-468b-4a58-a67a-0a5f02aacb62
+langcode: en
 status: true
 dependencies:
   module:
@@ -15,7 +15,11 @@ type: image
 settings:
   uri_scheme: public
   default_image:
-    uuid: ''
+    uuid: null
+    alt: ''
+    title: ''
+    width: null
+    height: null
   target_type: file
   display_field: false
   display_default: false

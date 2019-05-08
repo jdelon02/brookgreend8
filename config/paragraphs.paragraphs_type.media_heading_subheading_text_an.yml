@@ -1,9 +1,0 @@
-uuid: d7eb5c95-e741-4fcf-8eeb-dd74dceacfda
-langcode: en
-status: true
-dependencies: {  }
-id: media_heading_subheading_text_an
-label: 'Media, Heading, Subheading, Text and Links'
-icon_uuid: null
-description: 'Migrated from paragraph bundle Media, Heading, Subheading, Text and Links'
-behavior_plugins: {  }

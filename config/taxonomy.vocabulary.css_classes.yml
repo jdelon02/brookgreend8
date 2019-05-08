@@ -1,8 +1,0 @@
-uuid: 84522bbc-fd41-400c-9931-5e8361dad243
-langcode: en
-status: true
-dependencies: {  }
-name: 'Css Classes'
-vid: css_classes
-description: ''
-weight: 0

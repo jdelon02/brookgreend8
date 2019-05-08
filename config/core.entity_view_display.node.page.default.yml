@@ -1,19 +1,11 @@
-uuid: 42b66a03-d779-40f6-827f-240ca7798a35
+uuid: 6e0f97dc-691d-4edf-b167-267281feefcf
 langcode: en
 status: true
 dependencies:
   config:
-    - core.entity_view_display.comment.comment_node_page.default
     - field.field.node.page.body
-    - field.field.node.page.comment_node_page
-    - field.field.node.page.field_heading
-    - field.field.node.page.field_heading_background_image
-    - field.field.node.page.field_heading_links
-    - field.field.node.page.field_html_embed
-    - field.field.node.page.field_subheading
     - node.type.page
   module:
-    - comment
     - text
     - user
 _core:
@@ -25,32 +17,12 @@ mode: default
 content:
   body:
     label: hidden
-    weight: 0
     type: text_default
+    weight: 100
+    region: content
     settings: {  }
     third_party_settings: {  }
-    region: content
-  comment_node_page:
-    label: hidden
-    type: comment_default
-    weight: 20
-    settings:
-      view_mode: default
-      pager_id: 0
-    third_party_settings: {  }
-    region: content
-  field_html_embed:
-    label: hidden
-    weight: 5
-    type: text_default
-    settings: {  }
-    third_party_settings: {  }
-    region: content
   links:
     weight: 101
     region: content
-hidden:
-  field_heading: true
-  field_heading_background_image: true
-  field_heading_links: true
-  field_subheading: true
+hidden: {  }

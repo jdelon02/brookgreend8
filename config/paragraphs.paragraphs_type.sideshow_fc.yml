@@ -1,9 +1,0 @@
-uuid: 4959f190-b118-4723-8df2-43b06389964a
-langcode: en
-status: true
-dependencies: {  }
-id: sideshow_fc
-label: 'Sideshow fc'
-icon_uuid: null
-description: 'Migrated from field_collection field_sideshow_fc'
-behavior_plugins: {  }

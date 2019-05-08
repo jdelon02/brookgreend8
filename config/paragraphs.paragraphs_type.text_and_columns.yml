@@ -1,9 +1,0 @@
-uuid: 23261cbc-64c3-405d-a50c-6f9c77542f75
-langcode: en
-status: true
-dependencies: {  }
-id: text_and_columns
-label: 'Text and Columns'
-icon_uuid: null
-description: 'Migrated from paragraph bundle Text and Columns'
-behavior_plugins: {  }

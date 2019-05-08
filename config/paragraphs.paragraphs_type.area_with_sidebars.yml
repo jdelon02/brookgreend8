@@ -1,9 +1,0 @@
-uuid: 498296ca-52ea-4067-b34f-955248bf0e7d
-langcode: en
-status: true
-dependencies: {  }
-id: area_with_sidebars
-label: 'Area with Sidebars'
-icon_uuid: null
-description: 'Migrated from paragraph bundle Area with Sidebars'
-behavior_plugins: {  }

@@ -1,9 +1,0 @@
-uuid: e546d089-0797-41d9-94fe-29651e8c8e4e
-langcode: en
-status: true
-dependencies: {  }
-id: view_field
-label: View
-icon_uuid: null
-description: 'Migrated from paragraph bundle View'
-behavior_plugins: {  }

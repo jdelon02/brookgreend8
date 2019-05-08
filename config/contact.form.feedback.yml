@@ -1,4 +1,4 @@
-uuid: e1c937ff-a282-4b2d-885d-d9e15f6722df
+uuid: a478fb86-88b9-4b48-85e4-8ec8a5b6a925
 langcode: en
 status: true
 dependencies: {  }
@@ -7,7 +7,7 @@ _core:
 id: feedback
 label: 'Website feedback'
 recipients:
-  - jdelong@backofficethinking.com
+  - chefjeremy@delongaz.com
 reply: ''
 weight: 0
 message: 'Your message has been sent.'

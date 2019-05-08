@@ -1,0 +1,110 @@
+uuid: 75fbf5ec-061b-463f-91fd-32b1578e580a
+langcode: en
+status: true
+dependencies: {  }
+id: upgrade_d7_eck_plant_collection_gardener_note
+class: Drupal\migrate\Plugin\Migration
+field_plugin_method: alterFieldInstanceMigration
+cck_plugin_method: null
+migration_tags:
+  - 'Drupal 7'
+  - Content
+migration_group: migrate_drupal_7
+label: 'Gardener Note (plant_collection)'
+source:
+  plugin: d7_eck_entity
+  entity_type: plant_collection
+  bundle: gardener_note
+process:
+  id:
+    -
+      plugin: get
+      source: id
+  title:
+    -
+      plugin: get
+      source: title
+  field_pc_garden:
+    -
+      plugin: get
+      source: field_pc_garden
+  field_pc_garden_description:
+    -
+      plugin: get
+      source: field_pc_garden_description
+  field_pc_garden_location:
+    -
+      plugin: get
+      source: field_pc_garden_location
+  field_pc_gardener_note:
+    -
+      plugin: get
+      source: field_pc_gardener_note
+  field_pc_image_caption:
+    -
+      plugin: get
+      source: field_pc_image_caption
+  field_pc_plant_image_date_taken:
+    -
+      plugin: sub_process
+      source: field_pc_plant_image_date_taken
+      process:
+        value:
+          plugin: format_date
+          from_format: 'Y-m-d H:i:s'
+          to_format: 'Y-m-d\TH:i:s'
+          source: value
+  field_pc_plant_image_image:
+    -
+      plugin: sub_process
+      source: field_pc_plant_image_image
+      process:
+        target_id: fid
+        alt: alt
+        title: title
+        width: width
+        height: height
+  field_pc_scientific_name:
+    -
+      plugin: sub_process
+      source: field_pc_scientific_name
+      process:
+        target_id: tid
+  field_pc_publication_link:
+    -
+      plugin: field_link
+      source: field_pc_publication_link
+  field_pc_reference_author:
+    -
+      plugin: get
+      source: field_pc_reference_author
+  field_pc_reference_garden:
+    -
+      plugin: get
+      source: field_pc_reference_garden
+  field_pc_plant_acquisition_metho:
+    -
+      plugin: get
+      source: field_pc_plant_acquisition_metho
+  field_pc_plant_source_location:
+    -
+      plugin: get
+      source: field_pc_plant_source_location
+  field_pc_source_phone:
+    -
+      plugin: get
+      source: field_pc_source_phone
+  field_pc_source_website:
+    -
+      plugin: field_link
+      source: field_pc_source_website
+destination:
+  plugin: 'eck:instance'
+  entity_type: plant_collection
+  default_bundle: gardener_note
+migration_dependencies:
+  required:
+    - upgrade_d7_eck_types
+    - upgrade_d7_eck_bundles
+  optional:
+    - upgrade_d7_field_instance

@@ -1,20 +1,13 @@
-uuid: 0369cf8e-234d-430e-a0c1-0a0a2bcd0896
+uuid: f522a1f1-cbad-449b-8809-9f2a76e16e94
 langcode: en
 status: true
-dependencies:
-  module:
-    - menu_ui
-third_party_settings:
-  menu_ui:
-    available_menus:
-      - main-menu
-    parent: 'main-menu:0:'
+dependencies: {  }
 _core:
   default_config_hash: AeW1SEDgb1OTQACAWGhzvMknMYAJlcZu0jljfeU3oso
 name: Article
 type: article
 description: 'Use <em>articles</em> for time-sensitive content like news, press releases or blog posts.'
 help: ''
-new_revision: false
+new_revision: true
 preview_mode: 1
 display_submitted: true

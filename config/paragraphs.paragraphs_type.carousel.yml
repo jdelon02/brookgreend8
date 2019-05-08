@@ -1,9 +1,0 @@
-uuid: 16113009-09d1-44ac-909d-2cb41ee372e1
-langcode: en
-status: true
-dependencies: {  }
-id: carousel
-label: Carousel
-icon_uuid: null
-description: 'Migrated from paragraph bundle Carousel'
-behavior_plugins: {  }

@@ -1,9 +1,0 @@
-uuid: 91df24ef-fe99-4b43-a81c-0b0297188642
-langcode: en
-status: true
-dependencies: {  }
-id: sponsors
-label: Sponsors
-icon_uuid: null
-description: 'Migrated from field_collection field_sponsors'
-behavior_plugins: {  }

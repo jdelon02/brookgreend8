@@ -1,4 +1,4 @@
-uuid: 041b0d4e-589b-4bd3-b7c7-c3d64309edc2
+uuid: 72898856-370a-4676-819b-4d42a96fd177
 langcode: en
 status: true
 dependencies:
@@ -14,27 +14,27 @@ field_name: field_image
 entity_type: node
 bundle: article
 label: Image
-description: 'Upload an image to go with this article.'
+description: ''
 required: false
-translatable: false
+translatable: true
 default_value: {  }
 default_value_callback: ''
 settings:
-  file_directory: field/image
+  file_directory: '[date:custom:Y]-[date:custom:m]'
   file_extensions: 'png gif jpg jpeg'
   max_filesize: ''
   max_resolution: ''
   min_resolution: ''
   alt_field: true
   title_field: false
+  alt_field_required: true
+  title_field_required: false
   default_image:
+    uuid: null
     alt: ''
     title: ''
     width: null
     height: null
-    uuid: ''
-  alt_field_required: true
-  title_field_required: false
   handler: 'default:file'
   handler_settings: {  }
 field_type: image

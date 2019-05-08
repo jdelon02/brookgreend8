@@ -1,9 +1,0 @@
-uuid: f790b281-7d22-463f-bbc4-165f94325c2d
-langcode: en
-status: true
-dependencies: {  }
-id: attraction
-label: Attraction
-icon_uuid: null
-description: 'Migrated from paragraph bundle Attraction'
-behavior_plugins: {  }

@@ -1,8 +1,0 @@
-uuid: 92418686-7178-46fb-96ea-f3179f96853e
-langcode: en
-status: true
-dependencies: {  }
-id: comment_node_landing_page
-label: 'Landing Page comment'
-target_entity_type_id: node
-description: null

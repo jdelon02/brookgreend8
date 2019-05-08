@@ -1,28 +1,20 @@
-uuid: 6b728085-ec94-4367-8fba-91373f91059d
+uuid: 5c8877a0-6964-44dd-b382-84ee9a1f0382
 langcode: en
 status: true
 dependencies: {  }
 _core:
   default_config_hash: dJ0L2DNSj5q6XVZAGsuVDpJTh5UeYkIPwKrUOOpr8YI
 id: authenticated
-label: 'authenticated user'
+label: 'Authenticated user'
 weight: 1
 is_admin: false
 permissions:
   - 'access comments'
   - 'access content'
+  - 'access shortcuts'
   - 'access site-wide contact form'
-  - 'diff view changes'
-  - 'edit mimemail user settings'
   - 'post comments'
   - 'search content'
   - 'skip comment approval'
-  - 'use advanced search'
-  - 'view any become_a_member bean'
-  - 'view any callout bean'
-  - 'view any callout_and_slideshow bean'
-  - 'view any featured_three_items bean'
-  - 'view any hours bean'
-  - 'view any hours_tickets_map bean'
-  - 'view bean page'
-  - 'view files'
+  - 'use text format basic_html'
+  - 'view media'

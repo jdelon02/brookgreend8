@@ -7,6 +7,19 @@
         {
             "type": "composer",
             "url": "https://packages.drupal.org/8"
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "npinos/d7migrate",
+                "version": "master",
+                "type": "drupal-module",
+                "dist": {
+                  "type": "zip",
+                  "url": "https://github.com/npinos/d7migrate/archive/master.zip",
+                  "reference": "master"
+                }
+            }
         }
     ],
     "require": {
@@ -55,7 +68,8 @@
         "pantheon-systems/quicksilver-pushback": "~1",
         "rvtraveller/qs-composer-installer": "^1.1",
         "webflo/drupal-core-strict": "^8",
-        "zaporylie/composer-drupal-optimizations": "^1.0"
+        "zaporylie/composer-drupal-optimizations": "^1.0",
+        "npinos/d7migrate": "dev-master"
     },
     "require-dev": {
         "behat/behat": "3.*",
@@ -119,7 +133,7 @@
           },
         "patches": {
             "drupal/eck": {
-                "Add support to Drupal 7 migration templates": "https://www.drupal.org/files/issues/2018-10-11/eck-migrate-templates2815453-17.patch"     
+                "Add support to Drupal 7 migration templates": "https://www.drupal.org/files/issues/2018-10-11/eck-migrate-templates2815453-17.patch"
             }
           },
         "build-env": {

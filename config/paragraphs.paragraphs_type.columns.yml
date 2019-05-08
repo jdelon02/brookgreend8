@@ -1,9 +1,0 @@
-uuid: c5e5a8b9-b128-46a2-b4f9-2cdab0938884
-langcode: en
-status: true
-dependencies: {  }
-id: columns
-label: Columns
-icon_uuid: null
-description: 'Migrated from paragraph bundle Columns'
-behavior_plugins: {  }
