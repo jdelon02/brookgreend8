@@ -1,0 +1,134 @@
+uuid: 5fdbdf78-37d6-4cdd-b34b-8bb283a3040b
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.featured_items
+id: paragraph.featured_items.default
+targetEntityType: paragraph
+bundle: featured_items
+mode: default
+content:
+  field_first_date:
+    label: hidden
+    weight: 6
+    type: datetime_default
+    settings:
+      - long
+      - both
+      - {  }
+      - {  }
+      - {  }
+      - {  }
+    third_party_settings: {  }
+    region: content
+  field_first_image:
+    label: hidden
+    weight: 8
+    type: image
+    settings:
+      - {  }
+      - {  }
+    third_party_settings: {  }
+    region: content
+  field_first_link:
+    label: hidden
+    weight: 9
+    type: link_url
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_first_title:
+    label: hidden
+    weight: 5
+    type: string
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_second_date:
+    label: hidden
+    weight: 18
+    type: datetime_default
+    settings:
+      - long
+      - both
+      - {  }
+      - {  }
+      - {  }
+      - {  }
+    third_party_settings: {  }
+    region: content
+  field_second_image:
+    label: hidden
+    weight: 17
+    type: image
+    settings:
+      - {  }
+      - {  }
+    third_party_settings: {  }
+    region: content
+  field_second_link:
+    label: hidden
+    weight: 18
+    type: link_url
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_second_text:
+    label: hidden
+    weight: 19
+    type: string
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_second_title:
+    label: hidden
+    weight: 17
+    type: string
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_third_date:
+    label: hidden
+    weight: 18
+    type: datetime_default
+    settings:
+      - long
+      - both
+      - {  }
+      - {  }
+      - {  }
+      - {  }
+    third_party_settings: {  }
+    region: content
+  field_third_image:
+    label: hidden
+    weight: 17
+    type: image
+    settings:
+      - {  }
+      - {  }
+    third_party_settings: {  }
+    region: content
+  field_third_link:
+    label: hidden
+    weight: 18
+    type: link_url
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_third_text:
+    label: hidden
+    weight: 19
+    type: string
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_third_title:
+    label: hidden
+    weight: 17
+    type: string
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

@@ -1,0 +1,21 @@
+uuid: 4b1f60f4-e60d-42b4-b8d1-98c791f39031
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node_plant_type
+label: 'Content - Plant Name'
+type: 'canonical_entities:node'
+pattern: 'plant-collection/name/[node:title]'
+selection_criteria:
+  -
+    id: node_type
+    bundles:
+      plant_type: plant_type
+    negate: false
+    context_mapping:
+      node: node
+selection_logic: and
+weight: 0
+relationships: {  }

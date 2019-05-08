@@ -1,0 +1,13 @@
+uuid: c87e92f7-fb31-46da-b4df-754f0c89fd0a
+langcode: en
+status: true
+dependencies: {  }
+id: friends_of_brookgreen
+label: 'Friends of Brookgreen'
+recipients:
+  - jrowe@brookgreen.org
+  - tscott@brookgreen.org
+reply: 'Thank you for your inquiry. We will contact you as soon as possible'
+weight: 0
+message: null
+redirect: null

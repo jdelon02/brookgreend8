@@ -1,0 +1,27 @@
+uuid: 331532ee-46e9-4678-a647-d76f99a1c48e
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.first_event
+    - field.field.node.plant_instance.comment_node_plant_instance
+    - node.type.plant_instance
+  module:
+    - user
+id: node.plant_instance.first_event
+targetEntityType: node
+bundle: plant_instance
+mode: first_event
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  comment_node_plant_instance: true
+  field_pc_featured_plant_type_ima: true
+  field_pc_images_carousel: true
+  field_pc_plant_id: true
+  field_pc_plant_parent: true
+  field_pc_plant_type: true

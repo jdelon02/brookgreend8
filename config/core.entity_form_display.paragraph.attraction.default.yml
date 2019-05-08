@@ -1,0 +1,54 @@
+uuid: 5abc863f-faca-4891-9745-76a1e2f48997
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.attraction
+id: paragraph.attraction.default
+targetEntityType: paragraph
+bundle: attraction
+mode: default
+content:
+  field_attraction_icon:
+    weight: 6
+    type: image_image
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_attraction_image:
+    weight: 5
+    type: file_generic
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_attraction_link:
+    weight: 4
+    type: advanced_link
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_attraction_name:
+    weight: 2
+    type: string_textfield
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_attraction_text:
+    weight: 3
+    type: string_textfield
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_styling:
+    weight: 8
+    type: entity_reference_autocomplete
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  created: true
+  status: true

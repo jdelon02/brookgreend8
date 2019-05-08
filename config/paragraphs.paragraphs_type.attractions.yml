@@ -1,0 +1,9 @@
+uuid: 31f3c7a4-8536-40d2-9380-f325c6883645
+langcode: en
+status: true
+dependencies: {  }
+id: attractions
+label: Attractions
+icon_uuid: null
+description: 'Migrated from paragraph bundle Attractions'
+behavior_plugins: {  }

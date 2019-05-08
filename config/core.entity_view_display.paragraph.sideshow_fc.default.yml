@@ -1,0 +1,55 @@
+uuid: 52079bea-bef3-4d61-8b18-5a1fc153082c
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.sideshow_fc
+id: paragraph.sideshow_fc.default
+targetEntityType: paragraph
+bundle: sideshow_fc
+mode: default
+content:
+  field_sideshow_date:
+    label: hidden
+    weight: 5
+    type: datetime_default
+    settings:
+      - short
+      - both
+      - {  }
+      - {  }
+      - {  }
+      - {  }
+    third_party_settings: {  }
+    region: content
+  field_slideshow_image:
+    label: hidden
+    weight: 1
+    type: image
+    settings:
+      - {  }
+      - callout_slide
+    third_party_settings: {  }
+    region: content
+  field_slideshow_link:
+    label: hidden
+    weight: 7
+    type: link
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_slideshow_subheading:
+    label: hidden
+    weight: 4
+    type: string
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_slideshow_text_area:
+    label: hidden
+    weight: 6
+    type: basic_string
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

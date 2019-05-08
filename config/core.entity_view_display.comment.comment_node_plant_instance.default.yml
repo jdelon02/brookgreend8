@@ -1,0 +1,27 @@
+uuid: bed09213-739e-4694-a70a-edba34fe6677
+langcode: en
+status: true
+dependencies:
+  config:
+    - comment.type.comment_node_plant_instance
+    - field.field.comment.comment_node_plant_instance.comment_body
+  module:
+    - text
+id: comment.comment_node_plant_instance.default
+targetEntityType: comment
+bundle: comment_node_plant_instance
+mode: default
+content:
+  comment_body:
+    label: hidden
+    type: text_default
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

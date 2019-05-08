@@ -1,0 +1,10 @@
+uuid: 58f5d097-92a4-4824-8998-08d0cc8a5636
+langcode: en
+status: true
+dependencies:
+  module:
+    - file
+id: file.large_landscape
+label: large_landscape
+targetEntityType: file
+cache: true

@@ -1,0 +1,28 @@
+uuid: 6a0b1ae0-abf7-4ac0-9552-9283c5d1d7ca
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.pc_images_carousel
+id: paragraph.pc_images_carousel.default
+targetEntityType: paragraph
+bundle: pc_images_carousel
+mode: default
+content:
+  field_pc_caption:
+    weight: 4
+    type: text_textarea
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_pc_image:
+    weight: 3
+    type: file_generic
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  created: true
+  status: true

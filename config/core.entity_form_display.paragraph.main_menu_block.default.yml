@@ -1,0 +1,22 @@
+uuid: eea440c2-e677-414c-b0b8-1337cdc7568f
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.main_menu_block
+id: paragraph.main_menu_block.default
+targetEntityType: paragraph
+bundle: main_menu_block
+mode: default
+content:
+  field_main_menu_block:
+    weight: 1
+    type: text_textfield
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+hidden:
+  created: true
+  status: true

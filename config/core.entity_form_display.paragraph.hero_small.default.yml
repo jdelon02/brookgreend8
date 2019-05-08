@@ -1,0 +1,40 @@
+uuid: 0e57fa59-2c06-4aec-82ec-c748e0ee7337
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.hero_small
+id: paragraph.hero_small.default
+targetEntityType: paragraph
+bundle: hero_small
+mode: default
+content:
+  field_background_image:
+    weight: 8
+    type: file_generic
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_heading:
+    weight: 0
+    type: string_textfield
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_links:
+    weight: 11
+    type: advanced_link
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_styling:
+    weight: 12
+    type: entity_reference_autocomplete
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  created: true
+  status: true

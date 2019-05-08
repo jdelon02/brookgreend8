@@ -1,0 +1,72 @@
+uuid: f746e4bd-f541-46ce-bd39-a55268a9b1b7
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.hero_large
+id: paragraph.hero_large.default
+targetEntityType: paragraph
+bundle: hero_large
+mode: default
+content:
+  field_background_image:
+    label: hidden
+    weight: 20
+    type: bg_image_formatter
+    settings:
+      - node_banner_tall
+      - {  }
+      - css
+      -
+        bg_image_selector: body
+        classes: ''
+        bg_image_color: '#FFFFFF'
+        bg_image_x: center
+        bg_image_y: center
+        bg_image_attachment: scroll
+        bg_image_repeat: no-repeat
+        bg_image_background_size: ''
+        bg_image_background_size_ie8: 0
+        bg_image_media_query: all
+        bg_image_important: 1
+    third_party_settings: {  }
+    region: content
+  field_background_video_url:
+    label: hidden
+    weight: 19
+    type: link
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_heading:
+    label: hidden
+    weight: 9
+    type: string
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_links:
+    label: hidden
+    weight: 11
+    type: link
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_scroll_link:
+    label: hidden
+    weight: 1
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_styling:
+    label: hidden
+    weight: 2
+    type: cssclass_formatter
+    settings:
+      - {  }
+      - 1
+      - entity
+    third_party_settings: {  }
+    region: content
+hidden: {  }

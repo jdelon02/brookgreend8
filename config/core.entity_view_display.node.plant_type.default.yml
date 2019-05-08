@@ -1,0 +1,177 @@
+uuid: 134a9f68-6ba0-41b2-aa0a-7d687bd47246
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_display.comment.comment_node_plant_type.default
+    - field.field.node.plant_type.body
+    - field.field.node.plant_type.comment_node_plant_type
+    - node.type.plant_type
+  module:
+    - comment
+    - text
+    - user
+id: node.plant_type.default
+targetEntityType: node
+bundle: plant_type
+mode: default
+content:
+  body:
+    label: hidden
+    weight: 4
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  comment_node_plant_type:
+    label: hidden
+    type: comment_default
+    weight: 20
+    settings:
+      view_mode: default
+      pager_id: 0
+    third_party_settings: {  }
+    region: content
+  field_infraspecific_epithet_albu:
+    label: inline
+    weight: 25
+    type: string
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_infraspecific_flag:
+    label: inline
+    weight: 26
+    type: string
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_intergeneric_hybrid_flag:
+    label: inline
+    weight: 27
+    type: string
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_pc_common_name:
+    label: inline
+    weight: 1
+    type: string
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_pc_cultivar_name:
+    label: inline
+    weight: 23
+    type: string
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_pc_featured_plant_type_ima:
+    label: hidden
+    weight: 3
+    type: image
+    settings:
+      - {  }
+      - pc_featured_plant_image__960_x_625
+    third_party_settings: {  }
+    region: content
+  field_pc_genus:
+    label: inline
+    weight: 22
+    type: string
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_pc_hardiness:
+    label: inline
+    weight: 12
+    type: taxonomy_term_reference_plain
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_pc_leaves:
+    label: inline
+    weight: 10
+    type: taxonomy_term_reference_plain
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_pc_longevity:
+    label: inline
+    weight: 13
+    type: taxonomy_term_reference_plain
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_pc_origin:
+    label: inline
+    weight: 9
+    type: basic_string
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_pc_plant_family:
+    label: inline
+    weight: 2
+    type: taxonomy_term_reference_plain
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_pc_registered_name:
+    label: inline
+    weight: 29
+    type: string
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_pc_research_section_access:
+    label: hidden
+    weight: 7
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_pc_scientific_name1:
+    label: inline
+    weight: 0
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_pc_specific_epithet:
+    label: inline
+    weight: 24
+    type: string
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_pc_stem:
+    label: inline
+    weight: 11
+    type: taxonomy_term_reference_plain
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_pc_trademarked_name:
+    label: inline
+    weight: 28
+    type: string
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_pc_zone:
+    label: inline
+    weight: 8
+    type: string
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_pc_images_carousel: true
+  field_pc_labeled: true

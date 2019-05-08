@@ -1,0 +1,8 @@
+uuid: 72f675b4-feca-4ae4-9434-f7e2b06a6afd
+langcode: en
+status: true
+dependencies: {  }
+name: 'Scientific Name'
+vid: scientific_name
+description: ''
+weight: 0

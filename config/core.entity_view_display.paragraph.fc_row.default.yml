@@ -1,0 +1,25 @@
+uuid: dc4a357d-decf-4023-8743-a3ba95dbfd32
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.fc_row
+id: paragraph.fc_row.default
+targetEntityType: paragraph
+bundle: fc_row
+mode: default
+content:
+  field_fc_column:
+    label: above
+    weight: 0
+    type: entity_reference_revisions_entity_view
+    settings:
+      0: Edit
+      1: Delete
+      2: Add
+      3: true
+      4: full
+      view_mode: full
+    third_party_settings: {  }
+    region: content
+hidden: {  }

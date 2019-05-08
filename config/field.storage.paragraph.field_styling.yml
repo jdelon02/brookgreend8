@@ -1,0 +1,20 @@
+uuid: 24e61356-c27c-4b56-a73f-9ec1090e8ff8
+langcode: und
+status: true
+dependencies:
+  module:
+    - paragraphs
+    - taxonomy
+id: paragraph.field_styling
+field_name: field_styling
+entity_type: paragraph
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

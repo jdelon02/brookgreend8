@@ -1,0 +1,21 @@
+uuid: 38fdfbcc-039d-4812-8de7-347ce4e48c7b
+langcode: und
+status: true
+dependencies:
+  module:
+    - paragraphs
+id: paragraph.field_third_text
+field_name: field_third_text
+entity_type: paragraph
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

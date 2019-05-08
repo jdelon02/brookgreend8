@@ -1,0 +1,30 @@
+uuid: 81f5f7ab-c6bd-48dc-b515-11617ba587f2
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.days_and_hours
+id: paragraph.days_and_hours.default
+targetEntityType: paragraph
+bundle: days_and_hours
+mode: default
+content:
+  field_days:
+    weight: 1
+    type: string_textfield
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_hours:
+    weight: 2
+    type: string_textfield
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+hidden:
+  created: true
+  status: true

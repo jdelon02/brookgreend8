@@ -1,0 +1,26 @@
+uuid: 0ccaa0c2-5302-4b5f-b63d-f791adb1509d
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.tickets
+id: paragraph.tickets.default
+targetEntityType: paragraph
+bundle: tickets
+mode: default
+content:
+  field_ages:
+    label: hidden
+    weight: 0
+    type: string
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_price:
+    label: hidden
+    weight: 1
+    type: string
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

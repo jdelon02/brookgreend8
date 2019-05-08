@@ -1,0 +1,20 @@
+uuid: 78d04a2f-8f1c-4783-9335-b12b08ccf8c7
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.fc_row
+id: paragraph.fc_row.default
+targetEntityType: paragraph
+bundle: fc_row
+mode: default
+content:
+  field_fc_column:
+    weight: 1
+    type: entity_reference_paragraphs
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  created: true
+  status: true

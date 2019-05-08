@@ -1,0 +1,45 @@
+uuid: b74c7495-7363-4713-ad55-f3c3a929fe3e
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.first_event
+    - field.field.node.plant_type.body
+    - field.field.node.plant_type.comment_node_plant_type
+    - node.type.plant_type
+  module:
+    - user
+id: node.plant_type.first_event
+targetEntityType: node
+bundle: plant_type
+mode: first_event
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  body: true
+  comment_node_plant_type: true
+  field_infraspecific_epithet_albu: true
+  field_infraspecific_flag: true
+  field_intergeneric_hybrid_flag: true
+  field_pc_common_name: true
+  field_pc_cultivar_name: true
+  field_pc_featured_plant_type_ima: true
+  field_pc_genus: true
+  field_pc_hardiness: true
+  field_pc_images_carousel: true
+  field_pc_labeled: true
+  field_pc_leaves: true
+  field_pc_longevity: true
+  field_pc_origin: true
+  field_pc_plant_family: true
+  field_pc_registered_name: true
+  field_pc_research_section_access: true
+  field_pc_scientific_name1: true
+  field_pc_specific_epithet: true
+  field_pc_stem: true
+  field_pc_trademarked_name: true
+  field_pc_zone: true

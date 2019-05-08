@@ -1,0 +1,19 @@
+uuid: 3e9d3421-49ee-4666-b463-4e1f0ed3073e
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.social_feed
+id: paragraph.social_feed.default
+targetEntityType: paragraph
+bundle: social_feed
+mode: default
+content:
+  field_feed_embed:
+    label: hidden
+    weight: 0
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

@@ -1,0 +1,14 @@
+uuid: 74accb60-41c6-4953-ba7d-38ec99ccd7f5
+langcode: en
+status: true
+dependencies: {  }
+id: giving
+label: Giving
+recipients:
+  - amitchell@brookgreen.org
+  - kminogue@brookgreen.org
+  - marketing@brookgreen.org
+reply: 'Thank you for your interest in giving to Brookgreen Gardens. We will be in contact with you as soon as possible.'
+weight: 0
+message: null
+redirect: null

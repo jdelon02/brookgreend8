@@ -1,0 +1,37 @@
+uuid: 8c87cb25-345a-49b9-a3bf-ede8d1e4dbbe
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.hero_small
+id: paragraph.hero_small.default
+targetEntityType: paragraph
+bundle: hero_small
+mode: default
+content:
+  field_heading:
+    label: hidden
+    weight: 9
+    type: string
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_links:
+    label: hidden
+    weight: 11
+    type: link
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_styling:
+    label: hidden
+    weight: 12
+    type: cssclass_formatter
+    settings:
+      - {  }
+      - 1
+      - entity
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_background_image: true

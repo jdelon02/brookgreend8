@@ -1,0 +1,24 @@
+uuid: f9e19fc4-c133-4054-86b7-839c6c432381
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.attractions
+id: paragraph.attractions.default
+targetEntityType: paragraph
+bundle: attractions
+mode: default
+content:
+  field_columns:
+    weight: 2
+    type: entity_reference_paragraphs
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: select
+    third_party_settings: {  }
+    region: content
+hidden:
+  created: true
+  status: true

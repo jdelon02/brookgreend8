@@ -1,0 +1,10 @@
+uuid: 475bf628-8651-4c60-9413-f0ce44bc205b
+langcode: en
+status: true
+dependencies:
+  module:
+    - file
+id: file.large_square
+label: large_square
+targetEntityType: file
+cache: true

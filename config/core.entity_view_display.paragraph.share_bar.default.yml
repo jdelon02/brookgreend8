@@ -1,0 +1,26 @@
+uuid: c58d6915-6574-4288-ab3b-3f5979944645
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.share_bar
+id: paragraph.share_bar.default
+targetEntityType: paragraph
+bundle: share_bar
+mode: default
+content:
+  field_follow_us_on:
+    label: inline
+    weight: 2
+    type: link
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_share_message:
+    label: hidden
+    weight: 1
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

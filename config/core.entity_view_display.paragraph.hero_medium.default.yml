@@ -1,0 +1,37 @@
+uuid: fed7efba-adba-4c7c-a6d5-de52b6fdf1f6
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.hero_medium
+id: paragraph.hero_medium.default
+targetEntityType: paragraph
+bundle: hero_medium
+mode: default
+content:
+  field_heading:
+    label: hidden
+    weight: 16
+    type: string
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_links:
+    label: hidden
+    weight: 18
+    type: link
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_styling:
+    label: hidden
+    weight: 19
+    type: cssclass_formatter
+    settings:
+      - {  }
+      - 1
+      - entity
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_background_image: true

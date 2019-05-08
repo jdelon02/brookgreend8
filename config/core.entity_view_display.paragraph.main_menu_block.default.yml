@@ -1,0 +1,19 @@
+uuid: 4c935c19-0cb3-4b5a-9b7c-e296a28d323d
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.main_menu_block
+id: paragraph.main_menu_block.default
+targetEntityType: paragraph
+bundle: main_menu_block
+mode: default
+content:
+  field_main_menu_block:
+    label: hidden
+    weight: 0
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

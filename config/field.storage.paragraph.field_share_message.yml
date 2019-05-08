@@ -1,0 +1,20 @@
+uuid: fd8959cf-1a59-4246-a301-d0428ba2f7ca
+langcode: und
+status: true
+dependencies:
+  module:
+    - paragraphs
+    - text
+id: paragraph.field_share_message
+field_name: field_share_message
+entity_type: paragraph
+type: text
+settings:
+  max_length: 1024
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

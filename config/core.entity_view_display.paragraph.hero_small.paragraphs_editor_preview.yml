@@ -1,0 +1,17 @@
+uuid: da662e4c-0f78-45ab-ba78-6f841dd3efc8
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.paragraphs_editor_preview
+    - paragraphs.paragraphs_type.hero_small
+id: paragraph.hero_small.paragraphs_editor_preview
+targetEntityType: paragraph
+bundle: hero_small
+mode: paragraphs_editor_preview
+content: {  }
+hidden:
+  field_background_image: true
+  field_heading: true
+  field_links: true
+  field_styling: true

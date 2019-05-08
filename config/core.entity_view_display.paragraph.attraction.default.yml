@@ -1,0 +1,55 @@
+uuid: 5a794f1d-101e-4c01-9af8-c43e5df93332
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.attraction
+id: paragraph.attraction.default
+targetEntityType: paragraph
+bundle: attraction
+mode: default
+content:
+  field_attraction_icon:
+    label: hidden
+    weight: 5
+    type: image
+    settings:
+      - {  }
+      - {  }
+    third_party_settings: {  }
+    region: content
+  field_attraction_image:
+    label: hidden
+    weight: 0
+    type: image
+    settings:
+      - {  }
+      - {  }
+    third_party_settings: {  }
+    region: content
+  field_attraction_name:
+    label: hidden
+    weight: 6
+    type: string
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_attraction_text:
+    label: hidden
+    weight: 7
+    type: string
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_styling:
+    label: hidden
+    weight: 3
+    type: cssclass_formatter
+    settings:
+      - entity
+      - {  }
+      - 1
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_attraction_link: true

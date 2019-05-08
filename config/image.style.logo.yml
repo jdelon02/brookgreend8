@@ -1,0 +1,15 @@
+uuid: e99c9b66-88fc-416f-b1f1-4bc034a192b4
+langcode: en
+status: true
+dependencies: {  }
+name: logo
+label: Logo
+effects:
+  601f6f0f-912a-4c51-85e1-624cdff77f2b:
+    uuid: 601f6f0f-912a-4c51-85e1-624cdff77f2b
+    id: image_scale
+    weight: 2
+    data:
+      width: 225
+      height: 80
+      upscale: false

@@ -1,0 +1,9 @@
+uuid: 5ff4aeec-f524-4310-88fa-60e648ede903
+langcode: en
+status: true
+dependencies: {  }
+id: table
+label: Table
+icon_uuid: null
+description: 'Migrated from paragraph bundle Table'
+behavior_plugins: {  }

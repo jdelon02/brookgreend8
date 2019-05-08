@@ -1,0 +1,9 @@
+uuid: cad8e1ee-998f-4e83-8c55-88e89d370c3b
+langcode: en
+status: true
+dependencies: {  }
+id: fc_column
+label: 'Fc column'
+icon_uuid: null
+description: 'Migrated from field_collection field_fc_column'
+behavior_plugins: {  }

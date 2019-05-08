@@ -1,0 +1,27 @@
+uuid: 2653bf49-530f-4d29-a701-6ac11c6199e3
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.plant_instance.comment_node_plant_instance
+    - node.type.plant_instance
+  module:
+    - user
+id: node.plant_instance.teaser
+targetEntityType: node
+bundle: plant_instance
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  comment_node_plant_instance: true
+  field_pc_featured_plant_type_ima: true
+  field_pc_images_carousel: true
+  field_pc_plant_id: true
+  field_pc_plant_parent: true
+  field_pc_plant_type: true

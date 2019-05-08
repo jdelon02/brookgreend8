@@ -1,0 +1,10 @@
+uuid: 3bb66537-e121-49a9-be82-7777d0d79a60
+langcode: en
+status: true
+dependencies:
+  module:
+    - file
+id: file.medium_square
+label: medium_square
+targetEntityType: file
+cache: true

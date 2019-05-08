@@ -1,0 +1,20 @@
+uuid: f570101f-eec0-4b00-a034-aaa258ef4c47
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.table
+id: paragraph.table.default
+targetEntityType: paragraph
+bundle: table
+mode: default
+content:
+  field_fc_row:
+    weight: 1
+    type: entity_reference_paragraphs
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  created: true
+  status: true

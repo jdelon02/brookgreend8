@@ -1,0 +1,20 @@
+uuid: 2a2e5d7c-c355-4c67-8592-9063063222e3
+langcode: und
+status: true
+dependencies:
+  module:
+    - paragraphs
+    - text
+id: paragraph.field_main_menu_block
+field_name: field_main_menu_block
+entity_type: paragraph
+type: text
+settings:
+  max_length: 255
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

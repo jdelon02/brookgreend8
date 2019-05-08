@@ -1,0 +1,26 @@
+uuid: 3b383579-3720-4998-911c-b46d65b1ff8c
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.sponsors
+id: paragraph.sponsors.default
+targetEntityType: paragraph
+bundle: sponsors
+mode: default
+content:
+  field_sponsor_link:
+    weight: 1
+    type: link_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_sponsor_logo:
+    weight: 0
+    type: file_generic
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  created: true
+  status: true

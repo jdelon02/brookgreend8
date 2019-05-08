@@ -1,0 +1,19 @@
+uuid: f3110c2f-6a38-417e-b871-e8d18480fb28
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.paragraphs_editor_preview
+    - paragraphs.paragraphs_type.callout
+id: paragraph.callout.paragraphs_editor_preview
+targetEntityType: paragraph
+bundle: callout
+mode: paragraphs_editor_preview
+content: {  }
+hidden:
+  field_background_image: true
+  field_callout_heading: true
+  field_callout_image: true
+  field_callout_text: true
+  field_heading: true
+  field_links: true

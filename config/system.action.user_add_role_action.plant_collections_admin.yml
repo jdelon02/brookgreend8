@@ -1,0 +1,14 @@
+uuid: 0df3187b-55b5-400c-be99-70e2e710a8d9
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.plant_collections_admin
+  module:
+    - user
+id: user_add_role_action.plant_collections_admin
+label: 'Add the Plant Collections Admin role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: plant_collections_admin

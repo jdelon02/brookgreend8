@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "616d17fb6899cba8577b6502b371ddd2",
+    "content-hash": "5fc600008b9ab93911a41786b10c7660",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -1680,7 +1680,7 @@
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
             "license": [
-                "GPL-2.0+"
+                "GPL-2.0-or-later"
             ],
             "authors": [
                 {
@@ -1691,7 +1691,7 @@
             "description": "This module allow you to export configuration after changes",
             "homepage": "https://www.drupal.org/project/config_direct_save",
             "support": {
-                "source": "http://cgit.drupalcode.org/config_direct_save"
+                "source": "https://git.drupalcode.org/project/config_direct_save"
             }
         },
         {
@@ -1737,7 +1737,7 @@
             ],
             "homepage": "https://www.drupal.org/project/config_installer",
             "support": {
-                "source": "http://cgit.drupalcode.org/config_installer"
+                "source": "https://git.drupalcode.org/project/config_installer"
             }
         },
         {
@@ -2526,17 +2526,11 @@
         },
         {
             "name": "drupal/eck",
-            "version": "1.0.0-alpha5",
+            "version": "dev-1.x",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/eck.git",
-                "reference": "8.x-1.0-alpha5"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/eck-8.x-1.0-alpha5.zip",
-                "reference": "8.x-1.0-alpha5",
-                "shasum": "27f859b0da7dfb3809baa38438c0362662d03add"
+                "reference": "f0b696d92120a8a3dc1344ecbccb5f7a693f219b"
             },
             "require": {
                 "drupal/core": "^8"
@@ -2547,8 +2541,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.0-alpha5",
-                    "datestamp": "1539887880",
+                    "version": "8.x-1.0-alpha5+5-dev",
+                    "datestamp": "1551552784",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Project has not opted into security advisory coverage!"
@@ -2610,7 +2604,8 @@
             "support": {
                 "source": "http://git.drupal.org/project/eck.git",
                 "issues": "https://www.drupal.org/project/issues/eck"
-            }
+            },
+            "time": "2019-04-11T06:26:26+00:00"
         },
         {
             "name": "drupal/entity_reference_revisions",
@@ -3778,7 +3773,7 @@
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
             "license": [
-                "GPL-2.0+"
+                "GPL-2.0-or-later"
             ],
             "authors": [
                 {
@@ -3789,7 +3784,7 @@
             "description": "Provides simple title/content custom blocks stored as config entities and not as content entities.",
             "homepage": "https://www.drupal.org/project/simple_block",
             "support": {
-                "source": "http://cgit.drupalcode.org/simple_block"
+                "source": "https://git.drupalcode.org/project/simple_block"
             }
         },
         {
@@ -6329,7 +6324,7 @@
                 },
                 {
                     "name": "Gert de Pagter",
-                    "email": "backendtea@gmail.com"
+                    "email": "BackEndTea@gmail.com"
                 }
             ],
             "description": "Symfony polyfill for ctype functions",
@@ -9798,6 +9793,7 @@
     "aliases": [],
     "minimum-stability": "alpha",
     "stability-flags": {
+        "drupal/eck": 20,
         "drupal/migrate_plus": 20,
         "drupal/migrate_tools": 20,
         "drupal/migrate_upgrade": 20,

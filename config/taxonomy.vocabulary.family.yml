@@ -1,0 +1,8 @@
+uuid: 8d729e40-3d5a-47a4-b00e-c1a4443e40fc
+langcode: en
+status: true
+dependencies: {  }
+name: Family
+vid: family
+description: ''
+weight: 0

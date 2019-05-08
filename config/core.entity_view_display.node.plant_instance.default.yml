@@ -1,0 +1,66 @@
+uuid: 4240477a-6f57-4372-89b9-85b3b3c8e639
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_display.comment.comment_node_plant_instance.default
+    - field.field.node.plant_instance.comment_node_plant_instance
+    - node.type.plant_instance
+  module:
+    - comment
+    - user
+id: node.plant_instance.default
+targetEntityType: node
+bundle: plant_instance
+mode: default
+content:
+  comment_node_plant_instance:
+    label: hidden
+    type: comment_default
+    weight: 20
+    settings:
+      view_mode: default
+      pager_id: 0
+    third_party_settings: {  }
+    region: content
+  field_pc_featured_plant_type_ima:
+    label: hidden
+    weight: 7
+    type: image
+    settings:
+      - {  }
+      - pc_featured_plant_image__960_x_625_
+    third_party_settings: {  }
+    region: content
+  field_pc_plant_id:
+    label: inline
+    weight: 2
+    type: string
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_pc_plant_parent:
+    label: inline
+    weight: 6
+    type: entity_reference_label
+    settings:
+      - {  }
+      - 1
+    third_party_settings: {  }
+    region: content
+  field_pc_plant_type:
+    label: inline
+    weight: 1
+    type: entity_reference_label
+    settings:
+      - {  }
+      - 1
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_pc_images_carousel: true

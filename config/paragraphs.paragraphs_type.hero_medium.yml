@@ -1,0 +1,9 @@
+uuid: 13e64746-d5bd-4d1c-aa39-76bc0c4078b8
+langcode: en
+status: true
+dependencies: {  }
+id: hero_medium
+label: 'Hero - Medium'
+icon_uuid: null
+description: 'Migrated from paragraph bundle Hero - Medium'
+behavior_plugins: {  }

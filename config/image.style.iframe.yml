@@ -1,0 +1,15 @@
+uuid: bca62bd7-969f-4214-90dc-8a1d349568f0
+langcode: en
+status: true
+dependencies: {  }
+name: iframe
+label: Iframe
+effects:
+  5be0fb99-ca23-4889-8f17-5505ff4fa988:
+    uuid: 5be0fb99-ca23-4889-8f17-5505ff4fa988
+    id: image_scale
+    weight: 1
+    data:
+      width: 900
+      height: 506
+      upscale: true

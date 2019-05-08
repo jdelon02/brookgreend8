@@ -1,0 +1,26 @@
+uuid: e3566f09-d7ba-4ac7-b9fa-aeb33c526473
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.media_and_text
+id: paragraph.media_and_text.default
+targetEntityType: paragraph
+bundle: media_and_text
+mode: default
+content:
+  field_images:
+    weight: 3
+    type: image_image
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_styling:
+    weight: 1
+    type: entity_reference_autocomplete
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  created: true
+  status: true

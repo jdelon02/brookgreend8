@@ -1,0 +1,10 @@
+uuid: 96bacd74-b9be-468e-a120-840b97038585
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.first_event
+label: first_event
+targetEntityType: node
+cache: true

@@ -1,0 +1,24 @@
+uuid: 9676b4e0-a438-41ca-9734-92df357a3317
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.media_text_and_link
+id: paragraph.media_text_and_link.default
+targetEntityType: paragraph
+bundle: media_text_and_link
+mode: default
+content:
+  field_image:
+    label: above
+    weight: 0
+    type: image
+    settings:
+      - {  }
+      - {  }
+      - {  }
+      - {  }
+      - {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }
