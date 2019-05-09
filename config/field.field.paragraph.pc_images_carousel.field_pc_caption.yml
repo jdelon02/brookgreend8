@@ -1,0 +1,21 @@
+uuid: a06e8d36-fe46-4d80-ab94-d1b0dfd68614
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_pc_caption
+    - paragraphs.paragraphs_type.pc_images_carousel
+  module:
+    - text
+id: paragraph.pc_images_carousel.field_pc_caption
+field_name: field_pc_caption
+entity_type: paragraph
+bundle: pc_images_carousel
+label: 'PC Caption'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

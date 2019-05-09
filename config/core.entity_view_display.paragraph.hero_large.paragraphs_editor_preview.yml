@@ -1,0 +1,32 @@
+uuid: ae905598-d898-49af-92b5-b356ac69949b
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.paragraphs_editor_preview
+    - field.field.paragraph.hero_large.field_background_image
+    - field.field.paragraph.hero_large.field_background_video_url
+    - field.field.paragraph.hero_large.field_heading
+    - field.field.paragraph.hero_large.field_links
+    - field.field.paragraph.hero_large.field_scroll_link
+    - field.field.paragraph.hero_large.field_styling
+    - paragraphs.paragraphs_type.hero_large
+id: paragraph.hero_large.paragraphs_editor_preview
+targetEntityType: paragraph
+bundle: hero_large
+mode: paragraphs_editor_preview
+content:
+  field_heading:
+    label: hidden
+    weight: 0
+    type: string
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_background_image: true
+  field_background_video_url: true
+  field_links: true
+  field_scroll_link: true
+  field_styling: true

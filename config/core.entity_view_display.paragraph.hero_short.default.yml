@@ -1,0 +1,23 @@
+uuid: 32b53740-3bad-442f-a2e8-2842b2d63a88
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.hero_short.field_background_image
+    - field.field.paragraph.hero_short.field_heading
+    - paragraphs.paragraphs_type.hero_short
+id: paragraph.hero_short.default
+targetEntityType: paragraph
+bundle: hero_short
+mode: default
+content:
+  field_heading:
+    label: hidden
+    weight: 7
+    type: string
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_background_image: true

@@ -1,0 +1,9 @@
+uuid: b880dfcb-7051-474b-966f-65cbc53d10cf
+langcode: en
+status: true
+dependencies: {  }
+id: attraction
+label: Attraction
+icon_uuid: null
+description: 'Migrated from paragraph bundle Attraction'
+behavior_plugins: {  }

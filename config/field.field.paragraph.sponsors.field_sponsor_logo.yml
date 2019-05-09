@@ -1,0 +1,33 @@
+uuid: 6e255dae-a3fc-4e87-b7df-9dd5d445ae33
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_sponsor_logo
+    - paragraphs.paragraphs_type.sponsors
+  module:
+    - image
+id: paragraph.sponsors.field_sponsor_logo
+field_name: field_sponsor_logo
+entity_type: paragraph
+bundle: sponsors
+label: 'Sponsor Logo'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: ''
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: 100x100
+  alt_field: false
+  title_field: false
+  default_image: 0
+  alt_field_required: true
+  title_field_required: false
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: image

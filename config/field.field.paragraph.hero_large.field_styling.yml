@@ -1,0 +1,21 @@
+uuid: 0946b4b8-7c11-4c63-b816-a0c4790fb630
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_styling
+    - paragraphs.paragraphs_type.hero_large
+id: paragraph.hero_large.field_styling
+field_name: field_styling
+entity_type: paragraph
+bundle: hero_large
+label: Styling
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings: {  }
+field_type: entity_reference

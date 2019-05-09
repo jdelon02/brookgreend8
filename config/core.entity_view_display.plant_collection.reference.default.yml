@@ -1,0 +1,73 @@
+uuid: 599b196b-397d-4a7c-af93-61a0b670b66f
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.plant_collection.reference
+    - field.field.plant_collection.reference.field_pc_publication_link
+    - field.field.plant_collection.reference.field_pc_reference_author
+    - field.field.plant_collection.reference.field_pc_reference_garden
+  module:
+    - link
+    - user
+id: plant_collection.reference.default
+targetEntityType: plant_collection
+bundle: reference
+mode: default
+content:
+  created:
+    label: hidden
+    type: timestamp
+    weight: 0
+    region: content
+    settings:
+      date_format: medium
+      custom_date_format: ''
+      timezone: ''
+    third_party_settings: {  }
+  field_pc_publication_link:
+    label: hidden
+    weight: 1
+    type: link
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    region: content
+  field_pc_reference_author:
+    label: above
+    weight: 4
+    type: string
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    region: content
+  field_pc_reference_garden:
+    label: hidden
+    weight: 3
+    type: entity_reference_entity_view
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: content
+  title:
+    label: hidden
+    type: string
+    weight: -5
+    region: content
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  uid:
+    label: hidden
+    type: author
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  changed: true

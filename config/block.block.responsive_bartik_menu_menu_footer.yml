@@ -1,0 +1,18 @@
+uuid: 4333b7b6-0e8f-401e-839e-8178fd56de75
+langcode: en
+status: true
+dependencies:
+  theme:
+    - bartik
+id: responsive_bartik_menu_menu_footer
+theme: bartik
+region: content
+weight: -20
+provider: null
+plugin: 'system_menu_block:menu-footer'
+settings:
+  id: broken
+  label: '<none>'
+  provider: core
+  label_display: visible
+visibility: {  }

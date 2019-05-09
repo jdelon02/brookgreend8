@@ -1,0 +1,9 @@
+uuid: 3401311c-6c9d-445b-ba74-d3c3b94b48bd
+langcode: en
+status: true
+dependencies: {  }
+id: pc_images_carousel
+label: 'Pc images carousel'
+icon_uuid: null
+description: 'Migrated from field_collection field_pc_images_carousel'
+behavior_plugins: {  }

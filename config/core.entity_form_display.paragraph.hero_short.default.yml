@@ -1,0 +1,33 @@
+uuid: f0eb0126-dea6-4dbf-b150-dc41aaf8b9b6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.hero_short.field_background_image
+    - field.field.paragraph.hero_short.field_heading
+    - paragraphs.paragraphs_type.hero_short
+  module:
+    - file
+id: paragraph.hero_short.default
+targetEntityType: paragraph
+bundle: hero_short
+mode: default
+content:
+  field_background_image:
+    weight: 6
+    type: file_generic
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+    region: content
+  field_heading:
+    weight: 2
+    type: string_textfield
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+hidden:
+  created: true
+  status: true

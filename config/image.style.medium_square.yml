@@ -1,0 +1,15 @@
+uuid: 335d7b10-8774-4ec2-b4d8-2fdf65af1554
+langcode: en
+status: true
+dependencies: {  }
+name: medium_square
+label: 'Medium Square'
+effects:
+  0c9693c1-69a7-40bf-b1ff-f3602ef7c9ad:
+    uuid: 0c9693c1-69a7-40bf-b1ff-f3602ef7c9ad
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 480
+      height: 480
+      anchor: center-center

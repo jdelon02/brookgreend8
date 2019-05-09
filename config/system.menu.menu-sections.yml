@@ -1,0 +1,8 @@
+uuid: ffc10e39-2485-4cf0-90c1-6126aec54274
+langcode: en
+status: true
+dependencies: {  }
+id: menu-sections
+label: Attractions
+description: ''
+locked: false

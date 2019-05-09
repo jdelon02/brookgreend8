@@ -1,0 +1,19 @@
+uuid: 94f76afd-b997-493c-adb4-1cc4c9c2b2f6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_slideshow_subheading
+    - paragraphs.paragraphs_type.sideshow_fc
+id: paragraph.sideshow_fc.field_slideshow_subheading
+field_name: field_slideshow_subheading
+entity_type: paragraph
+bundle: sideshow_fc
+label: 'Slideshow Subheading'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

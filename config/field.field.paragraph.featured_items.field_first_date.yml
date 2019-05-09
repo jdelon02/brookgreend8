@@ -1,0 +1,21 @@
+uuid: 804ff99d-47fd-475e-a809-4f247d6fe046
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_first_date
+    - paragraphs.paragraphs_type.featured_items
+  module:
+    - datetime
+id: paragraph.featured_items.field_first_date
+field_name: field_first_date
+entity_type: paragraph
+bundle: featured_items
+label: 'First Date'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

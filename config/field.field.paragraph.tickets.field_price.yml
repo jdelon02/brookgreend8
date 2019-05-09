@@ -1,0 +1,19 @@
+uuid: 9f021415-00d6-4af7-983b-35cd1ecf003d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_price
+    - paragraphs.paragraphs_type.tickets
+id: paragraph.tickets.field_price
+field_name: field_price
+entity_type: paragraph
+bundle: tickets
+label: Price
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

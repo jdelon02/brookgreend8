@@ -1,0 +1,9 @@
+uuid: 0b34315a-0d3b-40e0-9261-1f9220c4f301
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_entity_type.plant_collection
+name: 'Plant Image'
+type: plant_image
+description: 'Plant Image'

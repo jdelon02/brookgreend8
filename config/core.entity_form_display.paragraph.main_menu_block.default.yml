@@ -1,0 +1,25 @@
+uuid: 29081739-7211-4a28-9fdd-c146aa611f3b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.main_menu_block.field_main_menu_block
+    - paragraphs.paragraphs_type.main_menu_block
+  module:
+    - text
+id: paragraph.main_menu_block.default
+targetEntityType: paragraph
+bundle: main_menu_block
+mode: default
+content:
+  field_main_menu_block:
+    weight: 1
+    type: text_textfield
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+hidden:
+  created: true
+  status: true

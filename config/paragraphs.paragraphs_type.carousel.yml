@@ -1,0 +1,9 @@
+uuid: 81986ae8-b0ed-4e99-aa72-0acb809c30dc
+langcode: en
+status: true
+dependencies: {  }
+id: carousel
+label: Carousel
+icon_uuid: null
+description: 'Migrated from paragraph bundle Carousel'
+behavior_plugins: {  }

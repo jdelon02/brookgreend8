@@ -1,0 +1,20 @@
+uuid: a544b6f0-d1a4-4201-aeed-79fe59bbd453
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - menu-footer
+      - main-menu
+      - menu-sections
+    parent: 'menu-sections:0:'
+name: 'Landing Page'
+type: landing_page
+description: 'Use Landing Pages to create visually rich pages'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

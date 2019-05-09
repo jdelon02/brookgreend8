@@ -1,0 +1,30 @@
+uuid: 695b21bc-093d-45a0-81b2-034f0dfd7524
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.plant_collection.reference
+    - field.storage.node.field_pc_reference
+    - node.type.plant_type
+id: node.plant_type.field_pc_reference
+field_name: field_pc_reference
+entity_type: node
+bundle: plant_type
+label: References
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:plant_collection'
+  handler_settings:
+    behaviors:
+      views-select-list:
+        status: 0
+    sort:
+      field: _none
+      direction: ASC
+    target_bundles:
+      reference: reference
+field_type: entity_reference

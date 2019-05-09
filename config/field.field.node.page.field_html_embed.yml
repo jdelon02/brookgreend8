@@ -1,0 +1,21 @@
+uuid: fc099086-dd06-4255-8269-aaa938af850b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_html_embed
+    - node.type.page
+  module:
+    - text
+id: node.page.field_html_embed
+field_name: field_html_embed
+entity_type: node
+bundle: page
+label: 'HTML Embed'
+description: 'Use this field for Blackbaud form embed code and other html-based code. Text format must be set to "HTML".'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

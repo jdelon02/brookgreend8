@@ -1,0 +1,19 @@
+uuid: 17e34f9e-c9e0-458c-b885-a632abb59e2d
+langcode: und
+status: true
+dependencies:
+  module:
+    - eck
+id: plant_collection.field_pc_image_caption
+field_name: field_pc_image_caption
+entity_type: plant_collection
+type: string_long
+settings:
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

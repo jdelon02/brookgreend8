@@ -1,0 +1,9 @@
+uuid: 4396f80b-62bf-4d74-a09a-0993ee9dd056
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_entity_type.plant_collection
+name: Garden
+type: garden
+description: Garden

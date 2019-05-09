@@ -1,0 +1,10 @@
+uuid: 96af0f23-b191-401e-b4de-ccfd5dbd9308
+langcode: en
+status: true
+dependencies:
+  module:
+    - eck
+id: plant_collection.teaser
+label: Teaser
+targetEntityType: plant_collection
+cache: true

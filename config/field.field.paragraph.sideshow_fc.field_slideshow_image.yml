@@ -1,0 +1,33 @@
+uuid: 25a68192-658c-47b6-a5a1-269f1fa48f26
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_slideshow_image
+    - paragraphs.paragraphs_type.sideshow_fc
+  module:
+    - image
+id: paragraph.sideshow_fc.field_slideshow_image
+field_name: field_slideshow_image
+entity_type: paragraph
+bundle: sideshow_fc
+label: 'Slideshow Image'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  alt_field: false
+  default_image: 0
+  file_directory: ''
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: 480x480
+  title_field: false
+  alt_field_required: true
+  title_field_required: false
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: image

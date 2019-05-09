@@ -1,0 +1,19 @@
+uuid: a51091c8-6339-4327-a877-544c28cd901c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_third_title
+    - paragraphs.paragraphs_type.featured_items
+id: paragraph.featured_items.field_third_title
+field_name: field_third_title
+entity_type: paragraph
+bundle: featured_items
+label: 'Third Heading'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,47 @@
+uuid: e5eae924-20bc-46a4-b45d-a2d4fb12c2d0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.text_and_columns.field_columns
+    - field.field.paragraph.text_and_columns.field_heading
+    - field.field.paragraph.text_and_columns.field_subheading
+    - paragraphs.paragraphs_type.text_and_columns
+  module:
+    - paragraphs
+id: paragraph.text_and_columns.default
+targetEntityType: paragraph
+bundle: text_and_columns
+mode: default
+content:
+  field_columns:
+    weight: 5
+    type: entity_reference_paragraphs
+    settings:
+      title: Column
+      title_plural: Columns
+      edit_mode: preview
+      add_mode: select
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
+    region: content
+  field_heading:
+    weight: 2
+    type: string_textfield
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_subheading:
+    weight: 4
+    type: string_textfield
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+hidden:
+  created: true
+  status: true

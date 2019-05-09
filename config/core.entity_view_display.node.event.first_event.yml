@@ -1,0 +1,105 @@
+uuid: 6712e300-9010-4d31-a5e3-fdada4e1d20f
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.first_event
+    - field.field.node.event.body
+    - field.field.node.event.comment_node_event
+    - field.field.node.event.field_attraction
+    - field.field.node.event.field_event_date
+    - field.field.node.event.field_event_location_link
+    - field.field.node.event.field_event_location_text
+    - field.field.node.event.field_event_type
+    - field.field.node.event.field_heading
+    - field.field.node.event.field_heading_background_image
+    - field.field.node.event.field_heading_links
+    - field.field.node.event.field_image
+    - field.field.node.event.field_sponsors
+    - field.field.node.event.field_sponsors_image
+    - field.field.node.event.field_subheading
+    - node.type.event
+  module:
+    - datetime
+    - image
+    - link
+    - text
+    - user
+id: node.event.first_event
+targetEntityType: node
+bundle: event
+mode: first_event
+content:
+  body:
+    label: hidden
+    weight: 6
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_attraction:
+    label: above
+    weight: 11
+    type: entity_reference_label
+    settings:
+      link: true
+    third_party_settings: {  }
+    region: content
+  field_event_date:
+    label: inline
+    weight: 3
+    type: datetime_default
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    region: content
+  field_event_location_link:
+    label: inline
+    weight: 5
+    type: link
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    region: content
+  field_event_location_text:
+    label: inline
+    weight: 4
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_event_type:
+    label: hidden
+    weight: 2
+    type: entity_reference_label
+    settings:
+      link: true
+    third_party_settings: {  }
+    region: content
+  field_image:
+    label: hidden
+    weight: 1
+    type: image
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  comment_node_event: true
+  field_heading: true
+  field_heading_background_image: true
+  field_heading_links: true
+  field_sponsors: true
+  field_sponsors_image: true
+  field_subheading: true

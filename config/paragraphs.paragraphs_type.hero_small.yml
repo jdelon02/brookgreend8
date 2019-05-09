@@ -1,0 +1,9 @@
+uuid: 89c60698-bead-4c6e-9eeb-a8af92484e55
+langcode: en
+status: true
+dependencies: {  }
+id: hero_small
+label: 'Hero - Small'
+icon_uuid: null
+description: 'Migrated from paragraph bundle Hero - Small'
+behavior_plugins: {  }

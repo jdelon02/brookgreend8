@@ -1,0 +1,10 @@
+uuid: ab601169-886b-4d1a-8b36-59f9535abcd7
+langcode: en
+status: true
+dependencies:
+  module:
+    - file
+id: file.logo
+label: logo
+targetEntityType: file
+cache: true

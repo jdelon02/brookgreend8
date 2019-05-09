@@ -1,0 +1,15 @@
+uuid: 7f02e360-e07d-4257-9859-7d4ea6d1d603
+langcode: en
+status: true
+dependencies: {  }
+name: large_landscape
+label: 'Large Landscape'
+effects:
+  8afff5ce-49de-4d82-8ebd-7d48fd1b407c:
+    uuid: 8afff5ce-49de-4d82-8ebd-7d48fd1b407c
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 1600
+      height: 900
+      anchor: center-center

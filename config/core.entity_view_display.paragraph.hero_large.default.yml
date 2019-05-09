@@ -1,0 +1,83 @@
+uuid: 783fa792-ab42-410c-a898-ee8b56a66b24
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.hero_large.field_background_image
+    - field.field.paragraph.hero_large.field_background_video_url
+    - field.field.paragraph.hero_large.field_heading
+    - field.field.paragraph.hero_large.field_links
+    - field.field.paragraph.hero_large.field_scroll_link
+    - field.field.paragraph.hero_large.field_styling
+    - paragraphs.paragraphs_type.hero_large
+  module:
+    - bg_image_formatter
+    - link
+    - text
+id: paragraph.hero_large.default
+targetEntityType: paragraph
+bundle: hero_large
+mode: default
+content:
+  field_background_image:
+    label: hidden
+    weight: 20
+    type: bg_image_formatter
+    settings:
+      image_style: ''
+      css_settings:
+        bg_image_selector: body
+        bg_image_color: '#FFFFFF'
+        bg_image_x: left
+        bg_image_y: top
+        bg_image_attachment: scroll
+        bg_image_repeat: no-repeat
+        bg_image_background_size: ''
+        bg_image_background_size_ie8: 0
+        bg_image_media_query: all
+        bg_image_important: '1'
+        bg_image_z_index: auto
+        bg_image_path_format: absolute
+    third_party_settings: {  }
+    region: content
+  field_background_video_url:
+    label: hidden
+    weight: 19
+    type: link
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    region: content
+  field_heading:
+    label: hidden
+    weight: 9
+    type: string
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    region: content
+  field_links:
+    label: hidden
+    weight: 11
+    type: link
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    region: content
+  field_scroll_link:
+    label: hidden
+    weight: 1
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_styling: true

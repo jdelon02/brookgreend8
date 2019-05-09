@@ -1,0 +1,21 @@
+uuid: 9697acd6-1453-41c0-8f6d-8d17fef8856b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_styling
+    - paragraphs.paragraphs_type.media_heading_text_and_links
+id: paragraph.media_heading_text_and_links.field_styling
+field_name: field_styling
+entity_type: paragraph
+bundle: media_heading_text_and_links
+label: Styling
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings: {  }
+field_type: entity_reference

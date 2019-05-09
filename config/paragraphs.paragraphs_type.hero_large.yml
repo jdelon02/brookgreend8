@@ -1,0 +1,9 @@
+uuid: 6a72d3c6-3745-44bf-a4c9-9a488a295bc7
+langcode: en
+status: true
+dependencies: {  }
+id: hero_large
+label: 'Hero - Large & Video'
+icon_uuid: null
+description: 'Migrated from paragraph bundle Hero - Large & Video'
+behavior_plugins: {  }

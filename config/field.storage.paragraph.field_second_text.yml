@@ -1,0 +1,21 @@
+uuid: fb9daf38-d207-4a39-b091-f587c895724a
+langcode: und
+status: true
+dependencies:
+  module:
+    - paragraphs
+id: paragraph.field_second_text
+field_name: field_second_text
+entity_type: paragraph
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

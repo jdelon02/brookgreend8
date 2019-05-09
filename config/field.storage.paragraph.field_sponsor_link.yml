@@ -1,0 +1,19 @@
+uuid: a27bffa7-7c64-4ffa-945a-9593ff22ed8a
+langcode: und
+status: true
+dependencies:
+  module:
+    - link
+    - paragraphs
+id: paragraph.field_sponsor_link
+field_name: field_sponsor_link
+entity_type: paragraph
+type: link
+settings: {  }
+module: link
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

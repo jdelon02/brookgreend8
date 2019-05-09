@@ -1,0 +1,32 @@
+uuid: bde676f8-9f4f-403f-aa4d-3e3a5a6cb735
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.paragraphs_editor_preview
+    - field.field.paragraph.attraction.field_attraction_icon
+    - field.field.paragraph.attraction.field_attraction_image
+    - field.field.paragraph.attraction.field_attraction_link
+    - field.field.paragraph.attraction.field_attraction_name
+    - field.field.paragraph.attraction.field_attraction_text
+    - field.field.paragraph.attraction.field_styling
+    - paragraphs.paragraphs_type.attraction
+id: paragraph.attraction.paragraphs_editor_preview
+targetEntityType: paragraph
+bundle: attraction
+mode: paragraphs_editor_preview
+content:
+  field_attraction_name:
+    label: inline
+    weight: 0
+    type: string
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_attraction_icon: true
+  field_attraction_image: true
+  field_attraction_link: true
+  field_attraction_text: true
+  field_styling: true

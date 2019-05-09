@@ -1,0 +1,10 @@
+uuid: 3f9dce90-0d32-4199-ab43-65434123c07b
+langcode: en
+status: true
+dependencies: {  }
+id: plant_collection
+label: 'Plant Collection'
+created: true
+changed: true
+uid: true
+title: true

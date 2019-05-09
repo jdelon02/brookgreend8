@@ -1,0 +1,15 @@
+uuid: 7c1712b4-09ad-4306-b46e-c765522e9c64
+langcode: en
+status: true
+dependencies: {  }
+name: large_portrait
+label: 'Large Portrait'
+effects:
+  7d6806eb-d567-4b61-b316-e68ee82bd926:
+    uuid: 7d6806eb-d567-4b61-b316-e68ee82bd926
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 600
+      height: 800
+      anchor: center-center

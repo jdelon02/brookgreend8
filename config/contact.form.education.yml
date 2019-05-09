@@ -1,0 +1,13 @@
+uuid: e4786c12-654d-4a2d-8853-af8836db56c8
+langcode: en
+status: true
+dependencies: {  }
+id: education
+label: Education
+recipients:
+  - jcirino@brookgreen.org
+  - ljoseph@brookgreen.org
+reply: 'Thanks for your inquiry. We will contact as soon as possible!'
+weight: 0
+message: null
+redirect: null

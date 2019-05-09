@@ -1,0 +1,13 @@
+uuid: 82826b08-ad3d-4664-940a-ae552d7268cc
+langcode: en
+status: true
+dependencies: {  }
+id: membership
+label: Membership
+recipients:
+  - membership@brookgreen.org
+  - ljoseph@brookgreen.org
+reply: 'Thanks for you inquiry! We will contact you as soon as possible.'
+weight: 0
+message: null
+redirect: null

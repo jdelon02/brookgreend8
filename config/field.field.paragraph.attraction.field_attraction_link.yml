@@ -1,0 +1,23 @@
+uuid: b56f848c-020c-4e1c-9579-c06a89843b8d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_attraction_link
+    - paragraphs.paragraphs_type.attraction
+  module:
+    - link
+id: paragraph.attraction.field_attraction_link
+field_name: field_attraction_link
+entity_type: paragraph
+bundle: attraction
+label: 'Attraction Link'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 0
+  link_type: 17
+field_type: link

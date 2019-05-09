@@ -1,0 +1,20 @@
+uuid: 5269c5da-8e95-4c36-9e47-1ba65fec51f1
+langcode: und
+status: true
+dependencies:
+  module:
+    - paragraphs
+    - text
+id: paragraph.field_scroll_link
+field_name: field_scroll_link
+entity_type: paragraph
+type: text
+settings:
+  max_length: 255
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

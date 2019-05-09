@@ -1,0 +1,9 @@
+uuid: f0e82b4b-7c8d-4676-9b4e-bb95b03750e9
+langcode: en
+status: true
+dependencies: {  }
+id: featured_items
+label: 'Featured Items'
+icon_uuid: null
+description: 'Migrated from paragraph bundle Featured Items'
+behavior_plugins: {  }

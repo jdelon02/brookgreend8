@@ -1,0 +1,18 @@
+uuid: 52ab8d21-3034-4255-a046-1ad36f9573cf
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.file.large_landscape
+    - field.field.file.image.field_file_image_alt_text
+    - field.field.file.image.field_file_image_title_text
+  module:
+    - file
+id: file.image.large_landscape
+targetEntityType: file
+bundle: image
+mode: large_landscape
+content: {  }
+hidden:
+  field_file_image_alt_text: true
+  field_file_image_title_text: true

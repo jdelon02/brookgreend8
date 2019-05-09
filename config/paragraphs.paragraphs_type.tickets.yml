@@ -1,0 +1,9 @@
+uuid: fc9a9397-e05a-4d97-9c0d-6cc940b539a4
+langcode: en
+status: true
+dependencies: {  }
+id: tickets
+label: Tickets
+icon_uuid: null
+description: 'Migrated from field_collection field_tickets'
+behavior_plugins: {  }

@@ -1,0 +1,9 @@
+uuid: 7647978c-5a57-43f7-bf46-5314f8bc0981
+langcode: en
+status: true
+dependencies: {  }
+id: sideshow_fc
+label: 'Sideshow fc'
+icon_uuid: null
+description: 'Migrated from field_collection field_sideshow_fc'
+behavior_plugins: {  }

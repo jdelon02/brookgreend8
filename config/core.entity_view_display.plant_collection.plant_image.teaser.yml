@@ -1,0 +1,49 @@
+uuid: aff66f83-1ddb-412b-8573-5890d0c07157
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.plant_collection.teaser
+    - eck.eck_type.plant_collection.plant_image
+    - field.field.plant_collection.plant_image.field_pc_image_caption
+    - field.field.plant_collection.plant_image.field_pc_plant_image_date_taken
+    - field.field.plant_collection.plant_image.field_pc_plant_image_image
+    - field.field.plant_collection.plant_image.field_pc_scientific_name
+  module:
+    - user
+id: plant_collection.plant_image.teaser
+targetEntityType: plant_collection
+bundle: plant_image
+mode: teaser
+content:
+  created:
+    label: hidden
+    type: timestamp
+    weight: 0
+    region: content
+    settings:
+      date_format: medium
+      custom_date_format: ''
+      timezone: ''
+    third_party_settings: {  }
+  title:
+    label: hidden
+    type: string
+    weight: -5
+    region: content
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  uid:
+    label: hidden
+    type: author
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  changed: true
+  field_pc_image_caption: true
+  field_pc_plant_image_date_taken: true
+  field_pc_plant_image_image: true
+  field_pc_scientific_name: true

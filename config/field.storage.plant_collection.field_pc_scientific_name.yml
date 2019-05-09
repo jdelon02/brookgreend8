@@ -1,0 +1,20 @@
+uuid: 7e040cc9-30a8-42ea-bb3f-88758b49381f
+langcode: und
+status: true
+dependencies:
+  module:
+    - eck
+    - taxonomy
+id: plant_collection.field_pc_scientific_name
+field_name: field_pc_scientific_name
+entity_type: plant_collection
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

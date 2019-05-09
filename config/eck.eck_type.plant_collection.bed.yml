@@ -1,0 +1,9 @@
+uuid: 5cb8d4b8-e070-40ba-a9bb-0d326b6d2a20
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_entity_type.plant_collection
+name: Bed
+type: bed
+description: Bed

@@ -1,0 +1,15 @@
+uuid: 8912a5b4-7d0a-486f-a406-1b3cdf8ae58d
+langcode: en
+status: true
+dependencies: {  }
+name: callout_slide
+label: 'Callout Slide'
+effects:
+  76922825-3c6d-4ac2-a76a-0169c80f0e06:
+    uuid: 76922825-3c6d-4ac2-a76a-0169c80f0e06
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 960
+      height: 560
+      anchor: center-center

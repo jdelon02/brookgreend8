@@ -1,0 +1,57 @@
+uuid: bc9db53c-080c-4c1e-9f0c-89bb110ba446
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.plant_collection.reference
+    - field.field.plant_collection.reference.field_pc_publication_link
+    - field.field.plant_collection.reference.field_pc_reference_author
+    - field.field.plant_collection.reference.field_pc_reference_garden
+  module:
+    - link
+id: plant_collection.reference.default
+targetEntityType: plant_collection
+bundle: reference
+mode: default
+content:
+  created:
+    type: datetime_timestamp
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_pc_publication_link:
+    weight: 2
+    type: link_default
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    region: content
+  field_pc_reference_author:
+    weight: 3
+    type: string_textfield
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  title:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 5
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    region: content
+    third_party_settings: {  }
+hidden:
+  field_pc_reference_garden: true

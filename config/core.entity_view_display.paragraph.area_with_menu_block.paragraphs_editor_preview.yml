@@ -1,0 +1,17 @@
+uuid: 3c2d414b-6f27-4e96-aff2-72ca898ec634
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.paragraphs_editor_preview
+    - field.field.paragraph.area_with_menu_block.field_main_area
+    - field.field.paragraph.area_with_menu_block.field_menu_block
+    - paragraphs.paragraphs_type.area_with_menu_block
+id: paragraph.area_with_menu_block.paragraphs_editor_preview
+targetEntityType: paragraph
+bundle: area_with_menu_block
+mode: paragraphs_editor_preview
+content: {  }
+hidden:
+  field_main_area: true
+  field_menu_block: true

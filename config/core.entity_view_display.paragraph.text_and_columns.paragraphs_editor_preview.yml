@@ -1,0 +1,19 @@
+uuid: 197c7858-2bc4-43c4-a0b9-3f39c7d89749
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.paragraphs_editor_preview
+    - field.field.paragraph.text_and_columns.field_columns
+    - field.field.paragraph.text_and_columns.field_heading
+    - field.field.paragraph.text_and_columns.field_subheading
+    - paragraphs.paragraphs_type.text_and_columns
+id: paragraph.text_and_columns.paragraphs_editor_preview
+targetEntityType: paragraph
+bundle: text_and_columns
+mode: paragraphs_editor_preview
+content: {  }
+hidden:
+  field_columns: true
+  field_heading: true
+  field_subheading: true

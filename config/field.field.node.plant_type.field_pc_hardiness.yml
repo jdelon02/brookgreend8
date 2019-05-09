@@ -1,0 +1,21 @@
+uuid: 42503230-2f61-4bc0-93d8-5ef5f53c9206
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_pc_hardiness
+    - node.type.plant_type
+id: node.plant_type.field_pc_hardiness
+field_name: field_pc_hardiness
+entity_type: node
+bundle: plant_type
+label: Hardiness
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings: {  }
+field_type: entity_reference

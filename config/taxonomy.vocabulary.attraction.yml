@@ -1,0 +1,8 @@
+uuid: 7ecd37db-072e-4df1-9f63-8a2db8414460
+langcode: en
+status: true
+dependencies: {  }
+name: Attraction
+vid: attraction
+description: ''
+weight: 0

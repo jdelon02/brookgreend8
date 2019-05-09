@@ -1,0 +1,19 @@
+uuid: f4aed44e-6aa1-49ac-bb9a-85a489dadd77
+langcode: und
+status: true
+dependencies:
+  module:
+    - eck
+    - text
+id: plant_collection.field_pc_garden_description
+field_name: field_pc_garden_description
+entity_type: plant_collection
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

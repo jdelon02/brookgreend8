@@ -1,0 +1,123 @@
+uuid: da96c2c0-17af-4860-bc9d-945ef56621a5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_sidebar_first
+    - paragraphs.paragraphs_type.area_with_sidebars
+    - paragraphs.paragraphs_type.basic
+    - paragraphs.paragraphs_type.main_menu_block
+  module:
+    - entity_reference_revisions
+id: paragraph.area_with_sidebars.field_sidebar_first
+field_name: field_sidebar_first
+entity_type: paragraph
+bundle: area_with_sidebars
+label: Sidebar-First
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler_settings:
+    negate: 0
+    target_bundles:
+      main_menu_block: main_menu_block
+      basic: basic
+    target_bundles_drag_drop:
+      area_with_menu_block:
+        enabled: false
+        weight: -44
+      area_with_sidebars:
+        enabled: false
+        weight: -43
+      attraction:
+        enabled: false
+        weight: -42
+      attractions:
+        enabled: false
+        weight: -41
+      main_menu_block:
+        enabled: true
+        weight: -40
+      basic:
+        enabled: true
+        weight: -39
+      callout:
+        enabled: false
+        weight: -38
+      carousel:
+        enabled: false
+        weight: -37
+      columns:
+        enabled: false
+        weight: -36
+      featured_items:
+        enabled: false
+        weight: -35
+      hero_background_video:
+        enabled: false
+        weight: -34
+      hero_large:
+        enabled: false
+        weight: -33
+      hero_medium:
+        enabled: false
+        weight: -32
+      hero_small:
+        enabled: false
+        weight: -31
+      media_and_text:
+        enabled: false
+        weight: -30
+      media_heading_subheading_text_an:
+        enabled: false
+        weight: -29
+      media_heading_text_and_links:
+        enabled: false
+        weight: -28
+      media_text_and_link:
+        enabled: false
+        weight: -27
+      share_bar:
+        enabled: false
+        weight: -26
+      social_feed:
+        enabled: false
+        weight: -25
+      text_and_columns:
+        enabled: false
+        weight: -24
+      view_field:
+        enabled: false
+        weight: -23
+      days_and_hours:
+        enabled: false
+        weight: -22
+      fc_column:
+        enabled: false
+        weight: -21
+      fc_row:
+        enabled: false
+        weight: -20
+      hero_short:
+        enabled: false
+        weight: -19
+      pc_images_carousel:
+        enabled: false
+        weight: -18
+      sideshow_fc:
+        enabled: false
+        weight: -17
+      sponsors:
+        enabled: false
+        weight: -16
+      table:
+        enabled: false
+        weight: -15
+      tickets:
+        enabled: false
+        weight: -14
+  handler: 'default:paragraph'
+field_type: entity_reference_revisions

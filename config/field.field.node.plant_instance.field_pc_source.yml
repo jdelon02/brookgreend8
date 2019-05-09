@@ -1,0 +1,30 @@
+uuid: e443a0ad-d289-4095-874e-245283da1c44
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.plant_collection.source
+    - field.storage.node.field_pc_source
+    - node.type.plant_instance
+id: node.plant_instance.field_pc_source
+field_name: field_pc_source
+entity_type: node
+bundle: plant_instance
+label: Source
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:plant_collection'
+  handler_settings:
+    behaviors:
+      views-select-list:
+        status: 0
+    sort:
+      field: _none
+      direction: ASC
+    target_bundles:
+      source: source
+field_type: entity_reference

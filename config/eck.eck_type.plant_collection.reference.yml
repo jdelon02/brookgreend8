@@ -1,0 +1,9 @@
+uuid: b3ca78db-9ad9-4a5a-8acd-790d20a8fb5d
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_entity_type.plant_collection
+name: Reference
+type: reference
+description: Reference

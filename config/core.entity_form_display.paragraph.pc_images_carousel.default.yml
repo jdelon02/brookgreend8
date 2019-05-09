@@ -1,0 +1,34 @@
+uuid: 60f38491-d5fb-4d57-973f-42ee64b539cb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.pc_images_carousel.field_pc_caption
+    - field.field.paragraph.pc_images_carousel.field_pc_image
+    - paragraphs.paragraphs_type.pc_images_carousel
+  module:
+    - file
+    - text
+id: paragraph.pc_images_carousel.default
+targetEntityType: paragraph
+bundle: pc_images_carousel
+mode: default
+content:
+  field_pc_caption:
+    weight: 4
+    type: text_textarea
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_pc_image:
+    weight: 3
+    type: file_generic
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+    region: content
+hidden:
+  created: true
+  status: true

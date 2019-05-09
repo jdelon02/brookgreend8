@@ -1,0 +1,9 @@
+uuid: 55b28397-0475-42ef-84ec-24286d852141
+langcode: en
+status: true
+dependencies: {  }
+id: view_field
+label: View
+icon_uuid: null
+description: 'Migrated from paragraph bundle View'
+behavior_plugins: {  }

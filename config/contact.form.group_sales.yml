@@ -1,0 +1,12 @@
+uuid: 74a1a552-3187-45d0-81be-a32128072741
+langcode: en
+status: true
+dependencies: {  }
+id: group_sales
+label: 'Group Sales'
+recipients:
+  - marketing@brookgreen.org
+reply: 'Thanks for your inquiry. We will respond as soon as possible.'
+weight: 0
+message: null
+redirect: null

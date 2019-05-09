@@ -1,0 +1,66 @@
+uuid: 777e51ff-374b-4268-8073-23c9531724dc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.sideshow_fc.field_sideshow_date
+    - field.field.paragraph.sideshow_fc.field_slideshow_image
+    - field.field.paragraph.sideshow_fc.field_slideshow_link
+    - field.field.paragraph.sideshow_fc.field_slideshow_subheading
+    - field.field.paragraph.sideshow_fc.field_slideshow_text_area
+    - paragraphs.paragraphs_type.sideshow_fc
+  module:
+    - datetime
+    - image
+    - link
+id: paragraph.sideshow_fc.default
+targetEntityType: paragraph
+bundle: sideshow_fc
+mode: default
+content:
+  field_sideshow_date:
+    label: hidden
+    weight: 5
+    type: datetime_default
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    region: content
+  field_slideshow_image:
+    label: hidden
+    weight: 1
+    type: image
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    region: content
+  field_slideshow_link:
+    label: hidden
+    weight: 7
+    type: link
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    region: content
+  field_slideshow_subheading:
+    label: hidden
+    weight: 4
+    type: string
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    region: content
+  field_slideshow_text_area:
+    label: hidden
+    weight: 6
+    type: basic_string
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

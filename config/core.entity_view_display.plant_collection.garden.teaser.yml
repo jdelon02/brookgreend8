@@ -1,0 +1,43 @@
+uuid: f6180182-f11e-497f-86ea-7695ffbee2ad
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.plant_collection.teaser
+    - eck.eck_type.plant_collection.garden
+    - field.field.plant_collection.garden.field_pc_garden_description
+  module:
+    - user
+id: plant_collection.garden.teaser
+targetEntityType: plant_collection
+bundle: garden
+mode: teaser
+content:
+  created:
+    label: hidden
+    type: timestamp
+    weight: 0
+    region: content
+    settings:
+      date_format: medium
+      custom_date_format: ''
+      timezone: ''
+    third_party_settings: {  }
+  title:
+    label: hidden
+    type: string
+    weight: -5
+    region: content
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  uid:
+    label: hidden
+    type: author
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  changed: true
+  field_pc_garden_description: true

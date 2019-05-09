@@ -1,0 +1,13 @@
+uuid: 75096e8f-2937-4a7f-b721-35d258217359
+langcode: en
+status: true
+dependencies: {  }
+id: private_events
+label: 'Private Events'
+recipients:
+  - csitas@brookgreen.org
+  - marketing@brookgreen.org
+reply: 'Thanks for your inquiry! We will respond as soon as possible.'
+weight: 0
+message: null
+redirect: null

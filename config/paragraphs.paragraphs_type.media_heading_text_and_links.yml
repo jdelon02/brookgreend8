@@ -1,0 +1,9 @@
+uuid: c3dcbf6c-c3f7-4f4b-8b72-a53f8f372e3f
+langcode: en
+status: true
+dependencies: {  }
+id: media_heading_text_and_links
+label: 'Media, Heading, Text and Links'
+icon_uuid: null
+description: 'Migrated from paragraph bundle Media, Heading, Text and Links'
+behavior_plugins: {  }

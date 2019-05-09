@@ -5,13 +5,22 @@ dependencies: {  }
 _core:
   default_config_hash: j5zLMOdJBqC0bMvSdth5UebkprJB8g_2FXHqhfpJzow
 id: anonymous
-label: 'Anonymous user'
+label: 'anonymous user'
 weight: 0
 is_admin: false
 permissions:
   - 'access comments'
   - 'access content'
   - 'access site-wide contact form'
+  - 'diff view changes'
   - 'search content'
-  - 'use text format restricted_html'
-  - 'view media'
+  - 'use text format filtered_html'
+  - 'view any become_a_member bean'
+  - 'view any callout bean'
+  - 'view any callout_and_slideshow bean'
+  - 'view any featured_three_items bean'
+  - 'view any hours bean'
+  - 'view any hours_tickets_map bean'
+  - 'view bean page'
+  - 'view field_pc_research_section_access'
+  - 'view files'

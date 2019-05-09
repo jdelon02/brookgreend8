@@ -1,0 +1,19 @@
+uuid: 94ab1f51-4a3a-4b35-a358-614a80a6354f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_slideshow_text_area
+    - paragraphs.paragraphs_type.sideshow_fc
+id: paragraph.sideshow_fc.field_slideshow_text_area
+field_name: field_slideshow_text_area
+entity_type: paragraph
+bundle: sideshow_fc
+label: 'Slideshow Text Area'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

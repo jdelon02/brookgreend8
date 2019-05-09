@@ -1,0 +1,9 @@
+uuid: df5a74c0-2aeb-46a2-9922-6dc16ed18e3e
+langcode: en
+status: true
+dependencies: {  }
+id: sponsors
+label: Sponsors
+icon_uuid: null
+description: 'Migrated from field_collection field_sponsors'
+behavior_plugins: {  }

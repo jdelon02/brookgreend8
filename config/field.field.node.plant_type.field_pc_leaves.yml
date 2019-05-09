@@ -1,0 +1,21 @@
+uuid: 2dd9f6dc-6c64-46f2-a7fa-d9d2d38d3ec5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_pc_leaves
+    - node.type.plant_type
+id: node.plant_type.field_pc_leaves
+field_name: field_pc_leaves
+entity_type: node
+bundle: plant_type
+label: Leaves
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings: {  }
+field_type: entity_reference

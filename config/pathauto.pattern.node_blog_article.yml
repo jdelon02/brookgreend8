@@ -1,0 +1,21 @@
+uuid: fdbb39ff-4ba0-49d4-9ed9-d332fd514a7b
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node_blog_article
+label: 'Content - Blog Article'
+type: 'canonical_entities:node'
+pattern: 'blog/[node:title]'
+selection_criteria:
+  -
+    id: node_type
+    bundles:
+      blog_article: blog_article
+    negate: false
+    context_mapping:
+      node: node
+selection_logic: and
+weight: 0
+relationships: {  }

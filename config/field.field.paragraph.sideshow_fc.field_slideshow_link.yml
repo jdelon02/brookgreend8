@@ -1,0 +1,23 @@
+uuid: 08628042-3f43-4fb2-86e2-e6670cc7f418
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_slideshow_link
+    - paragraphs.paragraphs_type.sideshow_fc
+  module:
+    - link
+id: paragraph.sideshow_fc.field_slideshow_link
+field_name: field_slideshow_link
+entity_type: paragraph
+bundle: sideshow_fc
+label: 'Slideshow Link'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 2
+  link_type: 17
+field_type: link

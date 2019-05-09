@@ -1,0 +1,36 @@
+uuid: c0ae5b00-32db-443d-a471-aec4286f6569
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.media_and_text.field_images
+    - field.field.paragraph.media_and_text.field_styling
+    - image.style.thumbnail
+    - paragraphs.paragraphs_type.media_and_text
+  module:
+    - image
+id: paragraph.media_and_text.default
+targetEntityType: paragraph
+bundle: media_and_text
+mode: default
+content:
+  field_images:
+    weight: 3
+    type: image_image
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    region: content
+  field_styling:
+    weight: 1
+    type: entity_reference_autocomplete
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+hidden:
+  created: true
+  status: true

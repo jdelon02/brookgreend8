@@ -1,0 +1,40 @@
+uuid: fc2d113e-ff2e-4db2-8271-e5dd123eb0e0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.hero_small.field_background_image
+    - field.field.paragraph.hero_small.field_heading
+    - field.field.paragraph.hero_small.field_links
+    - field.field.paragraph.hero_small.field_styling
+    - paragraphs.paragraphs_type.hero_small
+  module:
+    - link
+id: paragraph.hero_small.default
+targetEntityType: paragraph
+bundle: hero_small
+mode: default
+content:
+  field_heading:
+    label: hidden
+    weight: 9
+    type: string
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    region: content
+  field_links:
+    label: hidden
+    weight: 11
+    type: link
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_background_image: true
+  field_styling: true

@@ -1,0 +1,21 @@
+uuid: 33b03e83-a6dc-4655-9733-ae2410748adb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_sideshow_date
+    - paragraphs.paragraphs_type.sideshow_fc
+  module:
+    - datetime
+id: paragraph.sideshow_fc.field_sideshow_date
+field_name: field_sideshow_date
+entity_type: paragraph
+bundle: sideshow_fc
+label: 'Sideshow Date'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

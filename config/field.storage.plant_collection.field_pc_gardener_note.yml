@@ -1,0 +1,19 @@
+uuid: 7581fb73-7ce1-4eb7-ac89-01bd2aff1149
+langcode: und
+status: true
+dependencies:
+  module:
+    - eck
+    - text
+id: plant_collection.field_pc_gardener_note
+field_name: field_pc_gardener_note
+entity_type: plant_collection
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

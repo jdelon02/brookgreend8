@@ -1,0 +1,55 @@
+uuid: 2bcf2c6e-b58c-4f64-9597-b18c19834f46
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.area_with_sidebars.field_main_content
+    - field.field.paragraph.area_with_sidebars.field_sidebar_first
+    - field.field.paragraph.area_with_sidebars.field_sidebar_second
+    - paragraphs.paragraphs_type.area_with_sidebars
+  module:
+    - paragraphs
+id: paragraph.area_with_sidebars.default
+targetEntityType: paragraph
+bundle: area_with_sidebars
+mode: default
+content:
+  field_main_content:
+    weight: 2
+    type: entity_reference_paragraphs
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: select
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
+    region: content
+  field_sidebar_first:
+    weight: 1
+    type: entity_reference_paragraphs
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: select
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
+    region: content
+  field_sidebar_second:
+    weight: 3
+    type: entity_reference_paragraphs
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: select
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
+    region: content
+hidden:
+  created: true
+  status: true

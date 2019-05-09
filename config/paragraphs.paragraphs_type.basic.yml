@@ -1,0 +1,9 @@
+uuid: 7680e030-0f14-4c16-bb10-5062b96d4876
+langcode: en
+status: true
+dependencies: {  }
+id: basic
+label: Basic
+icon_uuid: null
+description: 'Migrated from paragraph bundle Basic'
+behavior_plugins: {  }

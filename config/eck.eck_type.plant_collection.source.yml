@@ -1,0 +1,9 @@
+uuid: cb40aa48-ba76-4565-8499-dd6f8e5e241f
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_entity_type.plant_collection
+name: Source
+type: source
+description: Source

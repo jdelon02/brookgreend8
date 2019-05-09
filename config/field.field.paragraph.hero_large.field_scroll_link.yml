@@ -1,0 +1,21 @@
+uuid: 06109237-59ab-4e72-a238-e13366d0f5af
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_scroll_link
+    - paragraphs.paragraphs_type.hero_large
+  module:
+    - text
+id: paragraph.hero_large.field_scroll_link
+field_name: field_scroll_link
+entity_type: paragraph
+bundle: hero_large
+label: 'Scroll Link'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

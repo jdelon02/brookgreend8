@@ -1,0 +1,21 @@
+uuid: 3c5802c1-d3f4-42e8-a955-85698ec3c17a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_styling
+    - paragraphs.paragraphs_type.attraction
+id: paragraph.attraction.field_styling
+field_name: field_styling
+entity_type: paragraph
+bundle: attraction
+label: Styling
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings: {  }
+field_type: entity_reference

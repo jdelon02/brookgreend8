@@ -1,0 +1,20 @@
+uuid: 00383468-1d0d-4f2a-809a-d238d24d9334
+langcode: und
+status: true
+dependencies:
+  module:
+    - datetime
+    - paragraphs
+id: paragraph.field_sideshow_date
+field_name: field_sideshow_date
+entity_type: paragraph
+type: datetime
+settings:
+  datetime_type: datetime
+module: datetime
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

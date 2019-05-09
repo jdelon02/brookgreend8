@@ -1,0 +1,21 @@
+uuid: 49df8b1f-f95d-4f00-9182-5ac10df4d3df
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.plant_collection.garden
+    - field.storage.plant_collection.field_pc_garden_description
+  module:
+    - text
+id: plant_collection.garden.field_pc_garden_description
+field_name: field_pc_garden_description
+entity_type: plant_collection
+bundle: garden
+label: 'Garden Description'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

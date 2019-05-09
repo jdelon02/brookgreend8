@@ -1,0 +1,21 @@
+uuid: 2f42ef1c-2276-4192-8b78-987054b60531
+langcode: und
+status: true
+dependencies:
+  module:
+    - eck
+id: plant_collection.field_pc_reference_author
+field_name: field_pc_reference_author
+entity_type: plant_collection
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,9 @@
+uuid: 7e0b244c-5aba-420a-a1c5-6b5b30941a73
+langcode: en
+status: true
+dependencies: {  }
+id: hero_short
+label: 'Hero Short'
+icon_uuid: null
+description: 'Migrated from paragraph bundle Hero Short'
+behavior_plugins: {  }

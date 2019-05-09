@@ -1,0 +1,270 @@
+uuid: 2013d494-7ddc-4515-b628-511dd2f5e32b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.plant_type.body
+    - field.field.node.plant_type.comment_node_plant_type
+    - field.field.node.plant_type.field_infraspecific_epithet_albu
+    - field.field.node.plant_type.field_infraspecific_flag
+    - field.field.node.plant_type.field_intergeneric_hybrid_flag
+    - field.field.node.plant_type.field_pc_common_name
+    - field.field.node.plant_type.field_pc_cultivar_name
+    - field.field.node.plant_type.field_pc_featured_plant_type_ima
+    - field.field.node.plant_type.field_pc_genus
+    - field.field.node.plant_type.field_pc_hardiness
+    - field.field.node.plant_type.field_pc_images_carousel
+    - field.field.node.plant_type.field_pc_labeled
+    - field.field.node.plant_type.field_pc_leaves
+    - field.field.node.plant_type.field_pc_longevity
+    - field.field.node.plant_type.field_pc_origin
+    - field.field.node.plant_type.field_pc_plant_family
+    - field.field.node.plant_type.field_pc_reference
+    - field.field.node.plant_type.field_pc_registered_name
+    - field.field.node.plant_type.field_pc_research_section_access
+    - field.field.node.plant_type.field_pc_scientific_name1
+    - field.field.node.plant_type.field_pc_specific_epithet
+    - field.field.node.plant_type.field_pc_stem
+    - field.field.node.plant_type.field_pc_trademarked_name
+    - field.field.node.plant_type.field_pc_zone
+    - node.type.plant_type
+  module:
+    - comment
+    - file
+    - paragraphs
+    - path
+    - text
+id: node.plant_type.default
+targetEntityType: node
+bundle: plant_type
+mode: default
+content:
+  body:
+    weight: 19
+    type: text_textarea_with_summary
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  comment_node_plant_type:
+    type: comment_default
+    weight: 20
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  created:
+    type: datetime_timestamp
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_infraspecific_epithet_albu:
+    weight: 27
+    type: string_textfield
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_infraspecific_flag:
+    weight: 26
+    type: string_textfield
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_intergeneric_hybrid_flag:
+    weight: 24
+    type: string_textfield
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_pc_common_name:
+    weight: 16
+    type: string_textfield
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_pc_cultivar_name:
+    weight: 28
+    type: string_textfield
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_pc_featured_plant_type_ima:
+    weight: 9
+    type: file_generic
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+    region: content
+  field_pc_genus:
+    weight: 23
+    type: string_textfield
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_pc_hardiness:
+    weight: 41
+    type: options_select
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_pc_images_carousel:
+    weight: 11
+    type: entity_reference_paragraphs
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
+    region: content
+  field_pc_labeled:
+    weight: 18
+    type: options_select
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_pc_leaves:
+    weight: 39
+    type: options_select
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_pc_longevity:
+    weight: 42
+    type: options_select
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_pc_origin:
+    weight: 38
+    type: string_textarea
+    settings:
+      rows: 3
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_pc_plant_family:
+    weight: 21
+    type: entity_reference_autocomplete
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_pc_registered_name:
+    weight: 30
+    type: string_textfield
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_pc_research_section_access:
+    weight: 7
+    type: text_textarea
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_pc_scientific_name1:
+    weight: 17
+    type: text_textarea
+    settings:
+      rows: 3
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_pc_specific_epithet:
+    weight: 25
+    type: string_textfield
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_pc_stem:
+    weight: 40
+    type: options_select
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_pc_trademarked_name:
+    weight: 29
+    type: string_textfield
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_pc_zone:
+    weight: 43
+    type: string_textfield
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  path:
+    type: path
+    weight: 30
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  promote:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 15
+    region: content
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 120
+    region: content
+    third_party_settings: {  }
+  sticky:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 16
+    region: content
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 5
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    region: content
+    third_party_settings: {  }
+hidden:
+  field_pc_reference: true

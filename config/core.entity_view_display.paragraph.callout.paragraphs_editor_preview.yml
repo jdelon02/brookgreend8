@@ -1,0 +1,27 @@
+uuid: d87b1d2c-fbe1-42cd-92fc-76921494bfdb
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.paragraphs_editor_preview
+    - field.field.paragraph.callout.field_background_image
+    - field.field.paragraph.callout.field_callout_heading
+    - field.field.paragraph.callout.field_callout_image
+    - field.field.paragraph.callout.field_callout_link
+    - field.field.paragraph.callout.field_callout_text
+    - field.field.paragraph.callout.field_heading
+    - field.field.paragraph.callout.field_links
+    - paragraphs.paragraphs_type.callout
+id: paragraph.callout.paragraphs_editor_preview
+targetEntityType: paragraph
+bundle: callout
+mode: paragraphs_editor_preview
+content: {  }
+hidden:
+  field_background_image: true
+  field_callout_heading: true
+  field_callout_image: true
+  field_callout_link: true
+  field_callout_text: true
+  field_heading: true
+  field_links: true

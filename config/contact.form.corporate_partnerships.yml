@@ -1,0 +1,14 @@
+uuid: 9b2ef8f7-1a4b-4183-b7b5-c46c2e73389e
+langcode: en
+status: true
+dependencies: {  }
+id: corporate_partnerships
+label: 'Corporate Partnerships'
+recipients:
+  - ljoseph@brookgreen.org
+  - cpittman@brookgreen.org
+  - wbelser@brookgreen.org
+reply: 'Thank you for your inquiry! We will get back to you as soon as possible!'
+weight: 0
+message: null
+redirect: null

@@ -1,0 +1,15 @@
+uuid: 4f6a241b-fdef-4678-b53c-453a1a35a902
+langcode: en
+status: true
+dependencies: {  }
+name: member_banner
+label: 'Member Banner'
+effects:
+  4aeabb36-8af7-45f3-871b-38fdbacb057e:
+    uuid: 4aeabb36-8af7-45f3-871b-38fdbacb057e
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 1400
+      height: 620
+      anchor: center-center

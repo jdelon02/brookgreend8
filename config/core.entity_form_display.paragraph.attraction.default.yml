@@ -1,0 +1,65 @@
+uuid: 1ba42e31-99c0-4b89-9afa-4b7535317e89
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.attraction.field_attraction_icon
+    - field.field.paragraph.attraction.field_attraction_image
+    - field.field.paragraph.attraction.field_attraction_link
+    - field.field.paragraph.attraction.field_attraction_name
+    - field.field.paragraph.attraction.field_attraction_text
+    - field.field.paragraph.attraction.field_styling
+    - image.style.thumbnail
+    - paragraphs.paragraphs_type.attraction
+  module:
+    - file
+    - image
+id: paragraph.attraction.default
+targetEntityType: paragraph
+bundle: attraction
+mode: default
+content:
+  field_attraction_icon:
+    weight: 6
+    type: image_image
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    region: content
+  field_attraction_image:
+    weight: 5
+    type: file_generic
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+    region: content
+  field_attraction_name:
+    weight: 2
+    type: string_textfield
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_attraction_text:
+    weight: 3
+    type: string_textfield
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_styling:
+    weight: 8
+    type: entity_reference_autocomplete
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+hidden:
+  created: true
+  field_attraction_link: true
+  status: true

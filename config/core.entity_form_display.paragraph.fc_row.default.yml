@@ -1,0 +1,29 @@
+uuid: 6c20240e-c549-450d-b2f8-2fd5ffbbe9f9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.fc_row.field_fc_column
+    - paragraphs.paragraphs_type.fc_row
+  module:
+    - paragraphs
+id: paragraph.fc_row.default
+targetEntityType: paragraph
+bundle: fc_row
+mode: default
+content:
+  field_fc_column:
+    weight: 1
+    type: entity_reference_paragraphs
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
+    region: content
+hidden:
+  created: true
+  status: true

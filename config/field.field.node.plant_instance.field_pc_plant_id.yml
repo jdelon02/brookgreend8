@@ -1,0 +1,19 @@
+uuid: 9d8964f0-ee74-484a-8e3e-717d11e97424
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_pc_plant_id
+    - node.type.plant_instance
+id: node.plant_instance.field_pc_plant_id
+field_name: field_pc_plant_id
+entity_type: node
+bundle: plant_instance
+label: 'Plant ID'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

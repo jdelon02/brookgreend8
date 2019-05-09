@@ -1,0 +1,21 @@
+uuid: a544788c-ad87-481c-815f-48539b33fdb0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_third_date
+    - paragraphs.paragraphs_type.featured_items
+  module:
+    - datetime
+id: paragraph.featured_items.field_third_date
+field_name: field_third_date
+entity_type: paragraph
+bundle: featured_items
+label: 'Third Date'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

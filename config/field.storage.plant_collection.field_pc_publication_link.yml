@@ -1,0 +1,19 @@
+uuid: 82735168-5e2d-4a99-b89e-352959a0e962
+langcode: und
+status: true
+dependencies:
+  module:
+    - eck
+    - link
+id: plant_collection.field_pc_publication_link
+field_name: field_pc_publication_link
+entity_type: plant_collection
+type: link
+settings: {  }
+module: link
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

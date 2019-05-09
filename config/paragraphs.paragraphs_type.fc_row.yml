@@ -1,0 +1,9 @@
+uuid: 42bd4686-f756-493c-bcd6-5667ee72b2bc
+langcode: en
+status: true
+dependencies: {  }
+id: fc_row
+label: 'Fc row'
+icon_uuid: null
+description: 'Migrated from field_collection field_fc_row'
+behavior_plugins: {  }

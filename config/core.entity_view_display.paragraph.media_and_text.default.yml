@@ -1,0 +1,26 @@
+uuid: b891def1-28f9-4880-96e4-73306365976a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.media_and_text.field_images
+    - field.field.paragraph.media_and_text.field_styling
+    - paragraphs.paragraphs_type.media_and_text
+  module:
+    - image
+id: paragraph.media_and_text.default
+targetEntityType: paragraph
+bundle: media_and_text
+mode: default
+content:
+  field_images:
+    label: hidden
+    weight: 2
+    type: image
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_styling: true

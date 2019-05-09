@@ -1,0 +1,23 @@
+uuid: 689778aa-14bb-43eb-bbc3-799ca1c0391c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_follow_us_on
+    - paragraphs.paragraphs_type.share_bar
+  module:
+    - link
+id: paragraph.share_bar.field_follow_us_on
+field_name: field_follow_us_on
+entity_type: paragraph
+bundle: share_bar
+label: 'Follow Us On'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 0
+  link_type: 17
+field_type: link

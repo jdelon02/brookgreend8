@@ -1,0 +1,20 @@
+uuid: 7ba611f9-f3fd-425c-9b91-ca7d23855a93
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+    - taxonomy
+id: node.field_attraction
+field_name: field_attraction
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,33 @@
+uuid: 3ca0d122-eec3-4858-8177-9216b0032e00
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_heading_background_image
+    - node.type.event
+  module:
+    - image
+id: node.event.field_heading_background_image
+field_name: field_heading_background_image
+entity_type: node
+bundle: event
+label: 'Heading Background Image'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: ''
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: ''
+  max_resolution: 1920x900
+  min_resolution: ''
+  alt_field: false
+  title_field: false
+  default_image: '53'
+  alt_field_required: true
+  title_field_required: false
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: image

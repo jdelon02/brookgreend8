@@ -1,0 +1,19 @@
+uuid: 8b11b206-754d-4f22-b63b-2775e861dcc2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_first_title
+    - paragraphs.paragraphs_type.featured_items
+id: paragraph.featured_items.field_first_title
+field_name: field_first_title
+entity_type: paragraph
+bundle: featured_items
+label: 'First Heading'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

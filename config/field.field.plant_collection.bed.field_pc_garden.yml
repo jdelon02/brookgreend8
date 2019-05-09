@@ -1,0 +1,30 @@
+uuid: c12af915-738a-4311-bc63-4f9ce8e37847
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.plant_collection.bed
+    - eck.eck_type.plant_collection.garden
+    - field.storage.plant_collection.field_pc_garden
+id: plant_collection.bed.field_pc_garden
+field_name: field_pc_garden
+entity_type: plant_collection
+bundle: bed
+label: Garden
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:plant_collection'
+  handler_settings:
+    behaviors:
+      views-select-list:
+        status: 0
+    sort:
+      field: _none
+      direction: ASC
+    target_bundles:
+      garden: garden
+field_type: entity_reference

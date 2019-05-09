@@ -1,0 +1,9 @@
+uuid: 7e65b863-b1a2-4263-8ea8-b9407e13b9d6
+langcode: en
+status: true
+dependencies: {  }
+id: area_with_menu_block
+label: 'Area with Menu Block'
+icon_uuid: null
+description: 'Migrated from paragraph bundle Area with Menu Block'
+behavior_plugins: {  }

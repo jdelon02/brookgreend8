@@ -1,0 +1,9 @@
+uuid: 6447858b-d827-48b6-a57a-712c0c6e500f
+langcode: en
+status: true
+dependencies: {  }
+id: days_and_hours
+label: 'Days and hours'
+icon_uuid: null
+description: 'Migrated from field_collection field_days_and_hours'
+behavior_plugins: {  }

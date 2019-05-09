@@ -1,0 +1,21 @@
+uuid: 25df326d-49f1-4561-aebd-3bfa13574d8b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_styling
+    - paragraphs.paragraphs_type.media_and_text
+id: paragraph.media_and_text.field_styling
+field_name: field_styling
+entity_type: paragraph
+bundle: media_and_text
+label: Styling
+description: 'Add css classes to style this section'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings: {  }
+field_type: entity_reference

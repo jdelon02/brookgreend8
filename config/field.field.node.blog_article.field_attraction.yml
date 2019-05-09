@@ -1,0 +1,21 @@
+uuid: eaa540bf-5833-4922-8a83-09d1f47d10ae
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_attraction
+    - node.type.blog_article
+id: node.blog_article.field_attraction
+field_name: field_attraction
+entity_type: node
+bundle: blog_article
+label: Attraction
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings: {  }
+field_type: entity_reference

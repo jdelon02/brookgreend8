@@ -1,0 +1,10 @@
+uuid: 503fadd4-03f6-405f-93f4-4ebece8d42df
+langcode: en
+status: true
+dependencies:
+  module:
+    - file
+id: file.large_portrait
+label: large_portrait
+targetEntityType: file
+cache: true

@@ -1,0 +1,10 @@
+uuid: 0f3ef4e6-cbaa-45bf-967a-6a2e376a10c8
+langcode: en
+status: true
+dependencies:
+  module:
+    - file
+id: file.medium_landscape
+label: medium_landscape
+targetEntityType: file
+cache: true

@@ -1,0 +1,18 @@
+uuid: 404589ed-b8f4-46e2-ad1f-263bc3b2ed91
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.file.large_square
+    - field.field.file.image.field_file_image_alt_text
+    - field.field.file.image.field_file_image_title_text
+  module:
+    - file
+id: file.image.large_square
+targetEntityType: file
+bundle: image
+mode: large_square
+content: {  }
+hidden:
+  field_file_image_alt_text: true
+  field_file_image_title_text: true

@@ -1,0 +1,26 @@
+uuid: 20e19b2f-1cae-4726-bfde-bd4e5128096b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.media_text_and_link.field_image
+    - image.style.thumbnail
+    - paragraphs.paragraphs_type.media_text_and_link
+  module:
+    - image
+id: paragraph.media_text_and_link.default
+targetEntityType: paragraph
+bundle: media_text_and_link
+mode: default
+content:
+  field_image:
+    weight: 2
+    type: image_image
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    region: content
+hidden:
+  created: true
+  status: true

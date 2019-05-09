@@ -1,0 +1,21 @@
+uuid: a2b70eec-1e72-4ec2-8ca6-70e25d90f6bd
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.plant_collection.plant_image
+    - field.storage.plant_collection.field_pc_scientific_name
+id: plant_collection.plant_image.field_pc_scientific_name
+field_name: field_pc_scientific_name
+entity_type: plant_collection
+bundle: plant_image
+label: 'PC Scientific Name'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings: {  }
+field_type: entity_reference

@@ -1,0 +1,19 @@
+uuid: 7fdb3bed-d8a1-4c22-a228-a2bd4760091f
+langcode: und
+status: true
+dependencies:
+  module:
+    - eck
+id: plant_collection.field_pc_reference_garden
+field_name: field_pc_reference_garden
+entity_type: plant_collection
+type: entity_reference
+settings:
+  target_type: plant_collection
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

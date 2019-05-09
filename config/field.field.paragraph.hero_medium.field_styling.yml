@@ -1,0 +1,21 @@
+uuid: a8b02fa6-d0c0-4219-a7be-eb8deb4657ad
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_styling
+    - paragraphs.paragraphs_type.hero_medium
+id: paragraph.hero_medium.field_styling
+field_name: field_styling
+entity_type: paragraph
+bundle: hero_medium
+label: Styling
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings: {  }
+field_type: entity_reference

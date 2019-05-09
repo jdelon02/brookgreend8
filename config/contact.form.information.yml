@@ -1,0 +1,13 @@
+uuid: 9dfe6134-4f46-4233-953e-b2f32ca5bb2a
+langcode: en
+status: true
+dependencies: {  }
+id: information
+label: Information
+recipients:
+  - marketing@brookgreen.org
+  - info@brookgreen.org
+reply: 'Thank you for your inquiry. We will contact you as soon as possible.'
+weight: 0
+message: null
+redirect: null

@@ -1,0 +1,154 @@
+uuid: 17369ebc-ee4d-4a99-9ddc-1f53d2856feb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_section
+    - node.type.landing_page
+    - paragraphs.paragraphs_type.area_with_menu_block
+    - paragraphs.paragraphs_type.attractions
+    - paragraphs.paragraphs_type.basic
+    - paragraphs.paragraphs_type.callout
+    - paragraphs.paragraphs_type.carousel
+    - paragraphs.paragraphs_type.featured_items
+    - paragraphs.paragraphs_type.hero_large
+    - paragraphs.paragraphs_type.hero_medium
+    - paragraphs.paragraphs_type.hero_short
+    - paragraphs.paragraphs_type.hero_small
+    - paragraphs.paragraphs_type.main_menu_block
+    - paragraphs.paragraphs_type.media_and_text
+    - paragraphs.paragraphs_type.media_heading_subheading_text_an
+    - paragraphs.paragraphs_type.media_heading_text_and_links
+    - paragraphs.paragraphs_type.media_text_and_link
+    - paragraphs.paragraphs_type.share_bar
+    - paragraphs.paragraphs_type.social_feed
+    - paragraphs.paragraphs_type.text_and_columns
+    - paragraphs.paragraphs_type.view_field
+  module:
+    - entity_reference_revisions
+id: node.landing_page.field_section
+field_name: field_section
+entity_type: node
+bundle: landing_page
+label: Section
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler_settings:
+    negate: 0
+    target_bundles:
+      basic: basic
+      area_with_menu_block: area_with_menu_block
+      media_and_text: media_and_text
+      media_heading_subheading_text_an: media_heading_subheading_text_an
+      media_heading_text_and_links: media_heading_text_and_links
+      media_text_and_link: media_text_and_link
+      text_and_columns: text_and_columns
+      social_feed: social_feed
+      featured_items: featured_items
+      callout: callout
+      hero_large: hero_large
+      hero_medium: hero_medium
+      hero_small: hero_small
+      carousel: carousel
+      attractions: attractions
+      main_menu_block: main_menu_block
+      share_bar: share_bar
+      view_field: view_field
+      hero_short: hero_short
+    target_bundles_drag_drop:
+      basic:
+        enabled: true
+        weight: -44
+      area_with_menu_block:
+        enabled: true
+        weight: -43
+      media_and_text:
+        enabled: true
+        weight: -42
+      media_heading_subheading_text_an:
+        enabled: true
+        weight: -41
+      media_heading_text_and_links:
+        enabled: true
+        weight: -40
+      media_text_and_link:
+        enabled: true
+        weight: -39
+      text_and_columns:
+        enabled: true
+        weight: -38
+      social_feed:
+        enabled: true
+        weight: -37
+      featured_items:
+        enabled: true
+        weight: -36
+      callout:
+        enabled: true
+        weight: -35
+      hero_large:
+        enabled: true
+        weight: -34
+      hero_medium:
+        enabled: true
+        weight: -33
+      hero_small:
+        enabled: true
+        weight: -32
+      carousel:
+        enabled: true
+        weight: -30
+      attractions:
+        enabled: true
+        weight: -29
+      main_menu_block:
+        enabled: true
+        weight: -28
+      share_bar:
+        enabled: true
+        weight: -27
+      view_field:
+        enabled: true
+        weight: -26
+      area_with_sidebars:
+        enabled: false
+        weight: -25
+      columns:
+        enabled: false
+        weight: -24
+      attraction:
+        enabled: false
+        weight: -23
+      hero_short:
+        enabled: true
+        weight: 13
+      table:
+        enabled: false
+        weight: 22
+      days_and_hours:
+        enabled: false
+        weight: 23
+      fc_column:
+        enabled: false
+        weight: 24
+      fc_row:
+        enabled: false
+        weight: 25
+      pc_images_carousel:
+        enabled: false
+        weight: 26
+      sideshow_fc:
+        enabled: false
+        weight: 27
+      sponsors:
+        enabled: false
+        weight: 28
+      tickets:
+        enabled: false
+        weight: 29
+  handler: 'default:paragraph'
+field_type: entity_reference_revisions

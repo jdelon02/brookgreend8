@@ -1,0 +1,41 @@
+uuid: 57761808-ebbf-466a-b63e-852f7c1467e0
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.paragraphs_editor_preview
+    - field.field.paragraph.featured_items.field_first_date
+    - field.field.paragraph.featured_items.field_first_image
+    - field.field.paragraph.featured_items.field_first_link
+    - field.field.paragraph.featured_items.field_first_title
+    - field.field.paragraph.featured_items.field_second_date
+    - field.field.paragraph.featured_items.field_second_image
+    - field.field.paragraph.featured_items.field_second_link
+    - field.field.paragraph.featured_items.field_second_text
+    - field.field.paragraph.featured_items.field_second_title
+    - field.field.paragraph.featured_items.field_third_date
+    - field.field.paragraph.featured_items.field_third_image
+    - field.field.paragraph.featured_items.field_third_link
+    - field.field.paragraph.featured_items.field_third_text
+    - field.field.paragraph.featured_items.field_third_title
+    - paragraphs.paragraphs_type.featured_items
+id: paragraph.featured_items.paragraphs_editor_preview
+targetEntityType: paragraph
+bundle: featured_items
+mode: paragraphs_editor_preview
+content: {  }
+hidden:
+  field_first_date: true
+  field_first_image: true
+  field_first_link: true
+  field_first_title: true
+  field_second_date: true
+  field_second_image: true
+  field_second_link: true
+  field_second_text: true
+  field_second_title: true
+  field_third_date: true
+  field_third_image: true
+  field_third_link: true
+  field_third_text: true
+  field_third_title: true

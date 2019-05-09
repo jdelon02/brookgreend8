@@ -1,0 +1,8 @@
+uuid: e4f0c210-b0da-458f-be30-8649b40fa8d9
+langcode: en
+status: true
+dependencies: {  }
+id: comment_node_plant_type
+label: 'Plant Name comment'
+target_entity_type_id: node
+description: null

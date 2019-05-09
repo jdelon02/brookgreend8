@@ -1,0 +1,34 @@
+uuid: 951f2998-76f3-4a6a-a9ee-6875b14f5bdd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.area_with_menu_block.field_main_area
+    - field.field.paragraph.area_with_menu_block.field_menu_block
+    - paragraphs.paragraphs_type.area_with_menu_block
+  module:
+    - entity_reference_revisions
+id: paragraph.area_with_menu_block.default
+targetEntityType: paragraph
+bundle: area_with_menu_block
+mode: default
+content:
+  field_main_area:
+    label: hidden
+    weight: 1
+    type: entity_reference_revisions_entity_view
+    settings:
+      view_mode: full
+      link: ''
+    third_party_settings: {  }
+    region: content
+  field_menu_block:
+    label: hidden
+    weight: 0
+    type: entity_reference_revisions_entity_view
+    settings:
+      view_mode: full
+      link: ''
+    third_party_settings: {  }
+    region: content
+hidden: {  }

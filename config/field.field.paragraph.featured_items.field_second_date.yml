@@ -1,0 +1,21 @@
+uuid: 392d45f0-b2b3-466b-8829-059964b20a32
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_second_date
+    - paragraphs.paragraphs_type.featured_items
+  module:
+    - datetime
+id: paragraph.featured_items.field_second_date
+field_name: field_second_date
+entity_type: paragraph
+bundle: featured_items
+label: 'Second Date'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

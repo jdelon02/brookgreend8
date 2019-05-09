@@ -1,0 +1,21 @@
+uuid: e4996b03-9b0c-45be-b58e-d699bb0461de
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_pc_longevity
+    - node.type.plant_type
+id: node.plant_type.field_pc_longevity
+field_name: field_pc_longevity
+entity_type: node
+bundle: plant_type
+label: Longevity
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings: {  }
+field_type: entity_reference

@@ -1,0 +1,29 @@
+uuid: 68cc1bb0-1c02-40f5-9799-98d6e6a81967
+langcode: en
+status: true
+dependencies: {  }
+name: Minimal
+format: minimal
+weight: -7
+filters:
+  filter_autop:
+    id: filter_autop
+    provider: filter
+    status: true
+    weight: 0
+    settings: {  }
+  filter_html:
+    id: filter_html
+    provider: filter
+    status: true
+    weight: -10
+    settings:
+      allowed_html: '<em> <strong> <a href> <ul> <li> <ol> <blockquote> <img src alt data-entity-type data-entity-uuid>'
+      filter_html_help: false
+      filter_html_nofollow: false
+  filter_htmlcorrector:
+    id: filter_htmlcorrector
+    provider: filter
+    status: true
+    weight: 10
+    settings: {  }

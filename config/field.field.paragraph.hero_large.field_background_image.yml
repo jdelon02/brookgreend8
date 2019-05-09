@@ -1,0 +1,33 @@
+uuid: ffd19690-08bf-4eec-aaee-e81425f337fe
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_background_image
+    - paragraphs.paragraphs_type.hero_large
+  module:
+    - image
+id: paragraph.hero_large.field_background_image
+field_name: field_background_image
+entity_type: paragraph
+bundle: hero_large
+label: 'Background Image'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  alt_field: false
+  default_image: 0
+  file_directory: ''
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: ''
+  title_field: false
+  alt_field_required: true
+  title_field_required: false
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: image

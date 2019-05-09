@@ -1,0 +1,44 @@
+uuid: 8f40ad02-731d-4c6a-a067-44f6ff1307ab
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.area_with_sidebars.field_main_content
+    - field.field.paragraph.area_with_sidebars.field_sidebar_first
+    - field.field.paragraph.area_with_sidebars.field_sidebar_second
+    - paragraphs.paragraphs_type.area_with_sidebars
+  module:
+    - entity_reference_revisions
+id: paragraph.area_with_sidebars.default
+targetEntityType: paragraph
+bundle: area_with_sidebars
+mode: default
+content:
+  field_main_content:
+    label: hidden
+    weight: 1
+    type: entity_reference_revisions_entity_view
+    settings:
+      view_mode: full
+      link: ''
+    third_party_settings: {  }
+    region: content
+  field_sidebar_first:
+    label: hidden
+    weight: 0
+    type: entity_reference_revisions_entity_view
+    settings:
+      view_mode: full
+      link: ''
+    third_party_settings: {  }
+    region: content
+  field_sidebar_second:
+    label: hidden
+    weight: 2
+    type: entity_reference_revisions_entity_view
+    settings:
+      view_mode: full
+      link: ''
+    third_party_settings: {  }
+    region: content
+hidden: {  }

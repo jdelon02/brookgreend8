@@ -1,0 +1,8 @@
+uuid: fe83a057-681a-40cb-978c-a8fd2cd5b109
+langcode: en
+status: true
+dependencies: {  }
+id: comment_node_plant_instance
+label: 'Plant Inventory comment'
+target_entity_type_id: node
+description: null

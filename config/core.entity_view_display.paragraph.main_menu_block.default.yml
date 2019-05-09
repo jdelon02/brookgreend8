@@ -1,0 +1,22 @@
+uuid: 714ae804-1850-4727-9d00-92e64c5d93de
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.main_menu_block.field_main_menu_block
+    - paragraphs.paragraphs_type.main_menu_block
+  module:
+    - text
+id: paragraph.main_menu_block.default
+targetEntityType: paragraph
+bundle: main_menu_block
+mode: default
+content:
+  field_main_menu_block:
+    label: hidden
+    weight: 0
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

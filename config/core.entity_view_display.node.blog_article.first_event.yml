@@ -1,0 +1,28 @@
+uuid: 785b9f91-a8b9-4f9a-b633-434681c78a14
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.first_event
+    - field.field.node.blog_article.body
+    - field.field.node.blog_article.comment_node_blog_article
+    - field.field.node.blog_article.field_attraction
+    - field.field.node.blog_article.field_featured_image
+    - node.type.blog_article
+  module:
+    - user
+id: node.blog_article.first_event
+targetEntityType: node
+bundle: blog_article
+mode: first_event
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  body: true
+  comment_node_blog_article: true
+  field_attraction: true
+  field_featured_image: true

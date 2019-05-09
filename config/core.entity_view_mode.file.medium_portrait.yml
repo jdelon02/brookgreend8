@@ -1,0 +1,10 @@
+uuid: 1b44f22e-fb91-4fa4-868d-69f37c30d933
+langcode: en
+status: true
+dependencies:
+  module:
+    - file
+id: file.medium_portrait
+label: medium_portrait
+targetEntityType: file
+cache: true

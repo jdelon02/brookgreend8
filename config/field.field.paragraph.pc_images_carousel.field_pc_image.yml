@@ -1,0 +1,33 @@
+uuid: 54881fa3-dd11-40c5-84bd-400afb36e722
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_pc_image
+    - paragraphs.paragraphs_type.pc_images_carousel
+  module:
+    - image
+id: paragraph.pc_images_carousel.field_pc_image
+field_name: field_pc_image
+entity_type: paragraph
+bundle: pc_images_carousel
+label: Image
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  alt_field: false
+  default_image: 0
+  file_directory: images/plant-collection
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: 400x400
+  title_field: false
+  alt_field_required: true
+  title_field_required: false
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: image

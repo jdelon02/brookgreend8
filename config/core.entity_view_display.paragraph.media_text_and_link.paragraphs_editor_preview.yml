@@ -1,0 +1,15 @@
+uuid: fe671cf1-b22c-499c-b955-015669096359
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.paragraphs_editor_preview
+    - field.field.paragraph.media_text_and_link.field_image
+    - paragraphs.paragraphs_type.media_text_and_link
+id: paragraph.media_text_and_link.paragraphs_editor_preview
+targetEntityType: paragraph
+bundle: media_text_and_link
+mode: paragraphs_editor_preview
+content: {  }
+hidden:
+  field_image: true

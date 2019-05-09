@@ -1,0 +1,65 @@
+uuid: 877fb82f-ae4c-4208-b296-5e50ec08a328
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.hero_large.field_background_image
+    - field.field.paragraph.hero_large.field_background_video_url
+    - field.field.paragraph.hero_large.field_heading
+    - field.field.paragraph.hero_large.field_links
+    - field.field.paragraph.hero_large.field_scroll_link
+    - field.field.paragraph.hero_large.field_styling
+    - paragraphs.paragraphs_type.hero_large
+  module:
+    - file
+    - link
+    - text
+id: paragraph.hero_large.default
+targetEntityType: paragraph
+bundle: hero_large
+mode: default
+content:
+  field_background_image:
+    weight: 1
+    type: file_generic
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+    region: content
+  field_background_video_url:
+    weight: 9
+    type: link_default
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    region: content
+  field_heading:
+    weight: 0
+    type: string_textfield
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_scroll_link:
+    weight: 5
+    type: text_textfield
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_styling:
+    weight: 6
+    type: entity_reference_autocomplete
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+hidden:
+  created: true
+  field_links: true
+  status: true

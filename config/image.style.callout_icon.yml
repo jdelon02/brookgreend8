@@ -1,0 +1,15 @@
+uuid: ef684c25-af45-4d60-a8aa-a3c1d4466699
+langcode: en
+status: true
+dependencies: {  }
+name: callout_icon
+label: 'Callout Icon'
+effects:
+  a56bb752-6d19-40f7-b8ec-74319194fafa:
+    uuid: a56bb752-6d19-40f7-b8ec-74319194fafa
+    id: image_scale
+    weight: 1
+    data:
+      width: 30
+      height: 30
+      upscale: true

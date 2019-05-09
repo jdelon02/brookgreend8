@@ -1,0 +1,42 @@
+uuid: c49cf7b6-53bb-48e6-99c1-7916ce5b6bea
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.area_with_menu_block.field_main_area
+    - field.field.paragraph.area_with_menu_block.field_menu_block
+    - paragraphs.paragraphs_type.area_with_menu_block
+  module:
+    - paragraphs
+id: paragraph.area_with_menu_block.default
+targetEntityType: paragraph
+bundle: area_with_menu_block
+mode: default
+content:
+  field_main_area:
+    weight: 2
+    type: entity_reference_paragraphs
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: preview
+      add_mode: select
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
+    region: content
+  field_menu_block:
+    weight: 1
+    type: entity_reference_paragraphs
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: preview
+      add_mode: select
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
+    region: content
+hidden:
+  created: true
+  status: true

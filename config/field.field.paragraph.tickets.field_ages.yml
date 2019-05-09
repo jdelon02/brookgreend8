@@ -1,0 +1,19 @@
+uuid: 24179229-b587-4c54-839b-021a74232906
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_ages
+    - paragraphs.paragraphs_type.tickets
+id: paragraph.tickets.field_ages
+field_name: field_ages
+entity_type: paragraph
+bundle: tickets
+label: Ages
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,13 @@
+uuid: f20409cd-98c3-4dc8-94cb-e64e7f56d85c
+langcode: en
+status: true
+dependencies: {  }
+id: horticulture
+label: Horticulture
+recipients:
+  - LContreras@brookgreen.org
+  - ljoseph@brookgreen.org
+reply: 'Thank you for your question.  We will get back with you as soon as possible.'
+weight: 0
+message: null
+redirect: null

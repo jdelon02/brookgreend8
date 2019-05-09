@@ -1,0 +1,9 @@
+uuid: 4bbccc0b-2723-48f0-8d29-4f0ca0376085
+langcode: en
+status: true
+dependencies: {  }
+id: area_with_sidebars
+label: 'Area with Sidebars'
+icon_uuid: null
+description: 'Migrated from paragraph bundle Area with Sidebars'
+behavior_plugins: {  }

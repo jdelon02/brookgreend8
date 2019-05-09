@@ -1,0 +1,10 @@
+uuid: 6bafa89b-60b1-4297-9948-cc1325dbd161
+langcode: en
+status: true
+dependencies:
+  module:
+    - eck
+id: plant_collection.full
+label: Full
+targetEntityType: plant_collection
+cache: true

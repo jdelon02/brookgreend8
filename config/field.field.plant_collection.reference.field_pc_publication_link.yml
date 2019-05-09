@@ -1,0 +1,23 @@
+uuid: b7ce798e-6726-4cbe-8e51-1c50b18fe57a
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.plant_collection.reference
+    - field.storage.plant_collection.field_pc_publication_link
+  module:
+    - link
+id: plant_collection.reference.field_pc_publication_link
+field_name: field_pc_publication_link
+entity_type: plant_collection
+bundle: reference
+label: 'Publication Link'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 2
+  link_type: 17
+field_type: link

@@ -1,0 +1,46 @@
+uuid: 0070e63b-6628-45d6-9531-fc5d55ff318d
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.plant_collection.garden
+    - field.field.plant_collection.garden.field_pc_garden_description
+  module:
+    - text
+id: plant_collection.garden.default
+targetEntityType: plant_collection
+bundle: garden
+mode: default
+content:
+  created:
+    type: datetime_timestamp
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_pc_garden_description:
+    weight: 1
+    type: text_textarea
+    settings:
+      rows: 8
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  title:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 5
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    region: content
+    third_party_settings: {  }
+hidden: {  }

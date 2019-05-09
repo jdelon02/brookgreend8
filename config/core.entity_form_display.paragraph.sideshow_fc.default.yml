@@ -1,0 +1,52 @@
+uuid: 4ceb135c-079a-4bca-bd98-b35c6a9f1915
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.sideshow_fc.field_sideshow_date
+    - field.field.paragraph.sideshow_fc.field_slideshow_image
+    - field.field.paragraph.sideshow_fc.field_slideshow_link
+    - field.field.paragraph.sideshow_fc.field_slideshow_subheading
+    - field.field.paragraph.sideshow_fc.field_slideshow_text_area
+    - paragraphs.paragraphs_type.sideshow_fc
+  module:
+    - datetime
+    - file
+id: paragraph.sideshow_fc.default
+targetEntityType: paragraph
+bundle: sideshow_fc
+mode: default
+content:
+  field_sideshow_date:
+    weight: 2
+    type: datetime_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_slideshow_image:
+    weight: 1
+    type: file_generic
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+    region: content
+  field_slideshow_subheading:
+    weight: 3
+    type: string_textfield
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_slideshow_text_area:
+    weight: 4
+    type: string_textarea
+    settings:
+      rows: 3
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+hidden:
+  created: true
+  field_slideshow_link: true
+  status: true

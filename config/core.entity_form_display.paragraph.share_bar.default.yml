@@ -1,0 +1,35 @@
+uuid: 8632af47-c1b3-4b26-964a-ca5358f81b90
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.share_bar.field_follow_us_on
+    - field.field.paragraph.share_bar.field_share_message
+    - paragraphs.paragraphs_type.share_bar
+  module:
+    - link
+    - text
+id: paragraph.share_bar.default
+targetEntityType: paragraph
+bundle: share_bar
+mode: default
+content:
+  field_follow_us_on:
+    weight: 2
+    type: link_default
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    region: content
+  field_share_message:
+    weight: 1
+    type: text_textfield
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+hidden:
+  created: true
+  status: true

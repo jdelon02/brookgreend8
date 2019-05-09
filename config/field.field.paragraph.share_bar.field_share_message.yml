@@ -1,0 +1,21 @@
+uuid: 32e20ddb-d8c0-4699-9b36-9295bc363313
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_share_message
+    - paragraphs.paragraphs_type.share_bar
+  module:
+    - text
+id: paragraph.share_bar.field_share_message
+field_name: field_share_message
+entity_type: paragraph
+bundle: share_bar
+label: 'Share Message'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

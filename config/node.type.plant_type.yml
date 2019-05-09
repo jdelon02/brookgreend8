@@ -1,0 +1,16 @@
+uuid: d586b02e-5a9d-4a94-b55b-bfee1d706886
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    parent: 'main-menu:0:'
+name: 'Plant Name'
+type: plant_type
+description: ''
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

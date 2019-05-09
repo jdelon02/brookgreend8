@@ -1,0 +1,46 @@
+uuid: 915dc741-c8d3-4380-8977-701d72ebb7c1
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.plant_collection.gardener_note
+    - field.field.plant_collection.gardener_note.field_pc_gardener_note
+  module:
+    - text
+id: plant_collection.gardener_note.default
+targetEntityType: plant_collection
+bundle: gardener_note
+mode: default
+content:
+  created:
+    type: datetime_timestamp
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_pc_gardener_note:
+    weight: 1
+    type: text_textarea
+    settings:
+      rows: 8
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  title:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 5
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    region: content
+    third_party_settings: {  }
+hidden: {  }

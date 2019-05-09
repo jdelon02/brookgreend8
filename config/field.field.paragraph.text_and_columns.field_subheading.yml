@@ -1,0 +1,19 @@
+uuid: a06cee2a-49ef-44ec-b4c8-f3427a149d16
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_subheading
+    - paragraphs.paragraphs_type.text_and_columns
+id: paragraph.text_and_columns.field_subheading
+field_name: field_subheading
+entity_type: paragraph
+bundle: text_and_columns
+label: Subheading
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,9 @@
+uuid: 589c4941-1a80-4c07-8bf1-8c528bb19eea
+langcode: en
+status: true
+dependencies: {  }
+id: share_bar
+label: 'Share Bar'
+icon_uuid: null
+description: 'Migrated from paragraph bundle Share Bar'
+behavior_plugins: {  }

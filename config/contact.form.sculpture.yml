@@ -1,0 +1,13 @@
+uuid: 24dfef4f-532c-4c2c-83d2-759cc3ffe649
+langcode: en
+status: true
+dependencies: {  }
+id: sculpture
+label: Sculpture
+recipients:
+  - rsalmon@brookgreen.org
+  - ljoseph@brookgreen.org
+reply: 'Thanks for your inquiry!  Someone from our sculpture department will respond to you as soon as possible.'
+weight: 0
+message: null
+redirect: null

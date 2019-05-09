@@ -1,0 +1,20 @@
+uuid: 8fe797ce-8524-4932-b295-2cc88b5a4545
+langcode: und
+status: true
+dependencies:
+  module:
+    - datetime
+    - eck
+id: plant_collection.field_pc_plant_image_date_taken
+field_name: field_pc_plant_image_date_taken
+entity_type: plant_collection
+type: datetime
+settings:
+  datetime_type: datetime
+module: datetime
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

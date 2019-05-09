@@ -5,16 +5,24 @@ dependencies: {  }
 _core:
   default_config_hash: dJ0L2DNSj5q6XVZAGsuVDpJTh5UeYkIPwKrUOOpr8YI
 id: authenticated
-label: 'Authenticated user'
+label: 'authenticated user'
 weight: 1
 is_admin: false
 permissions:
   - 'access comments'
   - 'access content'
-  - 'access shortcuts'
   - 'access site-wide contact form'
+  - 'diff view changes'
+  - 'edit mimemail user settings'
   - 'post comments'
   - 'search content'
   - 'skip comment approval'
-  - 'use text format basic_html'
-  - 'view media'
+  - 'use advanced search'
+  - 'view any become_a_member bean'
+  - 'view any callout bean'
+  - 'view any callout_and_slideshow bean'
+  - 'view any featured_three_items bean'
+  - 'view any hours bean'
+  - 'view any hours_tickets_map bean'
+  - 'view bean page'
+  - 'view files'

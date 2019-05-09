@@ -1,0 +1,24 @@
+uuid: 47f3617b-ecc1-466c-8207-75018b9205dc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.fc_row.field_fc_column
+    - paragraphs.paragraphs_type.fc_row
+  module:
+    - entity_reference_revisions
+id: paragraph.fc_row.default
+targetEntityType: paragraph
+bundle: fc_row
+mode: default
+content:
+  field_fc_column:
+    label: above
+    weight: 0
+    type: entity_reference_revisions_entity_view
+    settings:
+      view_mode: full
+      link: ''
+    third_party_settings: {  }
+    region: content
+hidden: {  }

@@ -1,0 +1,18 @@
+uuid: c24732dc-c33c-4ca6-9ce7-f4b41f3c557a
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.plant_instance
+id: node.plant_instance.title
+field_name: title
+entity_type: node
+bundle: plant_instance
+label: 'Admin Title'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

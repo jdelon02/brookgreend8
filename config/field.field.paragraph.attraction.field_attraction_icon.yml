@@ -1,0 +1,38 @@
+uuid: 7fe5d938-4819-4cba-830e-a0d93bfd349d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_attraction_icon
+    - paragraphs.paragraphs_type.attraction
+  module:
+    - image
+id: paragraph.attraction.field_attraction_icon
+field_name: field_attraction_icon
+entity_type: paragraph
+bundle: attraction
+label: 'Attraction Icon'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: ''
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: false
+  title_field: false
+  default_image:
+    alt: ''
+    title: ''
+    width: null
+    height: null
+    uuid: ''
+  alt_field_required: true
+  title_field_required: false
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: image

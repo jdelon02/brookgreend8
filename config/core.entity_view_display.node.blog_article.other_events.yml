@@ -1,0 +1,28 @@
+uuid: 87f6b36f-fa51-4480-8fbe-19b7baf730f5
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.other_events
+    - field.field.node.blog_article.body
+    - field.field.node.blog_article.comment_node_blog_article
+    - field.field.node.blog_article.field_attraction
+    - field.field.node.blog_article.field_featured_image
+    - node.type.blog_article
+  module:
+    - user
+id: node.blog_article.other_events
+targetEntityType: node
+bundle: blog_article
+mode: other_events
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  body: true
+  comment_node_blog_article: true
+  field_attraction: true
+  field_featured_image: true

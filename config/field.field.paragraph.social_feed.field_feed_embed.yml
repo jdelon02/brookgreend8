@@ -1,0 +1,21 @@
+uuid: 9885a387-86c9-4bcb-921f-0fed5331d156
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_feed_embed
+    - paragraphs.paragraphs_type.social_feed
+  module:
+    - text
+id: paragraph.social_feed.field_feed_embed
+field_name: field_feed_embed
+entity_type: paragraph
+bundle: social_feed
+label: 'Feed Embed'
+description: "<p><strong>USE THIS CODE</strong></p>\r\n<p>&lt;script&gt;<br />\r\njQuery(function($){<br />\r\n&nbsp; $.getScript(\"https://assets.juicer.io/embed.js\");<br />\r\n});<br />\r\n&lt;/script&gt;<br />\r\n&lt;link href=\"https://assets.juicer.io/embed.css\" media=\"all\" rel=\"stylesheet\" type=\"text/css\" /&gt;<br />\r\n&lt;ul class=\"juicer-feed\" data-feed-id=\"bgsummerlights\"&gt;<br />\r\n&lt;/ul&gt;</p>\r\n"
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

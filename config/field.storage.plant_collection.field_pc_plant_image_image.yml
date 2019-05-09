@@ -1,0 +1,26 @@
+uuid: 284817ab-3fdf-46be-a291-e53a7b95f736
+langcode: und
+status: true
+dependencies:
+  module:
+    - eck
+    - file
+    - image
+id: plant_collection.field_pc_plant_image_image
+field_name: field_pc_plant_image_image
+entity_type: plant_collection
+type: image
+settings:
+  default_image:
+    uuid: ''
+  uri_scheme: public
+  target_type: file
+  display_field: false
+  display_default: false
+module: image
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,9 @@
+uuid: 512341ae-493f-46ee-a7ca-0b80a5f82a62
+langcode: en
+status: true
+dependencies: {  }
+id: social_feed
+label: 'Social Feed'
+icon_uuid: null
+description: 'Migrated from paragraph bundle Social Feed'
+behavior_plugins: {  }

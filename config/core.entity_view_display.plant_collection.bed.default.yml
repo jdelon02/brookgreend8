@@ -1,0 +1,49 @@
+uuid: 4f72e17a-27a0-49aa-ba56-bcb79a343080
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.plant_collection.bed
+    - field.field.plant_collection.bed.field_pc_garden
+  module:
+    - user
+id: plant_collection.bed.default
+targetEntityType: plant_collection
+bundle: bed
+mode: default
+content:
+  created:
+    label: hidden
+    type: timestamp
+    weight: 0
+    region: content
+    settings:
+      date_format: medium
+      custom_date_format: ''
+      timezone: ''
+    third_party_settings: {  }
+  field_pc_garden:
+    label: hidden
+    weight: 3
+    type: entity_reference_label
+    settings:
+      link: true
+    third_party_settings: {  }
+    region: content
+  title:
+    label: hidden
+    type: string
+    weight: -5
+    region: content
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  uid:
+    label: hidden
+    type: author
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  changed: true

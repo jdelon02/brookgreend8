@@ -1,0 +1,21 @@
+uuid: 96014618-ed89-40e8-94fd-fac4f3fef1de
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node_plant_instance
+label: 'Content - Plant Inventory'
+type: 'canonical_entities:node'
+pattern: 'plant-collection/inventory/[node:title]'
+selection_criteria:
+  -
+    id: node_type
+    bundles:
+      plant_instance: plant_instance
+    negate: false
+    context_mapping:
+      node: node
+selection_logic: and
+weight: 0
+relationships: {  }

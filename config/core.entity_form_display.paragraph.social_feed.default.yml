@@ -1,0 +1,25 @@
+uuid: 076a903e-cd08-44cf-9ba3-1d1719553ee4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.social_feed.field_feed_embed
+    - paragraphs.paragraphs_type.social_feed
+  module:
+    - text
+id: paragraph.social_feed.default
+targetEntityType: paragraph
+bundle: social_feed
+mode: default
+content:
+  field_feed_embed:
+    weight: 1
+    type: text_textarea
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+hidden:
+  created: true
+  status: true

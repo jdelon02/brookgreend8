@@ -1,0 +1,20 @@
+uuid: 6b7a05c2-e7f2-44ea-ade8-f6ed11a4c46c
+langcode: und
+status: true
+dependencies:
+  module:
+    - datetime
+    - paragraphs
+id: paragraph.field_third_date
+field_name: field_third_date
+entity_type: paragraph
+type: datetime
+settings:
+  datetime_type: datetime
+module: datetime
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

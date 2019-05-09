@@ -1,0 +1,19 @@
+uuid: 9561dd3e-1d24-447c-bd6a-e6aefd470575
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_third_text
+    - paragraphs.paragraphs_type.featured_items
+id: paragraph.featured_items.field_third_text
+field_name: field_third_text
+entity_type: paragraph
+bundle: featured_items
+label: 'Third Text'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

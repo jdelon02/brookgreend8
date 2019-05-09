@@ -1,0 +1,30 @@
+uuid: 5c3fb971-1d22-4e48-a01d-59bd8b5696bf
+langcode: und
+status: true
+dependencies:
+  module:
+    - eck
+    - options
+id: plant_collection.field_pc_plant_acquisition_metho
+field_name: field_pc_plant_acquisition_metho
+entity_type: plant_collection
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: Donation
+      label: Donation
+    -
+      value: Purchase
+      label: Purchase
+    -
+      value: Breeding
+      label: Breeding
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

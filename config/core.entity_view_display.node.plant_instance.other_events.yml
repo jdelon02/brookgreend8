@@ -1,0 +1,40 @@
+uuid: b095b0d1-36e1-45dc-ac00-db164c9ea537
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.other_events
+    - field.field.node.plant_instance.comment_node_plant_instance
+    - field.field.node.plant_instance.field_pc_bed
+    - field.field.node.plant_instance.field_pc_featured_plant_type_ima
+    - field.field.node.plant_instance.field_pc_garden
+    - field.field.node.plant_instance.field_pc_gardener_notes
+    - field.field.node.plant_instance.field_pc_images_carousel
+    - field.field.node.plant_instance.field_pc_plant_id
+    - field.field.node.plant_instance.field_pc_plant_parent
+    - field.field.node.plant_instance.field_pc_plant_type
+    - field.field.node.plant_instance.field_pc_source
+    - node.type.plant_instance
+  module:
+    - user
+id: node.plant_instance.other_events
+targetEntityType: node
+bundle: plant_instance
+mode: other_events
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  comment_node_plant_instance: true
+  field_pc_bed: true
+  field_pc_featured_plant_type_ima: true
+  field_pc_garden: true
+  field_pc_gardener_notes: true
+  field_pc_images_carousel: true
+  field_pc_plant_id: true
+  field_pc_plant_parent: true
+  field_pc_plant_type: true
+  field_pc_source: true

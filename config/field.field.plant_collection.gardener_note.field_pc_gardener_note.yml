@@ -1,0 +1,21 @@
+uuid: c6731d06-c3c1-4538-a64c-91b39a2506cb
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.plant_collection.gardener_note
+    - field.storage.plant_collection.field_pc_gardener_note
+  module:
+    - text
+id: plant_collection.gardener_note.field_pc_gardener_note
+field_name: field_pc_gardener_note
+entity_type: plant_collection
+bundle: gardener_note
+label: Note
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

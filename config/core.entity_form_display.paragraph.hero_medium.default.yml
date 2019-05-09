@@ -1,0 +1,45 @@
+uuid: d84e86dd-afeb-4387-a12d-14e83bfefa1c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.hero_medium.field_background_image
+    - field.field.paragraph.hero_medium.field_heading
+    - field.field.paragraph.hero_medium.field_links
+    - field.field.paragraph.hero_medium.field_styling
+    - paragraphs.paragraphs_type.hero_medium
+  module:
+    - file
+id: paragraph.hero_medium.default
+targetEntityType: paragraph
+bundle: hero_medium
+mode: default
+content:
+  field_background_image:
+    weight: 5
+    type: file_generic
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+    region: content
+  field_heading:
+    weight: 0
+    type: string_textfield
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_styling:
+    weight: 9
+    type: entity_reference_autocomplete
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+hidden:
+  created: true
+  field_links: true
+  status: true

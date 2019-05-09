@@ -1,0 +1,9 @@
+uuid: c7e52f3e-5ef9-478d-b033-0a8c43dd340e
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_entity_type.plant_collection
+name: 'Gardener Note'
+type: gardener_note
+description: 'Gardener Note'

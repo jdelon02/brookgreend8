@@ -1,0 +1,24 @@
+uuid: b9068839-79f7-4fd7-a42d-1dcb2e9bb393
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_main_menu_block
+    - paragraphs.paragraphs_type.main_menu_block
+  module:
+    - text
+id: paragraph.main_menu_block.field_main_menu_block
+field_name: field_main_menu_block
+entity_type: paragraph
+bundle: main_menu_block
+label: 'Main Menu Block'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: '[block:menu_block:1]'
+    format: html
+default_value_callback: ''
+settings: {  }
+field_type: text

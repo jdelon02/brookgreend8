@@ -1,0 +1,9 @@
+uuid: 3233cb75-cdac-4d61-84b3-68358c747d83
+langcode: en
+status: true
+dependencies: {  }
+id: main_menu_block
+label: 'Menu Block'
+icon_uuid: null
+description: 'Migrated from paragraph bundle Menu Block'
+behavior_plugins: {  }

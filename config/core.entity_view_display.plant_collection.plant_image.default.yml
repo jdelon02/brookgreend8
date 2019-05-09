@@ -1,0 +1,79 @@
+uuid: f8ccfe55-ae8c-40bb-aaa2-0a002eefff7a
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.plant_collection.plant_image
+    - field.field.plant_collection.plant_image.field_pc_image_caption
+    - field.field.plant_collection.plant_image.field_pc_plant_image_date_taken
+    - field.field.plant_collection.plant_image.field_pc_plant_image_image
+    - field.field.plant_collection.plant_image.field_pc_scientific_name
+  module:
+    - datetime
+    - image
+    - user
+id: plant_collection.plant_image.default
+targetEntityType: plant_collection
+bundle: plant_image
+mode: default
+content:
+  created:
+    label: hidden
+    type: timestamp
+    weight: 0
+    region: content
+    settings:
+      date_format: medium
+      custom_date_format: ''
+      timezone: ''
+    third_party_settings: {  }
+  field_pc_image_caption:
+    label: hidden
+    weight: 2
+    type: basic_string
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_pc_plant_image_date_taken:
+    label: hidden
+    weight: 3
+    type: datetime_default
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    region: content
+  field_pc_plant_image_image:
+    label: hidden
+    weight: 1
+    type: image
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    region: content
+  field_pc_scientific_name:
+    label: above
+    weight: 6
+    type: entity_reference_label
+    settings:
+      link: true
+    third_party_settings: {  }
+    region: content
+  title:
+    label: hidden
+    type: string
+    weight: -5
+    region: content
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  uid:
+    label: hidden
+    type: author
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  changed: true

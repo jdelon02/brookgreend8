@@ -1,0 +1,100 @@
+uuid: af90d145-798d-4e33-9559-06592c876a73
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_display.comment.comment_node_plant_instance.default
+    - field.field.node.plant_instance.comment_node_plant_instance
+    - field.field.node.plant_instance.field_pc_bed
+    - field.field.node.plant_instance.field_pc_featured_plant_type_ima
+    - field.field.node.plant_instance.field_pc_garden
+    - field.field.node.plant_instance.field_pc_gardener_notes
+    - field.field.node.plant_instance.field_pc_images_carousel
+    - field.field.node.plant_instance.field_pc_plant_id
+    - field.field.node.plant_instance.field_pc_plant_parent
+    - field.field.node.plant_instance.field_pc_plant_type
+    - field.field.node.plant_instance.field_pc_source
+    - node.type.plant_instance
+  module:
+    - comment
+    - image
+    - user
+id: node.plant_instance.default
+targetEntityType: node
+bundle: plant_instance
+mode: default
+content:
+  comment_node_plant_instance:
+    label: hidden
+    type: comment_default
+    weight: 20
+    settings:
+      view_mode: default
+      pager_id: 0
+    third_party_settings: {  }
+    region: content
+  field_pc_bed:
+    label: inline
+    weight: 3
+    type: entity_reference_label
+    settings:
+      link: true
+    third_party_settings: {  }
+    region: content
+  field_pc_featured_plant_type_ima:
+    label: hidden
+    weight: 7
+    type: image
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    region: content
+  field_pc_garden:
+    label: inline
+    weight: 4
+    type: entity_reference_label
+    settings:
+      link: true
+    third_party_settings: {  }
+    region: content
+  field_pc_plant_id:
+    label: inline
+    weight: 2
+    type: string
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    region: content
+  field_pc_plant_parent:
+    label: inline
+    weight: 6
+    type: entity_reference_label
+    settings:
+      link: true
+    third_party_settings: {  }
+    region: content
+  field_pc_plant_type:
+    label: inline
+    weight: 1
+    type: entity_reference_label
+    settings:
+      link: true
+    third_party_settings: {  }
+    region: content
+  field_pc_source:
+    label: inline
+    weight: 5
+    type: entity_reference_label
+    settings:
+      link: true
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_pc_gardener_notes: true
+  field_pc_images_carousel: true
