@@ -1,4 +1,7 @@
 framework:
+  less:
+    base:
+      less/styles.less: { output: css/style.css }
   css:
     theme:
       css/style.css: {}
