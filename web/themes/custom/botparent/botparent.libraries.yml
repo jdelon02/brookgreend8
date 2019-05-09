@@ -6,15 +6,15 @@ framework:
     theme:
       css/style.css: {}
   js:
-    vendor/twbs/bootstrap/js/dist/affix.js: {}
-    vendor/twbs/bootstrap/js/dist/alert.js: {}
-    vendor/twbs/bootstrap/js/dist/button.js: {}
-    vendor/twbs/bootstrap/js/dist/carousel.js: {}
-    vendor/twbs/bootstrap/js/dist/collapse.js: {}
-    vendor/twbs/bootstrap/js/dist/dropdown.js: {}
-    vendor/twbs/bootstrap/js/dist/modal.js: {}
-    vendor/twbs/bootstrap/js/dist/tooltip.js: {}
-    vendor/twbs/bootstrap/js/dist/popover.js: {}
-    vendor/twbs/bootstrap/js/dist/scrollspy.js: {}
-    vendor/twbs/bootstrap/js/dist/tab.js: {}
-    vendor/twbs/bootstrap/js/dist/transition.js: {}
+    bootstrap/js/affix.js: {}
+    bootstrap/js/alert.js: {}
+    bootstrap/js/button.js: {}
+    bootstrap/js/carousel.js: {}
+    bootstrap/js/collapse.js: {}
+    bootstrap/js/dropdown.js: {}
+    bootstrap/js/modal.js: {}
+    bootstrap/js/tooltip.js: {}
+    bootstrap/js/popover.js: {}
+    bootstrap/js/scrollspy.js: {}
+    bootstrap/js/tab.js: {}
+    bootstrap/js/transition.js: {}
