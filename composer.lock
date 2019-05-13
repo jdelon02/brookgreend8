@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "dc0edf7f4fa0bfd876a1600fdc5de607",
+    "content-hash": "9a719317df0ea50b2c53127246f8bcc7",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -3214,6 +3214,59 @@
             }
         },
         {
+            "name": "drupal/migrate_file_to_media",
+            "version": "1.0.0-beta5",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/migrate_file_to_media.git",
+                "reference": "8.x-1.0-beta5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/migrate_file_to_media-8.x-1.0-beta5.zip",
+                "reference": "8.x-1.0-beta5",
+                "shasum": "0139059ddbd6f3e5980febad078c9d8738ee3d83"
+            },
+            "require": {
+                "drupal/core": "*",
+                "drupal/migrate_plus": "*",
+                "drupal/migrate_tools": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.0-beta5",
+                    "datestamp": "1549991884",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Project has not opted into security advisory coverage!"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "ayalon",
+                    "homepage": "https://www.drupal.org/user/419226"
+                },
+                {
+                    "name": "grahl",
+                    "homepage": "https://www.drupal.org/user/146040"
+                }
+            ],
+            "description": "Migrate file fields to media fields.",
+            "homepage": "https://www.drupal.org/project/migrate_file_to_media",
+            "support": {
+                "source": "https://git.drupalcode.org/project/migrate_file_to_media"
+            }
+        },
+        {
             "name": "drupal/migrate_plus",
             "version": "dev-4.x",
             "source": {
@@ -3335,73 +3388,6 @@
                 "irc": "irc://irc.freenode.org/drupal-migrate"
             },
             "time": "2019-04-10T13:58:55+00:00"
-        },
-        {
-            "name": "drupal/migrate_upgrade",
-            "version": "dev-3.x",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupalcode.org/project/migrate_upgrade.git",
-                "reference": "95143dff1337d1d4a5526690469d5b5f1dd64644"
-            },
-            "require": {
-                "drupal/core": "*",
-                "drupal/migrate_plus": "^4"
-            },
-            "require-dev": {
-                "drupal/migrate_plus": "4.x-dev",
-                "drush/drush": "^9"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "branch-alias": {
-                    "dev-3.x": "3.x-dev"
-                },
-                "drupal": {
-                    "version": "8.x-3.0+0-dev",
-                    "datestamp": "1547043784",
-                    "security-coverage": {
-                        "status": "not-covered",
-                        "message": "Dev releases are not covered by Drupal security advisories."
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "abhishek-anand",
-                    "homepage": "https://www.drupal.org/user/468982"
-                },
-                {
-                    "name": "heddn",
-                    "homepage": "https://www.drupal.org/user/1463982"
-                },
-                {
-                    "name": "ksenzee",
-                    "homepage": "https://www.drupal.org/user/139855"
-                },
-                {
-                    "name": "mikeryan",
-                    "homepage": "https://www.drupal.org/user/4420"
-                },
-                {
-                    "name": "ultimike",
-                    "homepage": "https://www.drupal.org/user/51132"
-                },
-                {
-                    "name": "xjm",
-                    "homepage": "https://www.drupal.org/user/65776"
-                }
-            ],
-            "description": "Drush support for direct upgrades from older Drupal versions.",
-            "homepage": "https://www.drupal.org/project/migrate_upgrade",
-            "support": {
-                "source": "https://git.drupalcode.org/project/migrate_upgrade"
-            },
-            "time": "2019-04-05T17:42:09+00:00"
         },
         {
             "name": "drupal/module_filter",
@@ -4075,7 +4061,7 @@
                 },
                 "drupal": {
                     "version": "8.x-5.2",
-                    "datestamp": "1553801966",
+                    "datestamp": "1557418583",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -8381,6 +8367,72 @@
             "time": "2017-12-06T20:35:40+00:00"
         },
         {
+            "name": "drupal/migrate_upgrade",
+            "version": "dev-3.x",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/migrate_upgrade.git",
+                "reference": "95143dff1337d1d4a5526690469d5b5f1dd64644"
+            },
+            "require": {
+                "drupal/core": "*",
+                "drupal/migrate_plus": "^4"
+            },
+            "require-dev": {
+                "drupal/migrate_plus": "4.x-dev",
+                "drush/drush": "^9"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-3.x": "3.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-3.0+0-dev",
+                    "datestamp": "1547043784",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Dev releases are not covered by Drupal security advisories."
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "abhishek-anand",
+                    "homepage": "https://www.drupal.org/user/468982"
+                },
+                {
+                    "name": "heddn",
+                    "homepage": "https://www.drupal.org/user/1463982"
+                },
+                {
+                    "name": "ksenzee",
+                    "homepage": "https://www.drupal.org/user/139855"
+                },
+                {
+                    "name": "mikeryan",
+                    "homepage": "https://www.drupal.org/user/4420"
+                },
+                {
+                    "name": "ultimike",
+                    "homepage": "https://www.drupal.org/user/51132"
+                },
+                {
+                    "name": "xjm",
+                    "homepage": "https://www.drupal.org/user/65776"
+                }
+            ],
+            "description": "Drush support for direct upgrades from older Drupal versions.",
+            "homepage": "https://www.drupal.org/project/migrate_upgrade",
+            "support": {
+                "source": "https://git.drupalcode.org/project/migrate_upgrade"
+            }
+        },
+        {
             "name": "fabpot/goutte",
             "version": "v3.2.3",
             "source": {
@@ -9732,11 +9784,11 @@
     "minimum-stability": "alpha",
     "stability-flags": {
         "drupal/eck": 20,
+        "drupal/simple_block": 10,
+        "npinos/d7migrate": 20,
         "drupal/migrate_plus": 20,
         "drupal/migrate_tools": 20,
-        "drupal/migrate_upgrade": 20,
-        "drupal/simple_block": 10,
-        "npinos/d7migrate": 20
+        "drupal/migrate_upgrade": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,
