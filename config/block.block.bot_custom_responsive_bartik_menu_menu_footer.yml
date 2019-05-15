@@ -10,14 +10,14 @@ dependencies:
     - bot_custom
 id: bot_custom_responsive_bartik_menu_menu_footer
 theme: bot_custom
-region: content
-weight: -20
+region: footer
+weight: -7
 provider: null
 plugin: 'system_menu_block:menu-footer'
 settings:
   id: broken
-  label: '<none>'
-  provider: core
+  label: Footer
+  provider: system
   label_display: visible
   level: 1
   depth: 0

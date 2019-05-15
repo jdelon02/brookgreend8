@@ -9,16 +9,8 @@ schemas:
 favicon:
   mimetype: image/vnd.microsoft.icon
   path: 'public://favicon.ico'
-  url: 'http://dev-brookgreend8.pantheonsite.io/sites/default/files/favicon.ico'
+  url: 'http://dev-brookgreend8.pantheonsite.io/themes/custom/bot_custom/favicon.ico'
   use_default: true
-features:
-  comment_user_picture: true
-  comment_user_verification: true
-  favicon: true
-  node_user_picture: true
-  logo: true
-  name: true
-  slogan: true
 table_responsive: '-1'
 region_wells:
   navigation: ''
@@ -30,13 +22,21 @@ region_wells:
   content: ''
   content_bottom: ''
   sidebar_first: ''
-  sidebar_second: well
+  sidebar_second: ''
   footer: ''
 cdn_provider: jsdelivr
-cdn_theme: cosmo
+cdn_theme: bootstrap_theme
 cdn_cache_ttl_versions: '604800'
 cdn_cache_ttl_themes: '604800'
 cdn_cache_ttl_assets: '0'
 cdn_cache_ttl_library: '0'
 reset_http_request_cache: ''
 table: ''
+features:
+  comment_user_picture: true
+  comment_user_verification: true
+  favicon: true
+  node_user_picture: true
+  logo: true
+  name: true
+  slogan: true

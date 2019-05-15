@@ -1,6 +1,6 @@
 uuid: 7eae6c6e-aab7-45c7-b25e-67de080dd5b7
 langcode: en
-status: true
+status: false
 dependencies:
   module:
     - system
@@ -11,7 +11,7 @@ _core:
 id: bot_custom_breadcrumbs
 theme: bot_custom
 region: navigation
-weight: 0
+weight: -4
 provider: null
 plugin: system_breadcrumb_block
 settings:

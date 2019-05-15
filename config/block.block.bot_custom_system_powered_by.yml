@@ -1,6 +1,6 @@
 uuid: 74ee5886-ed73-4790-baa2-af00882c2658
 langcode: en
-status: true
+status: false
 dependencies:
   module:
     - system
@@ -11,7 +11,7 @@ _core:
 id: bot_custom_system_powered_by
 theme: bot_custom
 region: navigation
-weight: 10
+weight: -2
 provider: null
 plugin: system_powered_by_block
 settings:

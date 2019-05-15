@@ -175,6 +175,7 @@ permissions:
   - 'use text format filtered_html'
   - 'use text format full_html'
   - 'use text format html'
+  - 'use text format php_code'
   - 'view any become_a_member bean'
   - 'view any callout bean'
   - 'view any callout_and_slideshow bean'

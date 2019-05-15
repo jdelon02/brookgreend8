@@ -26,6 +26,7 @@ module:
   eck: 0
   editor: 0
   entity_reference_revisions: 0
+  entity_usage: 0
   environment_indicator: 0
   environment_indicator_ui: 0
   field: 0
@@ -60,6 +61,7 @@ module:
   node: 0
   options: 0
   page_cache: 0
+  paragraphs_library: 0
   path: 0
   php: 0
   quickedit: 0
@@ -73,6 +75,7 @@ module:
   system: 0
   taxonomy: 0
   taxonomy_manager: 0
+  telephone: 0
   text: 0
   token: 0
   toolbar: 0

@@ -1,6 +1,6 @@
 uuid: 9c625d48-aab0-4e7c-b62e-5691afc4a1df
 langcode: en
-status: true
+status: false
 dependencies:
   theme:
     - bot_custom
@@ -9,7 +9,7 @@ _core:
 id: bot_custom_page_title
 theme: bot_custom
 region: content
-weight: -50
+weight: -7
 provider: null
 plugin: page_title_block
 settings:

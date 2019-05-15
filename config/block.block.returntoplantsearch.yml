@@ -1,0 +1,25 @@
+uuid: 1b777165-7511-43d1-bf95-15dc098281fd
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:73642f0a-90a4-423b-aafe-e393694d9204'
+  module:
+    - block_content
+  theme:
+    - bot_custom
+id: returntoplantsearch
+theme: bot_custom
+region: content_top
+weight: -11
+provider: null
+plugin: 'block_content:73642f0a-90a4-423b-aafe-e393694d9204'
+settings:
+  id: 'block_content:73642f0a-90a4-423b-aafe-e393694d9204'
+  label: 'Return to plant search'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

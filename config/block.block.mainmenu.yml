@@ -1,0 +1,27 @@
+uuid: 30baf375-048f-4c41-81f5-456852a9a1e0
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - menu_block
+  theme:
+    - bot_custom
+id: mainmenu
+theme: bot_custom
+region: navigation
+weight: -8
+provider: null
+plugin: 'menu_block:main'
+settings:
+  id: 'menu_block:main'
+  label: 'Main menu'
+  provider: menu_block
+  label_display: visible
+  level: 1
+  depth: 0
+  expand: 0
+  parent: 'main:'
+  suggestion: main
+visibility: {  }

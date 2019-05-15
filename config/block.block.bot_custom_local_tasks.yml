@@ -8,8 +8,8 @@ _core:
   default_config_hash: X9I1OB0W3WlWtrK-CNcg6hNWwa8wficanpH8pYnDZDE
 id: bot_custom_local_tasks
 theme: bot_custom
-region: content
-weight: -40
+region: content_top
+weight: -10
 provider: null
 plugin: local_tasks_block
 settings:

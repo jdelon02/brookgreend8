@@ -1,0 +1,25 @@
+uuid: e925573c-4025-4e46-a72b-0dc81726a3b9
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:fbdd52e9-e0f3-47f0-a989-abf125556ecb'
+  module:
+    - block_content
+  theme:
+    - bot_custom
+id: contactformtext
+theme: bot_custom
+region: content
+weight: -11
+provider: null
+plugin: 'block_content:fbdd52e9-e0f3-47f0-a989-abf125556ecb'
+settings:
+  id: 'block_content:fbdd52e9-e0f3-47f0-a989-abf125556ecb'
+  label: 'Contact Form Text'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

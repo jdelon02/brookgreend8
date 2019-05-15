@@ -11,7 +11,7 @@ _core:
 id: bot_custom_responsive_bartik_system_main
 theme: bot_custom
 region: content
-weight: -28
+weight: -10
 provider: null
 plugin: system_main_block
 settings:

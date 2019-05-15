@@ -1,0 +1,25 @@
+uuid: dd521ca0-a8fb-4e80-b932-2a6f54dc5970
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:5d865e7c-31bd-4f1f-b7f7-b3031ca178a1'
+  module:
+    - block_content
+  theme:
+    - bot_custom
+id: headermenuright
+theme: bot_custom
+region: navigation
+weight: -5
+provider: null
+plugin: 'block_content:5d865e7c-31bd-4f1f-b7f7-b3031ca178a1'
+settings:
+  id: 'block_content:5d865e7c-31bd-4f1f-b7f7-b3031ca178a1'
+  label: 'Header Menu Right'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

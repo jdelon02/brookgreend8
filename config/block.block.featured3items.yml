@@ -1,0 +1,25 @@
+uuid: 4212b571-11e1-4aff-bd11-9c97b5fec7c1
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:1a821d7a-4b2f-4736-a997-48320b8c3776'
+  module:
+    - block_content
+  theme:
+    - bot_custom
+id: featured3items
+theme: bot_custom
+region: content_bottom
+weight: -12
+provider: null
+plugin: 'block_content:1a821d7a-4b2f-4736-a997-48320b8c3776'
+settings:
+  id: 'block_content:1a821d7a-4b2f-4736-a997-48320b8c3776'
+  label: 'Featured 3 Items'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }
