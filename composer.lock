@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e1e57f1d86004d326813cf6c417a5898",
+    "content-hash": "cf47ab4993f5559694c46ffd9f555b3f",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -4964,17 +4964,6 @@
                 "php"
             ],
             "time": "2019-02-16T20:54:15+00:00"
-        },
-        {
-            "name": "npinos/d7migrate",
-            "version": "master",
-            "dist": {
-                "type": "zip",
-                "url": "https://github.com/npinos/d7migrate/archive/master.zip",
-                "reference": "master",
-                "shasum": null
-            },
-            "type": "drupal-module"
         },
         {
             "name": "pantheon-systems/quicksilver-pushback",
@@ -9982,8 +9971,7 @@
         "drupal/migrate_plus": 20,
         "drupal/migrate_tools": 20,
         "drupal/migrate_upgrade": 20,
-        "drupal/simple_block": 10,
-        "npinos/d7migrate": 20
+        "drupal/simple_block": 10
     },
     "prefer-stable": true,
     "prefer-lowest": false,
