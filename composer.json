@@ -35,6 +35,7 @@
         "drupal/bootstrap": "^3.19",
         "drupal/bootstrap_layouts": "^5.1",
         "drupal/captcha": "^1.0",
+        "drupal/config_delete": "^1.7",
         "drupal/config_direct_save": "^1.0",
         "drupal/config_installer": "^1.0",
         "drupal/console": "^1",
