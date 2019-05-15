@@ -18,7 +18,6 @@ module:
   contextual: 0
   ctools: 0
   custom_formatters: 0
-  d7migrate: 0
   datetime: 0
   datetime_range: 0
   dblog: 0
