@@ -1,8 +1,16 @@
+logo:
+  path: ''
+  url: 'http://dev-brookgreend8.pantheonsite.io/themes/custom/bot_custom/logo.svg'
+  use_default: true
+schemas:
+  bootstrap: 8000
+  botparent: 8000
+  bot_custom: 8000
 favicon:
   mimetype: image/vnd.microsoft.icon
   path: 'public://favicon.ico'
   url: 'http://dev-brookgreend8.pantheonsite.io/sites/default/files/favicon.ico'
-  use_default: false
+  use_default: true
 features:
   comment_user_picture: true
   comment_user_verification: true
@@ -11,11 +19,24 @@ features:
   logo: true
   name: true
   slogan: true
-logo:
-  path: ''
-  url: 'http://dev-brookgreend8.pantheonsite.io/themes/custom/botparent/logo.svg'
-  use_default: true
-schemas:
-  bootstrap: 8000
-  botparent: 8000
-  bot_custom: 8000
+table_responsive: '-1'
+region_wells:
+  navigation: ''
+  navigation_collapsible: ''
+  header: ''
+  highlighted: ''
+  help: ''
+  content_top: ''
+  content: ''
+  content_bottom: ''
+  sidebar_first: ''
+  sidebar_second: well
+  footer: ''
+cdn_provider: jsdelivr
+cdn_theme: cosmo
+cdn_cache_ttl_versions: '604800'
+cdn_cache_ttl_themes: '604800'
+cdn_cache_ttl_assets: '0'
+cdn_cache_ttl_library: '0'
+reset_http_request_cache: ''
+table: ''
