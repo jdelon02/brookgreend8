@@ -1,0 +1,22 @@
+uuid: faad6bd2-d6f8-4eb3-981c-db59380b11c4
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - botparent
+_core:
+  default_config_hash: jQQUUWN2Uxr5qZtc9zcJKBCxpKY8orN1u2HPqYYRQDI
+id: botparent_system_powered_by
+theme: botparent
+region: navigation
+weight: 10
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: ''
+  provider: system
+  label_display: '0'
+visibility: {  }

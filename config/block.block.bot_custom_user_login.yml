@@ -1,0 +1,20 @@
+uuid: a026c342-c09f-40ad-b686-0b24ec7715b8
+langcode: en
+status: true
+dependencies:
+  module:
+    - user
+  theme:
+    - bot_custom
+id: bot_custom_user_login
+theme: bot_custom
+region: sidebar_first
+weight: 0
+provider: null
+plugin: user_login_block
+settings:
+  id: user_login_block
+  label: ''
+  provider: user
+  label_display: '0'
+visibility: {  }

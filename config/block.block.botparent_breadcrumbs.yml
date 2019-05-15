@@ -1,0 +1,22 @@
+uuid: 475383d3-1aa7-45a8-ac75-76e05303a023
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - botparent
+_core:
+  default_config_hash: oXUb3JZR2WW5VOdw4HrhRicCsq51mCgLfRyvheG68ck
+id: botparent_breadcrumbs
+theme: botparent
+region: navigation
+weight: 0
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  provider: system
+  label_display: '0'
+visibility: {  }

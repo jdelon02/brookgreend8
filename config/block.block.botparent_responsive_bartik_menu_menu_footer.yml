@@ -1,0 +1,25 @@
+uuid: 01c4c54e-c967-4f60-8feb-a787f37084b9
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.menu-footer
+  module:
+    - system
+  theme:
+    - botparent
+id: botparent_responsive_bartik_menu_menu_footer
+theme: botparent
+region: content
+weight: -20
+provider: null
+plugin: 'system_menu_block:menu-footer'
+settings:
+  id: broken
+  label: '<none>'
+  provider: core
+  label_display: visible
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

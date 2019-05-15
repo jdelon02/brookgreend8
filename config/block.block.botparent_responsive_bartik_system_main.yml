@@ -1,0 +1,22 @@
+uuid: 5948b8e3-23a0-4b7b-a6a8-27b53c302598
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - botparent
+_core:
+  default_config_hash: 9EoWV2Lot6FVSr50t4hoKgiz1LIXYWNG-IIPYsWxBqo
+id: botparent_responsive_bartik_system_main
+theme: botparent
+region: content
+weight: -28
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: ''
+  provider: system
+  label_display: '0'
+visibility: {  }

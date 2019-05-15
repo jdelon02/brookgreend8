@@ -1,0 +1,21 @@
+favicon:
+  mimetype: image/vnd.microsoft.icon
+  path: 'public://favicon.ico'
+  url: 'http://dev-brookgreend8.pantheonsite.io/sites/default/files/favicon.ico'
+  use_default: false
+features:
+  comment_user_picture: true
+  comment_user_verification: true
+  favicon: true
+  node_user_picture: true
+  logo: true
+  name: true
+  slogan: true
+logo:
+  path: ''
+  url: 'http://dev-brookgreend8.pantheonsite.io/themes/custom/botparent/logo.svg'
+  use_default: true
+schemas:
+  bootstrap: 8000
+  botparent: 8000
+  bot_custom: 8000
