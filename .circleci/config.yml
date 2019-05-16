@@ -179,9 +179,9 @@ jobs:
             - run: echo "export CI_NODE_INDEX='${CIRCLE_NODE_INDEX}'" >> $BASH_ENV
             - run: source $BASH_ENV
 
-            # - run:
-            #    name: visual regression test
-            #    command: ./.ci/visual-regression-test.sh
+            - run:
+               name: visual regression test
+               command: ./.ci/visual-regression-test.sh
 
             - store_artifacts:
                 path: /tmp/artifacts
