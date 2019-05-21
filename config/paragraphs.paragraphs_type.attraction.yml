@@ -1,7 +1,12 @@
 uuid: b880dfcb-7051-474b-966f-65cbc53d10cf
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  module:
+    - paragraphs_library
+third_party_settings:
+  paragraphs_library:
+    allow_library_conversion: true
 id: attraction
 label: Attraction
 icon_uuid: null

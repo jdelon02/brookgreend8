@@ -12,8 +12,8 @@ _core:
   default_config_hash: rx9IrdDv7Ldc4kpalZAxdhIPZfYIeOMh1N-qKoQZwHo
 id: bot_custom_main_menu
 theme: bot_custom
-region: navigation
-weight: -7
+region: navigation_collapsible
+weight: -12
 provider: null
 plugin: 'system_menu_block:main'
 settings:

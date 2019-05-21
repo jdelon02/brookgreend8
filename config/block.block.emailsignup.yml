@@ -1,0 +1,25 @@
+uuid: 7c64f5c8-9e2e-42d5-bc75-898209e3bf90
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:1923386c-dd41-4f4e-ba2d-d0313831f1cd'
+  module:
+    - block_content
+  theme:
+    - bot_custom
+id: emailsignup
+theme: bot_custom
+region: footer
+weight: 0
+provider: null
+plugin: 'block_content:1923386c-dd41-4f4e-ba2d-d0313831f1cd'
+settings:
+  id: 'block_content:1923386c-dd41-4f4e-ba2d-d0313831f1cd'
+  label: 'Email Sign up'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

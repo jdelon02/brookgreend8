@@ -25,7 +25,7 @@ region_wells:
   sidebar_second: ''
   footer: ''
 cdn_provider: jsdelivr
-cdn_theme: bootstrap_theme
+cdn_theme: flatly
 cdn_cache_ttl_versions: '604800'
 cdn_cache_ttl_themes: '604800'
 cdn_cache_ttl_assets: '0'

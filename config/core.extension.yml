@@ -70,6 +70,7 @@ module:
   recaptcha: 0
   responsive_bg_image_formatter: 0
   responsive_image: 0
+  responsive_menu: 0
   search: 0
   shortcut: 0
   simple_block: 0
