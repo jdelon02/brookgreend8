@@ -27,8 +27,8 @@ ckeditor_stylesheets:
   - css/components/text-formatted.css
 regions:
   header: Header
-  primary_menu: 'Banner'
-  secondary_menu: 'Navigation'
+  banner: 'Banner'
+  navigation: 'Navigation'
   help: 'Help'
   page_top: 'Page top'
   page_bottom: 'Page bottom'
