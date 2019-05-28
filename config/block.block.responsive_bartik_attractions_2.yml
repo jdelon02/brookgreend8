@@ -1,0 +1,27 @@
+uuid: 1cba36cc-2d3a-47e2-84f2-2a58342b86ca
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.menu-sections
+  module:
+    - menu_block
+  theme:
+    - responsive_bartik
+id: responsive_bartik_attractions_2
+theme: responsive_bartik
+region: header
+weight: -7
+provider: null
+plugin: 'menu_block:menu-sections'
+settings:
+  id: 'menu_block:menu-sections'
+  label: Attractions
+  provider: menu_block
+  label_display: '0'
+  level: 1
+  depth: 0
+  expand: 0
+  parent: 'menu-sections:'
+  suggestion: menu_sections
+visibility: {  }

@@ -1,0 +1,25 @@
+uuid: e7f02186-5eda-4411-b881-3f1aedaa5c57
+langcode: en
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - responsive_bartik
+_core:
+  default_config_hash: NDwadleLD3YVSbDUaakxyYZyINYtkFtOVGShfq4kWy8
+id: responsive_bartik_branding
+theme: responsive_bartik
+region: header
+weight: -6
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  provider: system
+  label_display: '0'
+  use_site_logo: true
+  use_site_name: true
+  use_site_slogan: true
+visibility: {  }

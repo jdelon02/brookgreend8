@@ -1,0 +1,25 @@
+uuid: 53e79b5c-5a83-4285-a0cf-98c642fe203f
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:564d4edb-b795-42e4-a56a-20a0d77dde9f'
+  module:
+    - block_content
+  theme:
+    - responsive_bartik
+id: responsive_bartik_logo_2
+theme: responsive_bartik
+region: header
+weight: -8
+provider: null
+plugin: 'block_content:564d4edb-b795-42e4-a56a-20a0d77dde9f'
+settings:
+  id: 'block_content:564d4edb-b795-42e4-a56a-20a0d77dde9f'
+  label: Logo
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

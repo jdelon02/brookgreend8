@@ -1,0 +1,20 @@
+uuid: 50410605-c0ad-41c6-89f3-0892a96d897d
+langcode: en
+status: true
+dependencies:
+  module:
+    - user
+  theme:
+    - responsive_bartik
+id: responsive_bartik_user_login
+theme: responsive_bartik
+region: sidebar_first
+weight: 0
+provider: null
+plugin: user_login_block
+settings:
+  id: user_login_block
+  label: ''
+  provider: user
+  label_display: '0'
+visibility: {  }
