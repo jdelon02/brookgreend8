@@ -3,7 +3,7 @@
  * Visual styles for Responsive Bartik's featured top.
  */
 
-.featured-top {
+.featured {
   margin: 0;
   padding: 20px 10px 45px;
   text-align: center;
@@ -15,11 +15,11 @@
   font-weight: normal;
   line-height: 1.4;
 }
-.featured-top h2 {
+.featured h2 {
   font-size: 1.2em;
   line-height: 1;
 }
-.featured-top p {
+.featured p {
   margin: 0;
   padding: 0;
 }

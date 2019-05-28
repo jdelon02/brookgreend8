@@ -30,8 +30,8 @@ function responsive_bartik_preprocess_html(&$variables) {
     $variables['attributes']['class'][] = 'layout-no-sidebars';
   }
 
-  if (!empty($variables['page']['featured_top'])) {
-    $variables['attributes']['class'][] = 'has-featured-top';
+  if (!empty($variables['page']['featured'])) {
+    $variables['attributes']['class'][] = 'has-featured';
   }
 
 }

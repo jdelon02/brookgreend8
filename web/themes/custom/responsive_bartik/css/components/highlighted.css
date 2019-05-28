@@ -3,7 +3,7 @@
  * Styles for Responsive Bartik's highlighted component.
  */
 
-.has-featured-top .region-highlighted {
+.has-featured .region-highlighted {
   background: #f0f0f0;
   background: rgba(30, 50, 10, 0.08);
 }

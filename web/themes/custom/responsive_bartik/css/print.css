@@ -27,15 +27,15 @@ body {
 .two-sidebars .main-content {
   width: 100%;
 }
-.featured-bottom {
+.triptych {
   width: 960px;
   margin: 0;
   padding: 0;
   border: none;
 }
-.featured-bottom-first,
-.featured-bottom-second,
-.featured-bottom-third {
+.triptych-first,
+.triptych-middle,
+.triptych-last {
   width: 250px;
 }
 

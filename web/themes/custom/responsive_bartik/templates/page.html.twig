@@ -32,18 +32,18 @@
  * - page.highlighted: Items for the highlighted region.
  * - page.primary_menu: Items for the primary menu region.
  * - page.secondary_menu: Items for the secondary menu region.
- * - page.featured_top: Items for the featured top region.
+ * - page.featured: Items for the featured top region.
  * - page.content: The main content of the current page.
  * - page.sidebar_first: Items for the first sidebar.
  * - page.sidebar_second: Items for the second sidebar.
- * - page.featured_bottom_first: Items for the first featured bottom region.
- * - page.featured_bottom_second: Items for the second featured bottom region.
- * - page.featured_bottom_third: Items for the third featured bottom region.
- * - page.footer_first: Items for the first footer column.
- * - page.footer_second: Items for the second footer column.
- * - page.footer_third: Items for the third footer column.
- * - page.footer_fourth: Items for the fourth footer column.
- * - page.footer_fifth: Items for the fifth footer column.
+ * - page.triptych_first: Items for the first featured bottom region.
+ * - page.triptych_middle: Items for the second featured bottom region.
+ * - page.triptych_last: Items for the third featured bottom region.
+ * - page.footer_firstcolumn: Items for the first footer column.
+ * - page.footer_secondcolumn: Items for the second footer column.
+ * - page.footer_thirdcolumn: Items for the third footer column.
+ * - page.footer_fourthcolumn: Items for the fourth footer column.
+ * - page.footer: Items for the fifth footer column.
  * - page.breadcrumb: Items for the breadcrumb region.
  *
  * @see template_preprocess_page()
@@ -66,10 +66,10 @@
         </aside>
       </div>
     {% endif %}
-    {% if page.featured_top %}
-      <div class="featured-top">
-        <aside class="featured-top__inner section layout-container clearfix" role="complementary">
-          {{ page.featured_top }}
+    {% if page.featured %}
+      <div class="featured">
+        <aside class="featured__inner section layout-container clearfix" role="complementary">
+          {{ page.featured }}
         </aside>
       </div>
     {% endif %}
@@ -111,28 +111,28 @@
         {% endif %}
       </div>
     </div>
-    {% if page.featured_bottom_first or page.featured_bottom_second or page.featured_bottom_third %}
-      <div class="featured-bottom">
+    {% if page.triptych_first or page.triptych_middle or page.triptych_last %}
+      <div class="triptych">
         <aside class="layout-container clearfix" role="complementary">
-          {{ page.featured_bottom_first }}
-          {{ page.featured_bottom_second }}
-          {{ page.featured_bottom_third }}
+          {{ page.triptych_first }}
+          {{ page.triptych_middle }}
+          {{ page.triptych_last }}
         </aside>
       </div>
     {% endif %}
     <footer class="site-footer">
       <div class="layout-container">
-        {% if page.footer_first or page.footer_second or page.footer_third or page.footer_fourth %}
+        {% if page.footer_firstcolumn or page.footer_secondcolumn or page.footer_thirdcolumn or page.footer_fourthcolumn %}
           <div class="site-footer__top clearfix">
-            {{ page.footer_first }}
-            {{ page.footer_second }}
-            {{ page.footer_third }}
-            {{ page.footer_fourth }}
+            {{ page.footer_firstcolumn }}
+            {{ page.footer_secondcolumn }}
+            {{ page.footer_thirdcolumn }}
+            {{ page.footer_fourthcolumn }}
           </div>
         {% endif %}
-        {% if page.footer_fifth %}
+        {% if page.footer %}
           <div class="site-footer__bottom">
-            {{ page.footer_fifth }}
+            {{ page.footer }}
           </div>
         {% endif %}
       </div>
