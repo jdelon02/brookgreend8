@@ -19,6 +19,8 @@ module:
   contact: 0
   contextual: 0
   ctools: 0
+  ctools_block: 0
+  ctools_views: 0
   custom_formatters: 0
   datetime: 0
   datetime_range: 0
@@ -27,6 +29,8 @@ module:
   dynamic_page_cache: 0
   eck: 0
   editor: 0
+  entity_browser: 0
+  entity_browser_entity_form: 0
   entity_reference_revisions: 0
   entity_usage: 0
   environment_indicator: 0
@@ -45,11 +49,13 @@ module:
   history: 0
   honeypot: 0
   image: 0
+  inline_entity_form: 0
   insert_view: 0
   layout_discovery: 0
   libraries: 0
   link: 0
   media: 0
+  media_entity_browser_media_library: 0
   media_library: 0
   menu_block: 0
   menu_ui: 0
@@ -77,6 +83,7 @@ module:
   search: 0
   shortcut: 0
   simple_block: 0
+  superfish: 0
   system: 0
   taxonomy: 0
   taxonomy_manager: 0

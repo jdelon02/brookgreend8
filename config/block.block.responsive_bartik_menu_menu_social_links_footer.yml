@@ -1,0 +1,25 @@
+uuid: e0e5893a-7ad3-44f7-9745-cfda2a9db2b8
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.menu-social-links-footer
+  module:
+    - system
+  theme:
+    - responsive_bartik
+id: responsive_bartik_menu_menu_social_links_footer
+theme: responsive_bartik
+region: footer
+weight: -22
+provider: null
+plugin: 'system_menu_block:menu-social-links-footer'
+settings:
+  id: 'system_menu_block:menu-social-links-footer'
+  label: '<none>'
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

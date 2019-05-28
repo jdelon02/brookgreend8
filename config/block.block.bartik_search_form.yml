@@ -1,0 +1,20 @@
+uuid: b5943d1c-a417-4e82-b191-ae1f5d4970d3
+langcode: en
+status: false
+dependencies:
+  module:
+    - search
+  theme:
+    - bartik
+id: bartik_search_form
+theme: bartik
+region: ''
+weight: -1
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: '<none>'
+  provider: search
+  label_display: visible
+visibility: {  }

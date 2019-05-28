@@ -5,9 +5,13 @@ dependencies:
   config:
     - system.menu.menu-sections
   module:
+    - block_class
     - menu_block
   theme:
     - responsive_bartik
+third_party_settings:
+  block_class:
+    classes: top-attraction-menu
 id: responsive_bartik_attractions_2
 theme: responsive_bartik
 region: header

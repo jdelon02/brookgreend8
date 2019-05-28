@@ -1,0 +1,25 @@
+uuid: 60238bec-63ee-45d0-86a2-9c5179de5127
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.menu-footer
+  module:
+    - system
+  theme:
+    - responsive_bartik
+id: responsive_bartik_menu_menu_footer
+theme: responsive_bartik
+region: footer
+weight: -20
+provider: null
+plugin: 'system_menu_block:menu-footer'
+settings:
+  id: 'system_menu_block:menu-footer'
+  label: '<none>'
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }
