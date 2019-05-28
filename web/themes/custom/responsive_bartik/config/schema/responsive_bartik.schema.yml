@@ -1,0 +1,5 @@
+# Schema for the configuration files of the Responsive Bartik theme.
+
+responsive_bartik.settings:
+  type: theme_settings
+  label: 'Responsive Bartik settings'
