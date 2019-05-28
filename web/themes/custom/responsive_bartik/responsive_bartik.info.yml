@@ -27,21 +27,24 @@ ckeditor_stylesheets:
   - css/components/text-formatted.css
 regions:
   header: Header
-  primary_menu: 'Primary menu'
-  secondary_menu: 'Secondary menu'
+  primary_menu: 'Banner'
+  secondary_menu: 'Navigation'
+  help: 'Help'
   page_top: 'Page top'
   page_bottom: 'Page bottom'
   highlighted: Highlighted
-  featured_top: 'Featured top'
+  featured_top: 'Featured'
   breadcrumb: Breadcrumb
+  content_top: 'Content Top'
   content: Content
+  content_bottom: 'Content Bottom'
   sidebar_first: 'Sidebar first'
   sidebar_second: 'Sidebar second'
-  featured_bottom_first: 'Featured bottom first'
-  featured_bottom_second: 'Featured bottom second'
-  featured_bottom_third: 'Featured bottom third'
+  featured_bottom_first: 'Triptych First'
+  featured_bottom_second: 'Triptych middle'
+  featured_bottom_third: 'Triptych last'
   footer_first: 'Footer first'
   footer_second: 'Footer second'
   footer_third: 'Footer third'
   footer_fourth: 'Footer fourth'
-  footer_fifth: 'Footer fifth'
+  footer: 'Footer'

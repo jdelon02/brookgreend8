@@ -76,12 +76,20 @@
     <div id="main-wrapper" class="layout-main-wrapper layout-container clearfix">
       <div id="main" class="layout-main clearfix">
         {{ page.breadcrumb }}
+
+        {% if page.content_top %}
+        <div id="content-top"><div class="section clearfix">
+          {{ page.content_top }}
+        </div></div>
+        {% endif %}
+
         <main id="content" class="column main-content" role="main">
           <section class="section">
             <a id="main-content" tabindex="-1"></a>
             {{ page.content }}
           </section>
         </main>
+
         {% if page.sidebar_first %}
           <div id="sidebar-first" class="column sidebar">
             <aside class="section" role="complementary">
@@ -95,6 +103,11 @@
               {{ page.sidebar_second }}
             </aside>
           </div>
+        {% endif %}
+        {% if page.content_bottom %}
+        <div id="content-bottom"><div class="section clearfix">
+          {{ page.content_bottom }}
+        </div></div>
         {% endif %}
       </div>
     </div>
